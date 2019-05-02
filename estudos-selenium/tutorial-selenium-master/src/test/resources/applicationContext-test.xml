@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans"
+       xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+       xsi:schemaLocation="http://www.springframework.org/schema/beans http://www.springframework.org/schema/beans/spring-beans-2.5.xsd">
+
+    <bean id="siteBase" class="java.net.URI">
+        <constructor-arg value="http://localhost:8081/${project.artifactId}/" />
+    </bean>
+
+    <!--<bean id="driver" class="org.openqa.selenium.firefox.FirefoxDriver" destroy-method="quit"/>-->
+    <bean id="driver" class="org.openqa.selenium.chrome.ChromeDriver" destroy-method="quit" lazy-init="true"/>
+
+    <bean id="sysprops"
+          class="org.springframework.beans.factory.config.MethodInvokingFactoryBean">
+        <property name="targetClass">
+            <value>java.lang.System</value>
+        </property>
+        <property name="targetMethod">
+            <value>setProperty</value>
+        </property>
+        <property name="arguments">
+            <list>
+                <value>webdriver.chrome.driver</value>
+                <value>src/test/resources/chromedriver</value>
+            </list>
+        </property>
+    </bean>
+</beans>

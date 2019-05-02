@@ -1,0 +1,1153 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ChangeListManager">
+    <list default="true" readonly="true" id="657e0b22-c185-4ba7-b81b-1422036a6a29" name="Default" comment="" />
+    <ignored path="$PROJECT_DIR$/out/" />
+    <ignored path="$PROJECT_DIR$/target/" />
+    <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
+    <option name="TRACKING_ENABLED" value="true" />
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="CheckStyle-IDEA-workspace">
+    <option name="configuration">
+      <map>
+        <entry key="last-active-plugin-version" value="5.19.0" />
+      </map>
+    </option>
+  </component>
+  <component name="CompilerWorkspaceConfiguration">
+    <option name="MAKE_PROJECT_ON_SAVE" value="true" />
+  </component>
+  <component name="FileEditorManager">
+    <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
+      <file leaf-file-name="PaginaConfirmacaoExclusao.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/test/java/pages/genericas/PaginaConfirmacaoExclusao.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="126">
+              <caret line="12" column="4" selection-start-line="12" selection-start-column="4" selection-end-line="12" selection-end-column="4" />
+              <folding>
+                <element signature="imports" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="TestNG.xml" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/test/resources/TestNG.xml">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="144">
+              <caret line="8" column="76" selection-start-line="8" selection-start-column="76" selection-end-line="8" selection-end-column="76" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="DominioAlteracaoTest.java" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/src/test/java/tests/configuracoes/dominio/DominioAlteracaoTest.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="819">
+              <caret line="130" column="59" selection-start-line="130" selection-start-column="59" selection-end-line="130" selection-end-column="59" />
+              <folding>
+                <element signature="imports" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="InstanciaDriver.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/test/java/utils/InstanciaDriver.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="432">
+              <caret line="29" column="44" selection-start-line="29" selection-start-column="44" selection-end-line="29" selection-end-column="44" />
+              <folding>
+                <element signature="imports" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="PaginaAlteracaoExclusao.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/test/java/pages/genericas/PaginaAlteracaoExclusao.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="1008">
+              <caret line="63" column="10" selection-start-line="63" selection-start-column="10" selection-end-line="63" selection-end-column="10" />
+              <folding>
+                <element signature="imports" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+    </leaf>
+  </component>
+  <component name="FileTemplateManagerImpl">
+    <option name="RECENT_TEMPLATES">
+      <list>
+        <option value="Class" />
+      </list>
+    </option>
+  </component>
+  <component name="FindInProjectRecents">
+    <findStrings>
+      <find>@FindBy</find>
+      <find>Id</find>
+      <find>Sleep</find>
+      <find>SendKeys</find>
+      <find>XPath</find>
+      <find>How =</find>
+      <find>IWebElement</find>
+      <find>Mensagem</find>
+    </findStrings>
+    <replaceStrings>
+      <replace>ID</replace>
+      <replace>sleep</replace>
+      <replace>sendKeys</replace>
+      <replace>XPATH</replace>
+      <replace>how =</replace>
+      <replace>WebElement</replace>
+    </replaceStrings>
+  </component>
+  <component name="IdeDocumentHistory">
+    <option name="CHANGED_PATHS">
+      <list>
+        <option value="$PROJECT_DIR$/src/test/java/utils/BrowserFunctions.java" />
+        <option value="$PROJECT_DIR$/src/test/java/pages/FB.java" />
+        <option value="$PROJECT_DIR$/src/test/java/pages/Google.java" />
+        <option value="$PROJECT_DIR$/src/test/java/pages/genericas/SuperPagina.cs" />
+        <option value="$PROJECT_DIR$/src/test/java/excecoes/ElementoNaoEncontradoException.java" />
+        <option value="$PROJECT_DIR$/target/classes/log4j.properties" />
+        <option value="$PROJECT_DIR$/src/test/java/utils/LoginPortal.java" />
+        <option value="$PROJECT_DIR$/src/test/java/utils/RandomTest.java" />
+        <option value="$PROJECT_DIR$/src/test/java/tests/configuracoes/dominio/DadosTestDominio.java" />
+        <option value="$PROJECT_DIR$/src/test/java/pages/dominio/PaginaOldDominioAlteracaoExclusao.java" />
+        <option value="$PROJECT_DIR$/src/test/java/pages/dominio/PaginaOldDominio.java" />
+        <option value="$PROJECT_DIR$/src/test/java/pages/genericas/PaginaInclusao.java" />
+        <option value="$PROJECT_DIR$/src/test/java/pages/dominio/PaginaDominioConsulta.java" />
+        <option value="$PROJECT_DIR$/src/test/java/tests/DadosTesteGenerico.java" />
+        <option value="$PROJECT_DIR$/TestNG.xml" />
+        <option value="$PROJECT_DIR$/TestNg.xml" />
+        <option value="$PROJECT_DIR$/pom.xml" />
+        <option value="$PROJECT_DIR$/src/test/java/tests/TestGenerico.java" />
+        <option value="$PROJECT_DIR$/src/test/java/tests/SuperTest.java" />
+        <option value="$PROJECT_DIR$/src/test/java/tests/LoginPortalTest.java" />
+        <option value="$PROJECT_DIR$/src/test/java/utils/Mensagem.java" />
+        <option value="$PROJECT_DIR$/src/test/java/pages/dominio/PaginaDominioInclusao.java" />
+        <option value="$PROJECT_DIR$/src/test/java/pages/dominio/PaginaDominioAlteracaoExclusao.java" />
+        <option value="$PROJECT_DIR$/src/test/java/tests/TesteGenerico.java" />
+        <option value="$PROJECT_DIR$/src/main/resources/log4j.properties" />
+        <option value="$PROJECT_DIR$/src/test/java/pages/dominio/PaginaDominio.java" />
+        <option value="$PROJECT_DIR$/src/test/java/utils/InstanciaDriver.java" />
+        <option value="$PROJECT_DIR$/src/test/java/pages/genericas/SuperPaginaOld.java" />
+        <option value="$PROJECT_DIR$/src/test/java/tests/configuracoes/dominio/DominioInclusaoTest.java" />
+        <option value="$PROJECT_DIR$/src/test/java/pages/genericas/SuperPagina.java" />
+        <option value="$PROJECT_DIR$/src/test/java/pages/genericas/PaginaLoginPortal.java" />
+        <option value="$PROJECT_DIR$/src/test/java/tests/configuracoes/dominio/DominioExclusaoTest.java" />
+        <option value="$PROJECT_DIR$/src/test/java/pages/genericas/PaginaConsulta.java" />
+        <option value="$PROJECT_DIR$/src/test/java/pages/genericas/PaginaInicial.java" />
+        <option value="$PROJECT_DIR$/src/test/java/tests/configuracoes/dominio/DominioRNTest.java" />
+        <option value="$PROJECT_DIR$/src/test/java/tests/configuracoes/dominio/DominioAlteracaoTest.java" />
+        <option value="$PROJECT_DIR$/src/test/java/pages/genericas/PaginaAlteracaoExclusao.java" />
+        <option value="$PROJECT_DIR$/src/test/java/pages/genericas/PaginaConfirmacaoExclusao.java" />
+        <option value="$PROJECT_DIR$/src/test/resources/TestNG.xml" />
+      </list>
+    </option>
+  </component>
+  <component name="JsBuildToolGruntFileManager" detection-done="true" sorting="DEFINITION_ORDER" />
+  <component name="JsBuildToolPackageJson" detection-done="true" sorting="DEFINITION_ORDER" />
+  <component name="JsGulpfileManager">
+    <detection-done>true</detection-done>
+    <sorting>DEFINITION_ORDER</sorting>
+  </component>
+  <component name="MavenImportPreferences">
+    <option name="importingSettings">
+      <MavenImportingSettings>
+        <option name="importAutomatically" value="true" />
+      </MavenImportingSettings>
+    </option>
+  </component>
+  <component name="MavenProjectNavigator">
+    <treeState>
+      <expand>
+        <path>
+          <item name="" type="16c1761:MavenProjectsStructure$RootNode" />
+          <item name="sggTesteJava" type="9519ce18:MavenProjectsStructure$ProjectNode" />
+        </path>
+        <path>
+          <item name="" type="16c1761:MavenProjectsStructure$RootNode" />
+          <item name="sggTesteJava" type="9519ce18:MavenProjectsStructure$ProjectNode" />
+          <item name="Lifecycle" type="58874e2:MavenProjectsStructure$LifecycleNode" />
+        </path>
+      </expand>
+      <select />
+    </treeState>
+  </component>
+  <component name="NodePackageJsonFileManager">
+    <packageJsonPaths />
+  </component>
+  <component name="ProjectFrameBounds" extendedState="6">
+    <option name="y" value="24" />
+    <option name="width" value="1920" />
+    <option name="height" value="1056" />
+  </component>
+  <component name="ProjectView">
+    <navigator proportions="" version="1">
+      <foldersAlwaysOnTop value="true" />
+    </navigator>
+    <panes>
+      <pane id="Scope" />
+      <pane id="PackagesPane" />
+      <pane id="AndroidView" />
+      <pane id="ProjectPane">
+        <subPane>
+          <expand>
+            <path>
+              <item name="sggTesteJava" type="b2602c69:ProjectViewProjectNode" />
+              <item name="sggTesteJava" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="sggTesteJava" type="b2602c69:ProjectViewProjectNode" />
+              <item name="sggTesteJava" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="sggTesteJava" type="b2602c69:ProjectViewProjectNode" />
+              <item name="sggTesteJava" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="log" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="sggTesteJava" type="b2602c69:ProjectViewProjectNode" />
+              <item name="sggTesteJava" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="sggTesteJava" type="b2602c69:ProjectViewProjectNode" />
+              <item name="sggTesteJava" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+              <item name="resources" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="sggTesteJava" type="b2602c69:ProjectViewProjectNode" />
+              <item name="sggTesteJava" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="test" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="sggTesteJava" type="b2602c69:ProjectViewProjectNode" />
+              <item name="sggTesteJava" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="test" type="462c0819:PsiDirectoryNode" />
+              <item name="java" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="sggTesteJava" type="b2602c69:ProjectViewProjectNode" />
+              <item name="sggTesteJava" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="test" type="462c0819:PsiDirectoryNode" />
+              <item name="java" type="462c0819:PsiDirectoryNode" />
+              <item name="pages" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="sggTesteJava" type="b2602c69:ProjectViewProjectNode" />
+              <item name="sggTesteJava" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="test" type="462c0819:PsiDirectoryNode" />
+              <item name="java" type="462c0819:PsiDirectoryNode" />
+              <item name="pages" type="462c0819:PsiDirectoryNode" />
+              <item name="dominio" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="sggTesteJava" type="b2602c69:ProjectViewProjectNode" />
+              <item name="sggTesteJava" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="test" type="462c0819:PsiDirectoryNode" />
+              <item name="java" type="462c0819:PsiDirectoryNode" />
+              <item name="pages" type="462c0819:PsiDirectoryNode" />
+              <item name="genericas" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="sggTesteJava" type="b2602c69:ProjectViewProjectNode" />
+              <item name="sggTesteJava" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="test" type="462c0819:PsiDirectoryNode" />
+              <item name="java" type="462c0819:PsiDirectoryNode" />
+              <item name="tests" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="sggTesteJava" type="b2602c69:ProjectViewProjectNode" />
+              <item name="sggTesteJava" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="test" type="462c0819:PsiDirectoryNode" />
+              <item name="java" type="462c0819:PsiDirectoryNode" />
+              <item name="tests" type="462c0819:PsiDirectoryNode" />
+              <item name="dominio" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="sggTesteJava" type="b2602c69:ProjectViewProjectNode" />
+              <item name="sggTesteJava" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="test" type="462c0819:PsiDirectoryNode" />
+              <item name="java" type="462c0819:PsiDirectoryNode" />
+              <item name="utils" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="sggTesteJava" type="b2602c69:ProjectViewProjectNode" />
+              <item name="sggTesteJava" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="test" type="462c0819:PsiDirectoryNode" />
+              <item name="resources" type="462c0819:PsiDirectoryNode" />
+            </path>
+          </expand>
+          <select />
+        </subPane>
+      </pane>
+    </panes>
+  </component>
+  <component name="PropertiesComponent">
+    <property name="WebServerToolWindowFactoryState" value="false" />
+    <property name="aspect.path.notification.shown" value="true" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
+    <property name="nodejs_interpreter_path.stuck_in_default_project" value="undefined stuck path" />
+    <property name="nodejs_npm_path_reset_for_default_project" value="true" />
+    <property name="project.structure.last.edited" value="Modules" />
+    <property name="project.structure.proportion" value="0.15" />
+    <property name="project.structure.side.proportion" value="0.2" />
+    <property name="run.code.analysis.last.selected.profile" value="pProject Default" />
+    <property name="settings.editor.selected.configurable" value="reference.projectsettings.compiler.javacompiler" />
+  </component>
+  <component name="RecentsManager">
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/src/test/resources" />
+      <recent name="$PROJECT_DIR$/target/test-classes" />
+    </key>
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/src/test/java" />
+      <recent name="$PROJECT_DIR$" />
+      <recent name="$PROJECT_DIR$/src/test/java/pages" />
+      <recent name="$PROJECT_DIR$/src/test/java/utils" />
+    </key>
+  </component>
+  <component name="RunDashboard">
+    <option name="ruleStates">
+      <list>
+        <RuleState>
+          <option name="name" value="ConfigurationTypeDashboardGroupingRule" />
+        </RuleState>
+        <RuleState>
+          <option name="name" value="StatusDashboardGroupingRule" />
+        </RuleState>
+      </list>
+    </option>
+  </component>
+  <component name="RunManager" selected="TestNG./home/gilmario/workspaces/estudos-selenium/sggTesteJava/src/test/resources/TestNG.xml">
+    <configuration default="true" type="Applet" factoryName="Applet">
+      <option name="POLICY_FILE" value="$APPLICATION_HOME_DIR$/bin/appletviewer.policy" />
+    </configuration>
+    <configuration name="RandomTest" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="utils.RandomTest" />
+      <module name="sggTesteJava" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="utils.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+    </configuration>
+    <configuration default="true" type="Application" factoryName="Application">
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
+    </configuration>
+    <configuration default="true" type="JUnit" factoryName="JUnit">
+      <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false" />
+      <option name="ALTERNATIVE_JRE_PATH" />
+      <option name="PACKAGE_NAME" />
+      <option name="MAIN_CLASS_NAME" />
+      <option name="METHOD_NAME" />
+      <option name="TEST_OBJECT" value="class" />
+      <option name="VM_PARAMETERS" value="-ea" />
+      <option name="PARAMETERS" />
+      <option name="WORKING_DIRECTORY" value="$MODULE_DIR$" />
+      <option name="PASS_PARENT_ENVS" value="true" />
+      <option name="TEST_SEARCH_SCOPE">
+        <value defaultName="singleModule" />
+      </option>
+      <patterns />
+    </configuration>
+    <configuration name="LoginPortalTest" type="TestNG" factoryName="TestNG" temporary="true" nameIsGenerated="true">
+      <module name="sggTesteJava" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="tests.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false" />
+      <option name="ALTERNATIVE_JRE_PATH" />
+      <option name="SUITE_NAME" />
+      <option name="PACKAGE_NAME" value="tests" />
+      <option name="MAIN_CLASS_NAME" value="tests.LoginPortalTest" />
+      <option name="METHOD_NAME" />
+      <option name="GROUP_NAME" />
+      <option name="TEST_OBJECT" value="CLASS" />
+      <option name="VM_PARAMETERS" value="-ea" />
+      <option name="PARAMETERS" />
+      <option name="WORKING_DIRECTORY" value="$MODULE_DIR$" />
+      <option name="OUTPUT_DIRECTORY" />
+      <option name="PASS_PARENT_ENVS" value="true" />
+      <option name="TEST_SEARCH_SCOPE">
+        <value defaultName="singleModule" />
+      </option>
+      <option name="USE_DEFAULT_REPORTERS" value="false" />
+      <option name="PROPERTIES_FILE" />
+      <properties />
+      <listeners />
+    </configuration>
+    <configuration name="LoginPortalTest.logarPortalTest" type="TestNG" factoryName="TestNG" temporary="true" nameIsGenerated="true">
+      <module name="sggTesteJava" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="tests.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false" />
+      <option name="ALTERNATIVE_JRE_PATH" />
+      <option name="SUITE_NAME" />
+      <option name="PACKAGE_NAME" value="tests" />
+      <option name="MAIN_CLASS_NAME" value="tests.LoginPortalTest" />
+      <option name="METHOD_NAME" value="logarPortalTest" />
+      <option name="GROUP_NAME" />
+      <option name="TEST_OBJECT" value="METHOD" />
+      <option name="VM_PARAMETERS" value="-ea" />
+      <option name="PARAMETERS" />
+      <option name="WORKING_DIRECTORY" value="$MODULE_DIR$" />
+      <option name="OUTPUT_DIRECTORY" />
+      <option name="PASS_PARENT_ENVS" value="true" />
+      <option name="TEST_SEARCH_SCOPE">
+        <value defaultName="singleModule" />
+      </option>
+      <option name="USE_DEFAULT_REPORTERS" value="false" />
+      <option name="PROPERTIES_FILE" />
+      <properties />
+      <listeners />
+    </configuration>
+    <configuration name="/home/gilmario/workspaces/estudos-selenium/sggTesteJava/src/test/resources/TestNG.xml" type="TestNG" factoryName="TestNG" temporary="true" nameIsGenerated="true">
+      <module name="sggTesteJava" />
+      <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false" />
+      <option name="ALTERNATIVE_JRE_PATH" />
+      <option name="SUITE_NAME" value="$PROJECT_DIR$/src/test/resources/TestNG.xml" />
+      <option name="PACKAGE_NAME" />
+      <option name="MAIN_CLASS_NAME" />
+      <option name="METHOD_NAME" />
+      <option name="GROUP_NAME" />
+      <option name="TEST_OBJECT" value="SUITE" />
+      <option name="VM_PARAMETERS" value="-ea" />
+      <option name="PARAMETERS" />
+      <option name="WORKING_DIRECTORY" value="$MODULE_DIR$" />
+      <option name="OUTPUT_DIRECTORY" />
+      <option name="PASS_PARENT_ENVS" value="true" />
+      <option name="TEST_SEARCH_SCOPE">
+        <value defaultName="singleModule" />
+      </option>
+      <option name="USE_DEFAULT_REPORTERS" value="false" />
+      <option name="PROPERTIES_FILE" />
+      <properties />
+      <listeners />
+    </configuration>
+    <configuration default="true" type="TestNG" factoryName="TestNG">
+      <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false" />
+      <option name="ALTERNATIVE_JRE_PATH" />
+      <option name="SUITE_NAME" />
+      <option name="PACKAGE_NAME" />
+      <option name="MAIN_CLASS_NAME" />
+      <option name="METHOD_NAME" />
+      <option name="GROUP_NAME" />
+      <option name="TEST_OBJECT" value="CLASS" />
+      <option name="VM_PARAMETERS" value="-ea" />
+      <option name="PARAMETERS" />
+      <option name="WORKING_DIRECTORY" value="$MODULE_DIR$" />
+      <option name="OUTPUT_DIRECTORY" />
+      <option name="PASS_PARENT_ENVS" value="true" />
+      <option name="TEST_SEARCH_SCOPE">
+        <value defaultName="singleModule" />
+      </option>
+      <option name="USE_DEFAULT_REPORTERS" value="false" />
+      <option name="PROPERTIES_FILE" />
+      <properties />
+      <listeners />
+    </configuration>
+    <list>
+      <item itemvalue="Application.RandomTest" />
+      <item itemvalue="TestNG./home/gilmario/workspaces/estudos-selenium/sggTesteJava/src/test/resources/TestNG.xml" />
+      <item itemvalue="TestNG.LoginPortalTest.logarPortalTest" />
+      <item itemvalue="TestNG.LoginPortalTest" />
+    </list>
+    <recent_temporary>
+      <list>
+        <item itemvalue="TestNG./home/gilmario/workspaces/estudos-selenium/sggTesteJava/src/test/resources/TestNG.xml" />
+        <item itemvalue="TestNG.LoginPortalTest" />
+        <item itemvalue="TestNG.LoginPortalTest.logarPortalTest" />
+        <item itemvalue="Application.RandomTest" />
+      </list>
+    </recent_temporary>
+  </component>
+  <component name="SQLPlugin.ProjectConfiguration">
+    <queries />
+  </component>
+  <component name="SvnConfiguration" cleanupOnStartRun="true">
+    <configuration>$USER_HOME$/.subversion</configuration>
+    <supportedVersion>125</supportedVersion>
+  </component>
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="657e0b22-c185-4ba7-b81b-1422036a6a29" name="Default" comment="" />
+      <created>1527099001084</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1527099001084</updated>
+      <workItem from="1527099012090" duration="3195000" />
+      <workItem from="1527529779121" duration="22494000" />
+      <workItem from="1527622918367" duration="209000" />
+      <workItem from="1527623130916" duration="75503000" />
+      <workItem from="1528111384686" duration="7948000" />
+      <workItem from="1528119613986" duration="2030000" />
+      <workItem from="1528121660392" duration="16400000" />
+      <workItem from="1528140615218" duration="11000" />
+    </task>
+    <servers />
+  </component>
+  <component name="TestHistory">
+    <history-entry file="_home_gilmario_workspaces_estudos-selenium_sggTesteJava_src_test_resources_TestNG_xml - 2018.06.04 at 14h 37m 13s.xml">
+      <configuration name="/home/gilmario/workspaces/estudos-selenium/sggTesteJava/src/test/resources/TestNG.xml" configurationId="TestNG" />
+    </history-entry>
+    <history-entry file="_home_gilmario_workspaces_estudos-selenium_sggTesteJava_src_test_resources_TestNG_xml - 2018.06.04 at 14h 43m 32s.xml">
+      <configuration name="/home/gilmario/workspaces/estudos-selenium/sggTesteJava/src/test/resources/TestNG.xml" configurationId="TestNG" />
+    </history-entry>
+    <history-entry file="_home_gilmario_workspaces_estudos-selenium_sggTesteJava_src_test_resources_TestNG_xml - 2018.06.04 at 14h 45m 42s.xml">
+      <configuration name="/home/gilmario/workspaces/estudos-selenium/sggTesteJava/src/test/resources/TestNG.xml" configurationId="TestNG" />
+    </history-entry>
+    <history-entry file="_home_gilmario_workspaces_estudos-selenium_sggTesteJava_src_test_resources_TestNG_xml - 2018.06.04 at 14h 47m 43s.xml">
+      <configuration name="/home/gilmario/workspaces/estudos-selenium/sggTesteJava/src/test/resources/TestNG.xml" configurationId="TestNG" />
+    </history-entry>
+    <history-entry file="_home_gilmario_workspaces_estudos-selenium_sggTesteJava_src_test_resources_TestNG_xml - 2018.06.04 at 14h 53m 34s.xml">
+      <configuration name="/home/gilmario/workspaces/estudos-selenium/sggTesteJava/src/test/resources/TestNG.xml" configurationId="TestNG" />
+    </history-entry>
+    <history-entry file="_home_gilmario_workspaces_estudos-selenium_sggTesteJava_src_test_resources_TestNG_xml - 2018.06.04 at 15h 05m 38s.xml">
+      <configuration name="/home/gilmario/workspaces/estudos-selenium/sggTesteJava/src/test/resources/TestNG.xml" configurationId="TestNG" />
+    </history-entry>
+    <history-entry file="_home_gilmario_workspaces_estudos-selenium_sggTesteJava_src_test_resources_TestNG_xml - 2018.06.04 at 15h 12m 44s.xml">
+      <configuration name="/home/gilmario/workspaces/estudos-selenium/sggTesteJava/src/test/resources/TestNG.xml" configurationId="TestNG" />
+    </history-entry>
+    <history-entry file="_home_gilmario_workspaces_estudos-selenium_sggTesteJava_src_test_resources_TestNG_xml - 2018.06.04 at 15h 19m 32s.xml">
+      <configuration name="/home/gilmario/workspaces/estudos-selenium/sggTesteJava/src/test/resources/TestNG.xml" configurationId="TestNG" />
+    </history-entry>
+    <history-entry file="_home_gilmario_workspaces_estudos-selenium_sggTesteJava_src_test_resources_TestNG_xml - 2018.06.04 at 15h 33m 10s.xml">
+      <configuration name="/home/gilmario/workspaces/estudos-selenium/sggTesteJava/src/test/resources/TestNG.xml" configurationId="TestNG" />
+    </history-entry>
+    <history-entry file="_home_gilmario_workspaces_estudos-selenium_sggTesteJava_src_test_resources_TestNG_xml - 2018.06.04 at 15h 36m 39s.xml">
+      <configuration name="/home/gilmario/workspaces/estudos-selenium/sggTesteJava/src/test/resources/TestNG.xml" configurationId="TestNG" />
+    </history-entry>
+  </component>
+  <component name="TimeTrackingManager">
+    <option name="totallyTimeSpent" value="127790000" />
+  </component>
+  <component name="ToolWindowManager">
+    <frame x="0" y="25" width="1920" height="1055" extended-state="6" />
+    <layout>
+      <window_info anchor="right" id="Palette" order="3" />
+      <window_info anchor="bottom" id="Event Log" order="16" side_tool="true" />
+      <window_info active="true" anchor="right" id="Maven Projects" order="9" visible="true" weight="0.32995737" />
+      <window_info anchor="bottom" id="Database Changes" order="11" show_stripe_button="false" />
+      <window_info id="Capture Tool" order="6" />
+      <window_info id="Designer" order="2" />
+      <window_info anchor="right" id="Database" order="7" />
+      <window_info anchor="bottom" id="SonarQube" order="15" weight="0.32890365" />
+      <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
+      <window_info anchor="right" id="News Feed" order="6" />
+      <window_info anchor="right" id="Ant Build" order="1" weight="0.25" />
+      <window_info id="UI Designer" order="4" />
+      <window_info anchor="bottom" id="Debug" order="4" weight="0.39977852" />
+      <window_info anchor="bottom" id="TODO" order="7" />
+      <window_info anchor="right" id="Palette&#9;" order="8" />
+      <window_info id="Image Layers" order="3" />
+      <window_info anchor="right" id="Capture Analysis" order="5" />
+      <window_info anchor="bottom" id="Version Control" order="13" />
+      <window_info anchor="bottom" id="Run" order="3" weight="0.32890365" />
+      <window_info anchor="bottom" id="CheckStyle" order="10" weight="0.32890365" />
+      <window_info anchor="bottom" id="Terminal" order="9" weight="0.32890365" />
+      <window_info anchor="bottom" id="SQL" order="8" />
+      <window_info anchor="bottom" id="Problems" order="12" weight="0.32890365" />
+      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.26812366" />
+      <window_info anchor="bottom" id="Reviews" order="14" />
+      <window_info anchor="right" id="Theme Preview" order="4" />
+      <window_info id="Favorites" order="5" side_tool="true" />
+      <window_info anchor="bottom" id="Messages" order="0" weight="0.32890365" />
+      <window_info anchor="bottom" id="Inspection" order="6" weight="0.4" />
+      <window_info anchor="right" id="Commander" order="0" weight="0.4" />
+      <window_info anchor="bottom" id="Find" order="2" weight="0.32890365" />
+      <window_info anchor="bottom" id="Cvs" order="5" weight="0.25" />
+      <window_info anchor="right" content_ui="combo" id="Hierarchy" order="2" weight="0.25" />
+      <window_info anchor="bottom" id="Message" order="1" />
+      <window_info anchor="bottom" id="Inspection Results" order="17" weight="0.32890365" />
+    </layout>
+    <layout-to-restore>
+      <window_info id="Designer" order="2" />
+      <window_info anchor="right" id="Palette" order="3" />
+      <window_info id="Image Layers" order="3" />
+      <window_info anchor="bottom" id="Run" order="3" visible="true" weight="0.32890365" />
+      <window_info anchor="bottom" id="Cvs" order="5" weight="0.25" />
+      <window_info anchor="right" id="Ant Build" order="1" weight="0.25" />
+      <window_info id="UI Designer" order="4" />
+      <window_info id="Favorites" order="5" side_tool="true" />
+      <window_info anchor="bottom" id="Database Changes" order="11" show_stripe_button="false" />
+      <window_info id="Capture Tool" order="6" />
+      <window_info anchor="right" id="Capture Analysis" order="5" />
+      <window_info anchor="bottom" id="Inspection Results" order="17" weight="0.32890365" />
+      <window_info anchor="right" id="Commander" order="0" weight="0.4" />
+      <window_info anchor="bottom" id="CheckStyle" order="10" weight="0.32890365" />
+      <window_info anchor="bottom" id="Event Log" order="16" side_tool="true" />
+      <window_info anchor="bottom" id="Messages" order="0" weight="0.32890365" />
+      <window_info anchor="right" content_ui="combo" id="Hierarchy" order="2" weight="0.25" />
+      <window_info anchor="bottom" id="Problems" order="12" />
+      <window_info anchor="bottom" id="SQL" order="8" />
+      <window_info anchor="bottom" id="Version Control" order="13" />
+      <window_info anchor="right" id="Maven Projects" order="9" weight="0.32995737" />
+      <window_info anchor="bottom" id="Terminal" order="9" weight="0.32890365" />
+      <window_info anchor="bottom" id="Find" order="2" weight="0.32890365" />
+      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.26279318" />
+      <window_info anchor="right" id="Database" order="7" />
+      <window_info anchor="bottom" id="Message" order="1" />
+      <window_info anchor="bottom" id="Reviews" order="14" />
+      <window_info anchor="bottom" id="TODO" order="7" />
+      <window_info anchor="right" id="Palette&#9;" order="8" />
+      <window_info anchor="right" id="Theme Preview" order="4" />
+      <window_info anchor="bottom" id="SonarQube" order="15" weight="0.32890365" />
+      <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
+      <window_info anchor="bottom" id="Inspection" order="6" weight="0.4" />
+      <window_info anchor="right" id="News Feed" order="6" />
+      <window_info anchor="bottom" id="Debug" order="4" weight="0.39977852" />
+    </layout-to-restore>
+  </component>
+  <component name="TypeScriptGeneratedFilesManager">
+    <option name="version" value="1" />
+  </component>
+  <component name="VcsContentAnnotationSettings">
+    <option name="myLimit" value="2678400000" />
+  </component>
+  <component name="XDebuggerManager">
+    <breakpoint-manager>
+      <option name="time" value="5" />
+    </breakpoint-manager>
+  </component>
+  <component name="editorHistoryManager">
+    <entry file="file://$PROJECT_DIR$/src/test/java/excecoes/ElementoNaoEncontradoException.java" />
+    <entry file="jar://$MAVEN_REPOSITORY$/log4j/log4j/1.2.17/log4j-1.2.17.jar!/org/apache/log4j/Category.class">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="193">
+          <caret line="110" column="16" selection-start-line="110" selection-start-column="16" selection-end-line="110" selection-end-column="16" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://$MAVEN_REPOSITORY$/log4j/log4j/1.2.17/log4j-1.2.17-sources.jar!/org/apache/log4j/Category.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="895">
+          <caret line="317" column="7" selection-start-line="317" selection-start-column="7" selection-end-line="317" selection-end-column="7" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/target/classes/log4j.properties" />
+    <entry file="jar://$MAVEN_REPOSITORY$/org/seleniumhq/selenium/selenium-support/3.5.2/selenium-support-3.5.2.jar!/org/openqa/selenium/support/ui/ExpectedConditions.class">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="346">
+          <caret line="461" column="45" selection-start-line="461" selection-start-column="45" selection-end-line="461" selection-end-column="45" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/test/java/pages/genericas/PaginaAlteracaoExclusaoOld.java" />
+    <entry file="file://$PROJECT_DIR$/src/test/java/pages/genericas/PaginaConfirmacaoExclusaoOld.java" />
+    <entry file="file://$PROJECT_DIR$/src/test/java/pages/genericas/PaginaInclusaoOld.java" />
+    <entry file="file://$PROJECT_DIR$/src/test/java/pages/dominio/PaginaDominioConsultaOld.java" />
+    <entry file="file://$PROJECT_DIR$/src/test/java/pages/dominio/PaginaDominioAlteracaoExclusaoOld.java" />
+    <entry file="file://$PROJECT_DIR$/src/test/java/pages/genericas/PaginaConsultaOld.java" />
+    <entry file="file://$PROJECT_DIR$/src/test/java/utils/RandomTest.java" />
+    <entry file="file://$PROJECT_DIR$/src/test/java/tests/SuperTestOld.java" />
+    <entry file="file://$PROJECT_DIR$/src/test/java/pages/dominio/PaginaDominioInclusaoOld.java" />
+    <entry file="file://$PROJECT_DIR$/src/test/java/pages/dominio/PaginaDominioOld.java" />
+    <entry file="file://$PROJECT_DIR$/src/test/java/pages/FB.java" />
+    <entry file="file://$PROJECT_DIR$/target/test-classes/TestNG.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="36">
+          <caret line="2" column="16" lean-forward="true" selection-start-line="2" selection-start-column="16" selection-end-line="2" selection-end-column="16" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/TestNg.xml" />
+    <entry file="file://$PROJECT_DIR$/target/maven-status/maven-compiler-plugin/testCompile/default-testCompile/createdFiles.lst">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/test/java/tests/TestGenerico.java" />
+    <entry file="uml://MAVEN/br.com.gilmario:sggTesteJava:1.0-SNAPSHOT">
+      <provider selected="true" editor-type-id="UmlEditorProvider">
+        <state>
+          <ID>MAVEN</ID>
+          <OriginalElement>br.com.gilmario:sggTesteJava:1.0-SNAPSHOT</OriginalElement>
+          <nodes>
+            <node x="" y="">br.com.gilmario:sggTesteJava:1.0-SNAPSHOT</node>
+            <node x="" y="">org.seleniumhq.selenium:selenium-java:jar:3.5.2</node>
+            <node x="" y="">org.seleniumhq.selenium:selenium-java:jar:3.5.2/org.seleniumhq.selenium:selenium-api:jar:3.5.2</node>
+            <node x="" y="">org.seleniumhq.selenium:selenium-java:jar:3.5.2/org.seleniumhq.selenium:selenium-chrome-driver:jar:3.5.2</node>
+            <node x="" y="">org.seleniumhq.selenium:selenium-java:jar:3.5.2/org.seleniumhq.selenium:selenium-edge-driver:jar:3.5.2</node>
+            <node x="" y="">org.seleniumhq.selenium:selenium-java:jar:3.5.2/org.seleniumhq.selenium:selenium-firefox-driver:jar:3.5.2</node>
+            <node x="" y="">org.seleniumhq.selenium:selenium-java:jar:3.5.2/org.seleniumhq.selenium:selenium-ie-driver:jar:3.5.2</node>
+            <node x="" y="">org.seleniumhq.selenium:selenium-java:jar:3.5.2/org.seleniumhq.selenium:selenium-opera-driver:jar:3.5.2</node>
+            <node x="" y="">org.seleniumhq.selenium:selenium-java:jar:3.5.2/org.seleniumhq.selenium:selenium-remote-driver:jar:3.5.2</node>
+            <node x="" y="">org.seleniumhq.selenium:selenium-java:jar:3.5.2/org.seleniumhq.selenium:selenium-safari-driver:jar:3.5.2</node>
+            <node x="" y="">org.seleniumhq.selenium:selenium-java:jar:3.5.2/org.seleniumhq.selenium:selenium-support:jar:3.5.2</node>
+            <node x="" y="">org.seleniumhq.selenium:selenium-java:jar:3.5.2/cglib:cglib-nodep:jar:3.2.4</node>
+            <node x="" y="">org.seleniumhq.selenium:selenium-java:jar:3.5.2/org.apache.commons:commons-exec:jar:1.3</node>
+            <node x="" y="">org.seleniumhq.selenium:selenium-java:jar:3.5.2/org.apache.commons:commons-lang3:jar:3.5</node>
+            <node x="" y="">org.seleniumhq.selenium:selenium-java:jar:3.5.2/commons-codec:commons-codec:jar:1.10</node>
+            <node x="" y="">org.seleniumhq.selenium:selenium-java:jar:3.5.2/commons-io:commons-io:jar:2.5</node>
+            <node x="" y="">org.seleniumhq.selenium:selenium-java:jar:3.5.2/commons-logging:commons-logging:jar:1.2</node>
+            <node x="" y="">org.seleniumhq.selenium:selenium-java:jar:3.5.2/org.w3c.css:sac:jar:1.3</node>
+            <node x="" y="">org.seleniumhq.selenium:selenium-java:jar:3.5.2/net.sourceforge.cssparser:cssparser:jar:0.9.23</node>
+            <node x="" y="">org.seleniumhq.selenium:selenium-java:jar:3.5.2/com.google.code.gson:gson:jar:2.8.0</node>
+            <node x="" y="">org.seleniumhq.selenium:selenium-java:jar:3.5.2/com.google.guava:guava:jar:23.0</node>
+            <node x="" y="">org.seleniumhq.selenium:selenium-java:jar:3.5.2/com.google.guava:guava:jar:23.0/com.google.code.findbugs:jsr305:jar:1.3.9</node>
+            <node x="" y="">org.seleniumhq.selenium:selenium-java:jar:3.5.2/com.google.guava:guava:jar:23.0/com.google.errorprone:error_prone_annotations:jar:2.0.18</node>
+            <node x="" y="">org.seleniumhq.selenium:selenium-java:jar:3.5.2/com.google.guava:guava:jar:23.0/com.google.j2objc:j2objc-annotations:jar:1.1</node>
+            <node x="" y="">org.seleniumhq.selenium:selenium-java:jar:3.5.2/com.google.guava:guava:jar:23.0/org.codehaus.mojo:animal-sniffer-annotations:jar:1.14</node>
+            <node x="" y="">org.seleniumhq.selenium:selenium-java:jar:3.5.2/org.hamcrest:hamcrest-core:jar:1.3</node>
+            <node x="" y="">org.seleniumhq.selenium:selenium-java:jar:3.5.2/net.sourceforge.htmlunit:htmlunit:jar:2.27</node>
+            <node x="" y="">org.seleniumhq.selenium:selenium-java:jar:3.5.2/net.sourceforge.htmlunit:htmlunit-core-js:jar:2.27</node>
+            <node x="" y="">org.seleniumhq.selenium:selenium-java:jar:3.5.2/net.sourceforge.htmlunit:neko-htmlunit:jar:2.27</node>
+            <node x="" y="">org.seleniumhq.selenium:selenium-java:jar:3.5.2/org.apache.httpcomponents:httpclient:jar:4.5.3</node>
+            <node x="" y="">org.seleniumhq.selenium:selenium-java:jar:3.5.2/org.apache.httpcomponents:httpclient:jar:4.5.3/commons-codec:commons-codec:jar:1.9</node>
+            <node x="" y="">org.seleniumhq.selenium:selenium-java:jar:3.5.2/org.apache.httpcomponents:httpcore:jar:4.4.6</node>
+            <node x="" y="">org.seleniumhq.selenium:selenium-java:jar:3.5.2/org.apache.httpcomponents:httpmime:jar:4.5.3</node>
+            <node x="" y="">org.seleniumhq.selenium:selenium-java:jar:3.5.2/org.eclipse.jetty:jetty-client:jar:9.4.5.v20170502</node>
+            <node x="" y="">org.seleniumhq.selenium:selenium-java:jar:3.5.2/org.eclipse.jetty:jetty-http:jar:9.4.5.v20170502</node>
+            <node x="" y="">org.seleniumhq.selenium:selenium-java:jar:3.5.2/org.eclipse.jetty:jetty-io:jar:9.4.5.v20170502</node>
+            <node x="" y="">org.seleniumhq.selenium:selenium-java:jar:3.5.2/org.eclipse.jetty:jetty-util:jar:9.4.5.v20170502</node>
+            <node x="" y="">org.seleniumhq.selenium:selenium-java:jar:3.5.2/net.java.dev.jna:jna:jar:4.1.0</node>
+            <node x="" y="">org.seleniumhq.selenium:selenium-java:jar:3.5.2/net.java.dev.jna:jna-platform:jar:4.1.0</node>
+            <node x="" y="">org.seleniumhq.selenium:selenium-java:jar:3.5.2/junit:junit:jar:4.12</node>
+            <node x="" y="">org.seleniumhq.selenium:selenium-java:jar:3.5.2/com.codeborne:phantomjsdriver:jar:1.4.0</node>
+            <node x="" y="">org.seleniumhq.selenium:selenium-java:jar:3.5.2/com.codeborne:phantomjsdriver:jar:1.4.0/org.seleniumhq.selenium:selenium-remote-driver:jar:3.1.0</node>
+            <node x="" y="">org.seleniumhq.selenium:selenium-java:jar:3.5.2/org.seleniumhq.selenium:htmlunit-driver:jar:2.27</node>
+            <node x="" y="">org.seleniumhq.selenium:selenium-java:jar:3.5.2/org.seleniumhq.selenium:htmlunit-driver:jar:2.27/org.seleniumhq.selenium:selenium-api:jar:3.4.0</node>
+            <node x="" y="">org.seleniumhq.selenium:selenium-java:jar:3.5.2/org.seleniumhq.selenium:htmlunit-driver:jar:2.27/org.seleniumhq.selenium:selenium-support:jar:3.4.0</node>
+            <node x="" y="">org.seleniumhq.selenium:selenium-java:jar:3.5.2/javax.servlet:javax.servlet-api:jar:3.1.0</node>
+            <node x="" y="">org.seleniumhq.selenium:selenium-java:jar:3.5.2/org.eclipse.jetty.websocket:websocket-api:jar:9.4.5.v20170502</node>
+            <node x="" y="">org.seleniumhq.selenium:selenium-java:jar:3.5.2/org.eclipse.jetty.websocket:websocket-client:jar:9.4.5.v20170502</node>
+            <node x="" y="">org.seleniumhq.selenium:selenium-java:jar:3.5.2/org.eclipse.jetty.websocket:websocket-common:jar:9.4.5.v20170502</node>
+            <node x="" y="">org.seleniumhq.selenium:selenium-java:jar:3.5.2/xalan:serializer:jar:2.7.2</node>
+            <node x="" y="">org.seleniumhq.selenium:selenium-java:jar:3.5.2/xalan:serializer:jar:2.7.2/xml-apis:xml-apis:jar:1.3.04</node>
+            <node x="" y="">org.seleniumhq.selenium:selenium-java:jar:3.5.2/xalan:xalan:jar:2.7.2</node>
+            <node x="" y="">org.seleniumhq.selenium:selenium-java:jar:3.5.2/xerces:xercesImpl:jar:2.11.0</node>
+            <node x="" y="">org.seleniumhq.selenium:selenium-java:jar:3.5.2/xml-apis:xml-apis:jar:1.4.01</node>
+            <node x="" y="">org.testng:testng:jar:6.9.8</node>
+            <node x="" y="">org.testng:testng:jar:6.9.8/org.beanshell:bsh:jar:2.0b4</node>
+            <node x="" y="">org.testng:testng:jar:6.9.8/com.beust:jcommander:jar:1.48</node>
+            <node x="" y="">log4j:log4j:jar:1.2.17</node>
+          </nodes>
+          <notes />
+          <edges />
+          <settings layout="Hierarchic Group" zoom="0.1607810552555048" x="2397.0" y="1181.0" />
+          <SelectedNodes />
+          <Categories />
+          <SCOPE>All</SCOPE>
+          <VISIBILITY>All</VISIBILITY>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/pom.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="463">
+          <caret line="40" column="30" selection-start-line="40" selection-start-column="30" selection-end-line="40" selection-end-column="30" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://$MAVEN_REPOSITORY$/org/testng/testng/6.9.8/testng-6.9.8.jar!/org/testng/internal/TestMethodWorker.class">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="1242">
+          <caret line="86" selection-start-line="86" selection-end-line="86" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://$MAVEN_REPOSITORY$/org/testng/testng/6.9.8/testng-6.9.8.jar!/org/testng/internal/MethodInvocationHelper.class">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="172">
+          <caret line="76" selection-start-line="76" selection-end-line="76" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://$MAVEN_REPOSITORY$/org/testng/testng/6.9.8/testng-6.9.8.jar!/org/testng/internal/Invoker.class">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="155">
+          <caret line="434" selection-start-line="434" selection-end-line="434" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/resources/log4j.properties">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="18">
+          <caret line="1" column="22" selection-start-line="1" selection-start-column="22" selection-end-line="1" selection-end-column="22" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/test/java/tests/LoginPortalTest.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="270">
+          <caret line="15" column="34" lean-forward="true" selection-start-line="15" selection-start-column="34" selection-end-line="15" selection-end-column="34" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/test/java/tests/TesteGenerico.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="810">
+          <caret line="45" column="105" selection-start-line="45" selection-start-column="105" selection-end-line="45" selection-end-column="105" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/test/java/pages/genericas/SuperPagina.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="126">
+          <caret line="7" column="18" selection-start-line="7" selection-start-column="18" selection-end-line="7" selection-end-column="18" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/test/java/pages/dominio/PaginaDominioConsulta.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="108">
+          <caret line="6" column="32" selection-start-line="6" selection-start-column="32" selection-end-line="6" selection-end-column="32" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/test/java/pages/dominio/PaginaDominio.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="126">
+          <caret line="10" column="46" selection-start-line="10" selection-start-column="35" selection-end-line="10" selection-end-column="46" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/test/java/pages/genericas/PaginaInclusao.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="396">
+          <caret line="28" column="10" selection-start-line="28" selection-start-column="10" selection-end-line="28" selection-end-column="10" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/log/log4j-application.log">
+      <provider selected="true" editor-type-id="LogFileEditorProvider">
+        <state relative-caret-position="-101745" />
+      </provider>
+      <provider editor-type-id="text-editor">
+        <state relative-caret-position="-4482" />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/test/java/tests/DadosTesteGenerico.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="383">
+          <caret line="61" column="18" selection-start-line="61" selection-start-column="18" selection-end-line="61" selection-end-column="18" />
+          <folding>
+            <element signature="imports" expanded="true" />
+            <element signature="e#1518#1519#0" expanded="true" />
+            <element signature="e#1556#1557#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/test/java/tests/configuracoes/dominio/DadosTestDominio.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="36">
+          <caret line="3" column="18" selection-start-line="3" selection-start-column="18" selection-end-line="3" selection-end-column="18" />
+          <folding>
+            <element signature="e#107#108#0" expanded="true" />
+            <element signature="e#139#140#0" expanded="true" />
+            <element signature="e#193#194#0" expanded="true" />
+            <element signature="e#249#250#0" expanded="true" />
+            <element signature="e#311#312#0" expanded="true" />
+            <element signature="e#376#377#0" expanded="true" />
+            <element signature="e#435#436#0" expanded="true" />
+            <element signature="e#504#505#0" expanded="true" />
+            <element signature="e#559#560#0" expanded="true" />
+            <element signature="e#605#606#0" expanded="true" />
+            <element signature="e#813#814#0" expanded="true" />
+            <element signature="e#860#861#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/test/java/pages/dominio/PaginaDominioInclusao.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="270">
+          <caret line="17" column="18" selection-start-line="17" selection-start-column="18" selection-end-line="17" selection-end-column="18" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/test/java/tests/configuracoes/dominio/DominioInclusaoTest.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="293">
+          <caret line="19" column="26" lean-forward="true" selection-start-line="19" selection-start-column="26" selection-end-line="19" selection-end-column="26" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/test/java/pages/genericas/SuperPagina.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="126">
+          <caret line="7" column="24" selection-start-line="7" selection-start-column="24" selection-end-line="7" selection-end-column="24" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/test/java/pages/genericas/PaginaLoginPortal.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="522">
+          <caret line="48" column="5" lean-forward="true" selection-start-line="42" selection-start-column="4" selection-end-line="48" selection-end-column="5" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/test/java/tests/configuracoes/dominio/DominioExclusaoTest.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="311">
+          <caret line="22" column="56" lean-forward="true" selection-start-line="22" selection-start-column="56" selection-end-line="22" selection-end-column="56" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/test/java/pages/genericas/PaginaConsulta.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="330">
+          <caret line="27" column="6" selection-start-line="27" selection-start-column="6" selection-end-line="27" selection-end-column="6" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/test/java/pages/dominio/PaginaDominioAlteracaoExclusao.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="366">
+          <caret line="28" column="26" selection-start-line="28" selection-start-column="26" selection-end-line="28" selection-end-column="26" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/test/java/pages/genericas/PaginaInicial.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="378">
+          <caret line="236" column="10" selection-start-line="236" selection-start-column="10" selection-end-line="236" selection-end-column="10" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/test/java/utils/Mensagem.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="311">
+          <caret line="27" column="25" selection-start-line="27" selection-start-column="25" selection-end-line="27" selection-end-column="25" />
+          <folding>
+            <element signature="e#1095#1096#0" expanded="true" />
+            <element signature="e#1142#1143#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/test/java/tests/configuracoes/dominio/DominioRNTest.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-144">
+          <caret line="34" column="50" selection-start-line="34" selection-start-column="50" selection-end-line="34" selection-end-column="50" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://$MAVEN_REPOSITORY$/org/seleniumhq/selenium/selenium-api/3.5.2/selenium-api-3.5.2.jar!/org/openqa/selenium/WebDriver.class">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="193">
+          <caret line="34" column="28" selection-start-line="34" selection-start-column="28" selection-end-line="34" selection-end-column="28" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/test/java/pages/genericas/PaginaAlteracaoExclusao.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="1008">
+          <caret line="63" column="10" selection-start-line="63" selection-start-column="10" selection-end-line="63" selection-end-column="10" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/test/java/pages/genericas/PaginaConfirmacaoExclusao.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="126">
+          <caret line="12" column="4" selection-start-line="12" selection-start-column="4" selection-end-line="12" selection-end-column="4" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/test/resources/TestNG.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="144">
+          <caret line="8" column="76" selection-start-line="8" selection-start-column="76" selection-end-line="8" selection-end-column="76" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/test/java/utils/InstanciaDriver.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="432">
+          <caret line="29" column="44" selection-start-line="29" selection-start-column="44" selection-end-line="29" selection-end-column="44" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/test/java/tests/configuracoes/dominio/DominioAlteracaoTest.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="819">
+          <caret line="130" column="59" selection-start-line="130" selection-start-column="59" selection-end-line="130" selection-end-column="59" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+  </component>
+  <component name="masterDetails">
+    <states>
+      <state key="ArtifactsStructureConfigurable.UI">
+        <settings>
+          <artifact-editor />
+          <splitter-proportions>
+            <option name="proportions">
+              <list>
+                <option value="0.2" />
+              </list>
+            </option>
+          </splitter-proportions>
+        </settings>
+      </state>
+      <state key="FacetStructureConfigurable.UI">
+        <settings>
+          <last-edited>No facets are configured</last-edited>
+          <splitter-proportions>
+            <option name="proportions">
+              <list>
+                <option value="0.2" />
+              </list>
+            </option>
+          </splitter-proportions>
+        </settings>
+      </state>
+      <state key="GlobalLibrariesConfigurable.UI">
+        <settings>
+          <splitter-proportions>
+            <option name="proportions">
+              <list>
+                <option value="0.2" />
+              </list>
+            </option>
+          </splitter-proportions>
+        </settings>
+      </state>
+      <state key="JdkListConfigurable.UI">
+        <settings>
+          <last-edited>1.8</last-edited>
+          <splitter-proportions>
+            <option name="proportions">
+              <list>
+                <option value="0.2" />
+              </list>
+            </option>
+          </splitter-proportions>
+        </settings>
+      </state>
+      <state key="ModuleStructureConfigurable.UI">
+        <settings>
+          <last-edited>sggTesteJava</last-edited>
+          <splitter-proportions>
+            <option name="proportions">
+              <list>
+                <option value="0.2" />
+                <option value="0.6" />
+              </list>
+            </option>
+          </splitter-proportions>
+        </settings>
+      </state>
+      <state key="ProjectJDKs.UI">
+        <settings>
+          <last-edited>1.8</last-edited>
+          <splitter-proportions>
+            <option name="proportions">
+              <list>
+                <option value="0.2" />
+              </list>
+            </option>
+          </splitter-proportions>
+        </settings>
+      </state>
+      <state key="ProjectLibrariesConfigurable.UI">
+        <settings>
+          <last-edited>Maven: cglib:cglib-nodep:3.2.4</last-edited>
+          <splitter-proportions>
+            <option name="proportions">
+              <list>
+                <option value="0.2" />
+              </list>
+            </option>
+          </splitter-proportions>
+        </settings>
+      </state>
+      <state key="ScopeChooserConfigurable.UI">
+        <settings>
+          <splitter-proportions>
+            <option name="proportions">
+              <list>
+                <option value="0.2" />
+              </list>
+            </option>
+          </splitter-proportions>
+        </settings>
+      </state>
+    </states>
+  </component>
+</project>

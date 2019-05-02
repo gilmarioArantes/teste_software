@@ -1,0 +1,164 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="issues">
+    <option name="index">
+      <map>
+        <entry key="/a.dummy">
+          <value>
+            <set />
+          </value>
+        </entry>
+        <entry key="$PROJECT_DIR$/src/TestRandom.java">
+          <value>
+            <set />
+          </value>
+        </entry>
+        <entry key="$PROJECT_DIR$/../sggTesteJava/TestNG.xml">
+          <value>
+            <set />
+          </value>
+        </entry>
+        <entry key="$PROJECT_DIR$/../sggTesteJava/TestNg.xml">
+          <value>
+            <set />
+          </value>
+        </entry>
+        <entry key="$PROJECT_DIR$/../sggTesteJava/pom.xml">
+          <value>
+            <set />
+          </value>
+        </entry>
+        <entry key="$PROJECT_DIR$/../sggTesteJava/src/test/java/pages/dominio/PaginaDominio.java">
+          <value>
+            <set />
+          </value>
+        </entry>
+        <entry key="$PROJECT_DIR$/../sggTesteJava/src/test/java/pages/dominio/PaginaDominioAlteracaoExclusao.java">
+          <value>
+            <set />
+          </value>
+        </entry>
+        <entry key="$PROJECT_DIR$/../sggTesteJava/src/test/java/pages/dominio/PaginaDominioConsulta.java">
+          <value>
+            <set />
+          </value>
+        </entry>
+        <entry key="$PROJECT_DIR$/../sggTesteJava/src/test/java/pages/dominio/PaginaDominioInclusao.java">
+          <value>
+            <set />
+          </value>
+        </entry>
+        <entry key="$PROJECT_DIR$/../sggTesteJava/src/test/java/pages/dominio/PaginaOldDominio.java">
+          <value>
+            <set />
+          </value>
+        </entry>
+        <entry key="$PROJECT_DIR$/../sggTesteJava/src/test/java/pages/dominio/PaginaOldDominioAlteracaoExclusao.java">
+          <value>
+            <set />
+          </value>
+        </entry>
+        <entry key="$PROJECT_DIR$/../sggTesteJava/src/test/java/pages/genericas/PaginaAlteracaoExclusao.java">
+          <value>
+            <set />
+          </value>
+        </entry>
+        <entry key="$PROJECT_DIR$/../sggTesteJava/src/test/java/pages/genericas/PaginaConfirmacaoExclusao.java">
+          <value>
+            <set />
+          </value>
+        </entry>
+        <entry key="$PROJECT_DIR$/../sggTesteJava/src/test/java/pages/genericas/PaginaConsulta.java">
+          <value>
+            <set />
+          </value>
+        </entry>
+        <entry key="$PROJECT_DIR$/../sggTesteJava/src/test/java/pages/genericas/PaginaInclusao.java">
+          <value>
+            <set />
+          </value>
+        </entry>
+        <entry key="$PROJECT_DIR$/../sggTesteJava/src/test/java/pages/genericas/PaginaInicial.java">
+          <value>
+            <set />
+          </value>
+        </entry>
+        <entry key="$PROJECT_DIR$/../sggTesteJava/src/test/java/pages/genericas/PaginaLoginPortal.java">
+          <value>
+            <set />
+          </value>
+        </entry>
+        <entry key="$PROJECT_DIR$/../sggTesteJava/src/test/java/pages/genericas/SuperPagina.java">
+          <value>
+            <set />
+          </value>
+        </entry>
+        <entry key="$PROJECT_DIR$/../sggTesteJava/src/test/java/tests/DadosTesteGenerico.java">
+          <value>
+            <set />
+          </value>
+        </entry>
+        <entry key="$PROJECT_DIR$/../sggTesteJava/src/test/java/tests/LoginPortalTest.java">
+          <value>
+            <set />
+          </value>
+        </entry>
+        <entry key="$PROJECT_DIR$/../sggTesteJava/src/test/java/tests/SuperTest.java">
+          <value>
+            <set />
+          </value>
+        </entry>
+        <entry key="$PROJECT_DIR$/../sggTesteJava/src/test/java/tests/TestGenerico.java">
+          <value>
+            <set />
+          </value>
+        </entry>
+        <entry key="$PROJECT_DIR$/../sggTesteJava/src/test/java/tests/TesteGenerico.java">
+          <value>
+            <set />
+          </value>
+        </entry>
+        <entry key="$PROJECT_DIR$/../sggTesteJava/src/test/java/tests/configuracoes/dominio/DadosTestDominio.java">
+          <value>
+            <set />
+          </value>
+        </entry>
+        <entry key="$PROJECT_DIR$/../sggTesteJava/src/test/java/tests/configuracoes/dominio/DominioAlteracaoTest.java">
+          <value>
+            <set />
+          </value>
+        </entry>
+        <entry key="$PROJECT_DIR$/../sggTesteJava/src/test/java/tests/configuracoes/dominio/DominioExclusaoTest.java">
+          <value>
+            <set />
+          </value>
+        </entry>
+        <entry key="$PROJECT_DIR$/../sggTesteJava/src/test/java/tests/configuracoes/dominio/DominioInclusaoTest.java">
+          <value>
+            <set />
+          </value>
+        </entry>
+        <entry key="$PROJECT_DIR$/../sggTesteJava/src/test/java/tests/configuracoes/dominio/DominioRNTest.java">
+          <value>
+            <set />
+          </value>
+        </entry>
+        <entry key="$PROJECT_DIR$/../sggTesteJava/src/test/java/utils/InstanciaDriver.java">
+          <value>
+            <set />
+          </value>
+        </entry>
+        <entry key="$PROJECT_DIR$/../sggTesteJava/src/test/java/utils/Mensagem.java">
+          <value>
+            <set />
+          </value>
+        </entry>
+        <entry key="$PROJECT_DIR$/../sggTesteJava/src/test/resources/TestNG.xml">
+          <value>
+            <set />
+          </value>
+        </entry>
+      </map>
+    </option>
+  </component>
+</project>

@@ -1,0 +1,2 @@
+pom-java: https://www.swtestacademy.com/page-object-model-java/
+pom-java-generics: https://www.swtestacademy.com/page-object-model-java-generics/
