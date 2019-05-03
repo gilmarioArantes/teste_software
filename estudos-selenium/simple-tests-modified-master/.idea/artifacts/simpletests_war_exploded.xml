@@ -1,6 +1,13 @@
 <component name="ArtifactManager">
   <artifact type="exploded-war" name="simpletests:war exploded">
     <output-path>$PROJECT_DIR$/target/simpletests</output-path>
+    <properties id="maven-jee-properties">
+      <options>
+        <exploded>true</exploded>
+        <module>simpletests</module>
+        <packaging>war</packaging>
+      </options>
+    </properties>
     <root id="root">
       <element id="directory" name="WEB-INF">
         <element id="directory" name="classes">
@@ -49,13 +56,11 @@
           <element id="library" level="project" name="Maven: org.slf4j:slf4j-api:1.5.10" />
           <element id="library" level="project" name="Maven: org.slf4j:jcl-over-slf4j:1.5.10" />
           <element id="library" level="project" name="Maven: org.slf4j:slf4j-log4j12:1.5.10" />
-          <element id="library" level="project" name="Maven: log4j:log4j:1.2.15" />
-          <element id="library" level="project" name="Maven: javax.mail:mail:1.4" />
-          <element id="library" level="project" name="Maven: javax.jms:jms:1.1" />
-          <element id="library" level="project" name="Maven: com.fasterxml.jackson.core:jackson-core:2.5.3" />
-          <element id="library" level="project" name="Maven: com.fasterxml.jackson.core:jackson-annotations:2.5.3" />
-          <element id="library" level="project" name="Maven: com.fasterxml.jackson.core:jackson-databind:2.5.3" />
-          <element id="library" level="project" name="Maven: com.fasterxml.jackson.datatype:jackson-datatype-hibernate4:2.5.3" />
+          <element id="library" level="project" name="Maven: log4j:log4j:1.2.17" />
+          <element id="library" level="project" name="Maven: com.fasterxml.jackson.core:jackson-core:2.7.0" />
+          <element id="library" level="project" name="Maven: com.fasterxml.jackson.core:jackson-annotations:2.7.0" />
+          <element id="library" level="project" name="Maven: com.fasterxml.jackson.core:jackson-databind:2.7.0" />
+          <element id="library" level="project" name="Maven: com.fasterxml.jackson.datatype:jackson-datatype-hibernate4:2.7.0" />
           <element id="library" level="project" name="Maven: commons-collections:commons-collections:3.2.1" />
           <element id="library" level="project" name="Maven: joda-time:joda-time:2.9.4" />
         </element>
