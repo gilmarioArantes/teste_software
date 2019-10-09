@@ -1,3 +1,6 @@
+/**
+ * https://www.devmedia.com.br/algoritmos-de-ordenacao-em-java/32693
+ */
 package br.com.gilmarioarantes.ordenacao.src;
 
 import java.io.IOException;
