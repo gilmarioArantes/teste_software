@@ -1,5 +1,7 @@
 package br.com.gilmarioarantes.ordenacao.src;
 
+import java.io.IOException;
+
 public class BubbleSort {
     private static void bubbleSort(int[] vetor){
 
@@ -19,7 +21,7 @@ public class BubbleSort {
         }
     }
 
-    public static void main(String[] args){
+    public static void main(String[] args) throws IOException {
         int quantidade = 10000;
         int[] vetor = new int[quantidade];
 
