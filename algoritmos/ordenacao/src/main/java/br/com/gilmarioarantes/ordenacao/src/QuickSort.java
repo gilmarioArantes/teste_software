@@ -1,5 +1,8 @@
 package br.com.gilmarioarantes.ordenacao.src;
 
+import br.com.gilmarioarantes.ordenacao.util.CriaVetor;
+import br.com.gilmarioarantes.ordenacao.util.ImprimeVetor;
+
 import java.io.IOException;
 
 public class QuickSort {
@@ -37,17 +40,19 @@ public class QuickSort {
 
     public static void main(String[] args) throws IOException {
 
-        int quantidade = 10000;
+        int[] vetor = CriaVetor.criaVetor(10);
 
-        int[] vetor = new int[quantidade];
+        System.out.println("Imprimindo o vetor antes da ordenação.");
 
-        for(int i = 0; i < vetor.length; i++){
-            vetor[i] = (int) (Math.random()*quantidade);
-        }
+        ImprimeVetor.imprimeVetor(vetor);
 
         long tempoInicial = System.currentTimeMillis();
 
         quickSort(vetor,0, vetor.length-1);
+
+        System.out.println("Imprimindo o vetor depois da ordenação.");
+
+        ImprimeVetor.imprimeVetor(vetor);
 
         long tempoFinal = System.currentTimeMillis();
 
