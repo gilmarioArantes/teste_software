@@ -13,15 +13,19 @@ public class BubbleSort {
 
         boolean troca = true;
         int aux;
+        int contadorIteracoes = 0;
 
         while(troca){
             troca = false;
             for(int i = 0; i < vetor.length - 1; i++){
                 if(vetor[i] > vetor[i+1]){
+                    contadorIteracoes++;
+                    System.out.println("Iteração: " + contadorIteracoes);
                     aux = vetor[i];
                     vetor[i] = vetor[i+1];
                     vetor[i+1] = aux;
                     troca = true;
+                    ImprimeVetor.imprimeVetor(vetor);
                 }
             }
         }
@@ -29,7 +33,7 @@ public class BubbleSort {
 
     public static void main(String[] args) throws IOException {
 
-        int[] vetor = CriaVetor.criaVetor(10);
+        int[] vetor = CriaVetor.criaVetorSemRepeticao(10);
 
         System.out.println("Imprimindo o vetor antes da ordenação");
 

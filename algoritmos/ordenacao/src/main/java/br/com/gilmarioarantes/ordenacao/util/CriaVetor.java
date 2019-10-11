@@ -1,7 +1,10 @@
 package br.com.gilmarioarantes.ordenacao.util;
 
+import java.util.*;
+
 public class CriaVetor {
 
+    //cria um vetor com uma quantidade de elementos, sorteados de forma aleatória.
     public static int[] criaVetor(int quantidadeElementos){
 
         int[] vetor = new int[quantidadeElementos];
@@ -11,4 +14,31 @@ public class CriaVetor {
         }
         return vetor;
     }
+
+    //cria um vetor com uma quantidade de elementos, sorteados de forma aleatória, sem permitir a repetição dos elementos.
+    public static int[] criaVetorSemRepeticao(int quantidadeElementos){
+        List<Integer> numeros = new ArrayList<Integer>();
+        int i = 0;
+        while (i < quantidadeElementos){
+            int num = (int) (Math.random()*quantidadeElementos);
+            if(!numeros.contains(new Integer(num))){
+                numeros.add(new Integer(num));
+                i++;
+            }
+        }
+
+        int[] vetor = new int[quantidadeElementos];
+        for(int j = 0; j < vetor.length; j++){
+            vetor[j] = (int) numeros.get(j);
+        }
+
+        return vetor;
+    }
+
+    public static void main(String[] args){
+        int[] vetor = criaVetorSemRepeticao(10);
+        ImprimeVetor.imprimeVetor(vetor);
+    }
+
+
 }
