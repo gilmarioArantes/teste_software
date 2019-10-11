@@ -17,12 +17,12 @@ public class CriaVetor {
 
     //cria um vetor com uma quantidade de elementos, sorteados de forma aleatória, sem permitir a repetição dos elementos.
     public static int[] criaVetorSemRepeticao(int quantidadeElementos){
-        List<Integer> numeros = new ArrayList<Integer>();
+        List<Integer> numeros = new ArrayList<>();
         int i = 0;
         while (i < quantidadeElementos){
             int num = (int) (Math.random()*quantidadeElementos);
-            if(!numeros.contains(new Integer(num))){
-                numeros.add(new Integer(num));
+            if(!numeros.contains(num)){
+                numeros.add(num);
                 i++;
             }
         }

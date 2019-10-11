@@ -5,9 +5,10 @@ package br.com.gilmarioarantes.ordenacao.src;
 
 import br.com.gilmarioarantes.ordenacao.util.CriaVetor;
 import br.com.gilmarioarantes.ordenacao.util.ImprimeVetor;
+import lombok.extern.java.Log;
+import lombok.extern.slf4j.Slf4j;
 
-import java.io.IOException;
-
+@Log
 public class BubbleSort {
     private static void bubbleSort(int[] vetor){
 
@@ -20,7 +21,7 @@ public class BubbleSort {
             for(int i = 0; i < vetor.length - 1; i++){
                 if(vetor[i] > vetor[i+1]){
                     contadorIteracoes++;
-                    System.out.println("Iteração: " + contadorIteracoes);
+                    log.info("Iteração: " + contadorIteracoes);
                     aux = vetor[i];
                     vetor[i] = vetor[i+1];
                     vetor[i+1] = aux;
@@ -31,11 +32,11 @@ public class BubbleSort {
         }
     }
 
-    public static void main(String[] args) throws IOException {
+    public static void main(String[] args) {
 
         int[] vetor = CriaVetor.criaVetorSemRepeticao(10);
 
-        System.out.println("Imprimindo o vetor antes da ordenação");
+        log.info("Imprimindo o vetor antes da ordenação");
 
         ImprimeVetor.imprimeVetor(vetor);
 
@@ -43,12 +44,12 @@ public class BubbleSort {
 
         bubbleSort(vetor);
 
-        System.out.println("Imprimindo o vetor depois da ordenação");
+        log.info("Imprimindo o vetor depois da ordenação");
 
         ImprimeVetor.imprimeVetor(vetor);
 
         long tempoFinal = System.currentTimeMillis();
 
-        System.out.println("Executado em = " + (tempoFinal - tempoInicial) + " ms.");
+        log.info("Executado em = " + (tempoFinal - tempoInicial) + " ms.");
     }
 }
