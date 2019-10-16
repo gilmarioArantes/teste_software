@@ -1,10 +1,8 @@
-package br.com.gilmarioarantes.refatoracao.codigoduplicado;
+package br.com.gilmarioArantes.refatoracao.duplicacaoCodigo;
 
 import lombok.Data;
-import lombok.extern.slf4j.Slf4j;
 
 @Data
-@Slf4j
 public class RobotRefactored {
 
     private Posicao posicao;

@@ -1,4 +1,4 @@
-package br.com.gilmarioarantes.refatoracao.codigoduplicado;
+package br.com.gilmarioArantes.refatoracao.duplicacaoCodigo;
 
 import lombok.Data;
 
