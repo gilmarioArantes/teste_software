@@ -1,0 +1,11 @@
+
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd" >
+<suite name="Suite1" verbose="1">
+    <test name="AutomaticTest" >
+        <classes>
+            <class name="br.gov.goias.intra.driversTeste.teste.browsers.TestaChrome"></class>
+            <class name="br.gov.goias.intra.driversTeste.teste.browsers.TestaFirefox"/>
+            <class name="br.gov.goias.intra.driversTeste.teste.browsers.TestaOpera"></class>
+        </classes>
+    </test>
+</suite>
