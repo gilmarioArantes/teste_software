@@ -1,6 +1,7 @@
 package br.gov.goias.intra.driversTeste.pages.genericas;
 
 import br.gov.goias.intra.driversTeste.pages.infra.BasePage;
+import br.gov.goias.intra.driversTeste.util.Mensagem;
 import lombok.extern.log4j.Log4j;
 import org.openqa.selenium.By;
 import org.openqa.selenium.WebDriver;
@@ -9,7 +10,7 @@ import org.openqa.selenium.support.FindBy;
 import org.openqa.selenium.support.How;
 import org.openqa.selenium.support.ui.ExpectedConditions;
 import org.openqa.selenium.support.ui.WebDriverWait;
-import utils.Mensagem;
+
 
 /**
  * Classe definida para encapsular atributos e métodos que são compartilhados

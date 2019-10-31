@@ -3,9 +3,7 @@
 <suite name="Suite1" verbose="1">
     <test name="AutomaticTest" >
         <classes>
-            <class name="br.gov.goias.intra.driversTeste.teste.browsers.TestaChrome"></class>
-            <class name="br.gov.goias.intra.driversTeste.teste.browsers.TestaFirefox"/>
-            <class name="br.gov.goias.intra.driversTeste.teste.browsers.TestaOpera"></class>
+            <class name="br.gov.goias.intra.driversTeste.teste.genericos.LoginPortalTest"></class>
         </classes>
     </test>
 </suite>
