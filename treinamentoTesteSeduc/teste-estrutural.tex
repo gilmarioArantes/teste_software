@@ -1,0 +1,492 @@
+% Copyright © 2009 by Max Gontijo de Oliveira <maxopala@gmail.com>
+%
+% This program is free software; you can redistribute it and/or modify
+% it under the terms of the GNU General Public License as published by
+% the Free Software Foundation; either version 2 of the License, or
+% (at your option) any later version.
+% This program is distributed in the hope that it will be useful,
+% but WITHOUT ANY WARRANTY; without even the implied warranty of
+% MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
+% GNU General Public License for more details.
+
+\documentclass[xcolor=pdftex,dvipsnames,table,11pt]{beamer}
+% Outras classes: [notes], [notes=only], [trans], [handout], [red], [compress], [draft], [class=article]
+ 
+\mode<handout>{
+	\beamertemplatesolidbackgroundcolor{black!5}
+}
+
+\usepackage[brazil]{varioref}
+\usepackage[brazil,english]{babel}
+\usepackage[latin1]{inputenc}
+\usepackage{graphicx,url}
+\usepackage{pslatex}
+\usepackage{beamerthemeshadow}
+\usepackage{pgf}
+\usepackage{pgfpages}
+\usepackage[absolute,overlay]{textpos}
+\usepackage{verbatim}
+\usepackage{multirow}
+
+\newcommand{\cor}[2]{\color{#1}#2\color{black}}
+\newcommand{\kmeans}{\textit{k-means}}
+
+\useoutertheme{francisco}
+\setbeamertemplate{navigation symbols}{}
+%\setbeamertemplate{footline}[frame number]
+%\setbeamertemplate{footline}[infolines theme]
+%\beamertemplatetransparentcovereddynamic
+\usecolortheme[named=NavyBlue]{structure}
+%\useoutertheme{infolines}
+%\usetheme{AnnArbor}
+%\usetheme{Malmoe}
+%\usetheme{JuanLesPins}
+%\usetheme{Montpellier}
+
+\title{Teste Estrutural}
+%\subtitle{Orienta\c{c}\~{a}o a Objetos}
+\author{Gilmar Ferreira Arantes{\\\href{mailto:gilmar.arantes@goias.gov.br}{ - gilmar.arantes@goias.gov.br}}}
+\institute{GPS - SCTI}
+\date{Goiânia, 24 e 25 de Junho de 2019}
+
+\pgfdeclareimage[height=1.0cm]{right-logo}{./imagens/seduc-gov-siti-verde}
+\setbeamertemplate{sidebar right}{%
+  \vskip0.2125cm%
+  \llap{\insertlogo\hskip0.1cm}%
+  \vfill%
+  \llap{\pgfuseimage{right-logo}\hskip0.1cm}%
+  \vskip2pt%
+} 
+\graphicspath{{./imagens/}}
+\begin{document}
+
+\frame
+{
+  \titlepage
+}
+
+%\section{Sumário}
+\frame[allowframebreaks,t]
+{
+  \frametitle{Sumário}
+  \tableofcontents
+}
+
+
+
+
+%===============================================================================
+% Inicio Apresentação ================================================================================
+
+%========================================================================SECTION
+\section{Teste Estrutural}
+%========================================================================SECTION
+
+%-------------------------------------------------------------------------Slide
+\begin{frame}{Conceitos Básicos}
+	\begin{itemize}
+		\item \textcolor{red}{Técnica Caixa Branca oposto da Técnica Caixa Preta.}		
+	\end{itemize}
+\end{frame}
+
+%-------------------------------------------------------------------------Slide
+\begin{frame}{Conceitos Básicos}
+	\begin{itemize}
+		\item Técnica Caixa Branca oposto da Técnica Caixa Preta.
+		\begin{itemize}
+			\item \textcolor{red}{Baseia-se nos caminhos internos, estrutura e implementação do produto em teste.}
+		\end{itemize}
+	\end{itemize}
+\end{frame}
+
+%-------------------------------------------------------------------------Slide
+\begin{frame}{Conceitos Básicos}
+	\begin{itemize}
+		\item Técnica Caixa Branca oposto da Técnica Caixa Preta.
+		\begin{itemize}
+			\item Baseia-se nos caminhos internos, estrutura e implementação do produto em teste.
+			\item \textcolor{red}{Requer conhecimento do código do produto em teste para ser aplicada.}
+		\end{itemize}
+	\end{itemize}
+\end{frame}
+
+%-------------------------------------------------------------------------Slide
+\begin{frame}{Processo do Teste Caixa Branca}
+	\begin{itemize}
+		\item \textcolor{red}{Os passos básicos para se aplicar um critério de teste caixa branca são os seguintes:}
+	\end{itemize}
+\end{frame}
+
+%-------------------------------------------------------------------------Slide
+\begin{frame}{Processo do Teste Caixa Branca}
+	\begin{itemize}
+		\item Os passos básicos para se aplicar um critério de teste
+caixa branca são os seguintes:
+		\begin{enumerate}
+			\item \textcolor{red}{A implementação do produto em teste é analisada.}	
+		\end{enumerate}
+	\end{itemize}
+\end{frame}
+
+%-------------------------------------------------------------------------Slide
+\begin{frame}{Processo do Teste Caixa Branca}
+	\begin{itemize}
+		\item Os passos básicos para se aplicar um critério de teste
+caixa branca são os seguintes:
+		\begin{enumerate}
+			\item A implementação do produto em teste é analisada.
+			\item \textcolor{red}{Caminhos através da implementação são escolhidos.}
+		\end{enumerate}
+	\end{itemize}
+\end{frame}
+
+%-------------------------------------------------------------------------Slide
+\begin{frame}{Processo do Teste Caixa Branca}
+	\begin{itemize}
+		\item Os passos básicos para se aplicar um critério de teste
+caixa branca são os seguintes:
+		\begin{enumerate}
+			\item A implementação do produto em teste é analisada.
+			\item Caminhos através da implementação são escolhidos.
+			\item \textcolor{red}{Valores de entradas são selecionados de modo que os caminhos selecionados sejam executados.}
+		\end{enumerate}
+	\end{itemize}
+\end{frame}
+
+%-------------------------------------------------------------------------Slide
+\begin{frame}{Processo do Teste Caixa Branca}
+	\begin{itemize}
+		\item Os passos básicos para se aplicar um critério de teste
+caixa branca são os seguintes:
+		\begin{enumerate}
+			\item A implementação do produto em teste é analisada.
+			\item Caminhos através da implementação são escolhidos.
+			\item Valores de entradas são selecionados de modo que os caminhos selecionados sejam executados.
+			\item \textcolor{red}{As saídas esperadas para as entradas escolhidas são determinadas.}
+		\end{enumerate}
+	\end{itemize}
+\end{frame}
+
+%-------------------------------------------------------------------------Slide
+\begin{frame}{Processo do Teste Caixa Branca}
+	\begin{itemize}
+		\item Os passos básicos para se aplicar um critério de teste
+caixa branca são os seguintes:
+		\begin{enumerate}
+			\item A implementação do produto em teste é analisada.
+			\item Caminhos através da implementação são escolhidos.
+			\item Valores de entradas são selecionados de modo que os caminhos selecionados sejam executados.
+			\item As saídas esperadas para as entradas escolhidas são determinadas.
+			\item \textcolor{red}{Os casos de testes são construídos.}
+		\end{enumerate}
+	\end{itemize}
+\end{frame}
+
+%-------------------------------------------------------------------------Slide
+\begin{frame}{Processo do Teste Caixa Branca}
+	\begin{itemize}
+		\item Os passos básicos para se aplicar um critério de teste
+caixa branca são os seguintes:
+		\begin{enumerate}
+			\item A implementação do produto em teste é analisada.
+			\item Caminhos através da implementação são escolhidos.
+			\item Valores de entradas são selecionados de modo que os caminhos selecionados sejam executados.
+			\item As saídas esperadas para as entradas escolhidas são determinadas.
+			\item Os casos de testes são construídos.
+			\item \textcolor{red}{Os casos de testes são executados.}
+		\end{enumerate}
+	\end{itemize}
+\end{frame}
+
+%-------------------------------------------------------------------------Slide
+\begin{frame}{Processo do Teste Caixa Branca}
+	\begin{itemize}
+		\item Os passos básicos para se aplicar um critério de teste
+caixa branca são os seguintes:
+		\begin{enumerate}
+			\item A implementação do produto em teste é analisada.
+			\item Caminhos através da implementação são escolhidos.
+			\item Valores de entradas são selecionados de modo que os caminhos selecionados sejam executados.
+			\item As saídas esperadas para as entradas escolhidas são determinadas.
+			\item Os casos de testes são construídos.
+			\item Os casos de testes são executados.
+			\item \textcolor{red}{As saídas obtidas são comparadas com as saídas esperadas.}	
+		\end{enumerate}
+	\end{itemize}
+\end{frame}
+
+%-------------------------------------------------------------------------Slide
+\begin{frame}{Processo do Teste Caixa Branca}
+	\begin{itemize}
+		\item Os passos básicos para se aplicar um critério de teste
+caixa branca são os seguintes:
+		\begin{enumerate}
+			\item A implementação do produto em teste é analisada.
+			\item Caminhos através da implementação são escolhidos.
+			\item Valores de entradas são selecionados de modo que os caminhos selecionados sejam executados.
+			\item As saídas esperadas para as entradas escolhidas são determinadas.
+			\item Os casos de testes são construídos.
+			\item Os casos de testes são executados.
+			\item As saídas obtidas são comparadas com as saídas esperadas.
+			\item \textcolor{red}{Um relatório é gerado para avaliar o resultado dos testes.}	
+		\end{enumerate}
+	\end{itemize}
+\end{frame}
+
+%-------------------------------------------------------------------------Slide
+\begin{frame}{Critérios de Teste Estrutural}
+	\begin{itemize}
+		\item Critérios Baseados em Fluxo de Controle:
+		\begin{itemize}
+			\item Todos-Nós, Todas-Arestas, Todos-Caminhos.
+		\end{itemize}
+		\item Critérios Baseados em Fluxo de Dados:
+		\begin{itemize}
+			\item Todas-Definições, Todos-P-Usos, Todos-C-Usos, Todos-Usos, Todos-Du-Caminhos, Todos-Pot-Usos,Todos-Pot-Du-Caminhos, Todos-Pot-Usos/Du.
+		\end{itemize}
+	\end{itemize}
+\end{frame}
+
+%-------------------------------------------------------------------------Slide
+\begin{frame}{Uso nas Fases de Teste}
+	\begin{itemize}
+		\item Critérios da técnica caixa branca também podem ser utilizados em todas as fases/níveis de teste.
+		\item São mais comuns no teste de unidade e de integração.
+		\item Teste de caminhos:
+		\begin{itemize}
+			\item Caminhos dentro de uma unidade.
+			\item Caminhos entre unidades.
+			\item Caminhos entre sub-sistemas.
+			\item Caminhos entre o sistema todo.
+		\end{itemize}
+	\end{itemize}
+\end{frame}
+
+%-------------------------------------------------------------------------Slide
+\begin{frame}{Uso nas Fases de Teste}
+	\begin{itemize}
+		\item Diferentes caminhos dentro de um produto em teste.
+	\end{itemize}
+	\begin{figure}
+		\centering
+		\includegraphics[width=5cm]{gfc}
+	\end{figure}
+\end{frame}
+
+%-------------------------------------------------------------------------Slide
+\begin{frame}{Desvantagens do Teste Caixa Branca}
+	\begin{itemize}
+		\item \textcolor{red}{O número de caminhos a serem executados pode ser infinito (semelhante ao teste exaustivo).}
+	\end{itemize}
+\end{frame}
+
+%-------------------------------------------------------------------------Slide
+\begin{frame}{Desvantagens do Teste Caixa Branca}
+	\begin{itemize}
+		\item O número de caminhos a serem executados pode ser infinito (semelhante ao teste exaustivo).
+		\item \textcolor{red}{O caso de teste selecionado pode não revelar o defeito sensível a dado. Por exemplo:}
+	\end{itemize}
+\end{frame}
+
+%-------------------------------------------------------------------------Slide
+\begin{frame}{Desvantagens do Teste Caixa Branca}
+	\begin{itemize}
+		\item O número de caminhos a serem executados pode ser infinito (semelhante ao teste exaustivo).
+		\item O caso de teste selecionado pode não revelar o defeito sensível a dado. Por exemplo: 
+		\begin{itemize}
+			\item \textcolor{red}{y = x * 2; // deveria ser y = x ** 2}
+		\end{itemize}
+	\end{itemize}
+\end{frame}
+
+%-------------------------------------------------------------------------Slide
+\begin{frame}{Desvantagens do Teste Caixa Branca}
+	\begin{itemize}
+		\item O número de caminhos a serem executados pode ser infinito (semelhante ao teste exaustivo).
+		\item O caso de teste selecionado pode não revelar o defeito sensível a dado. Por exemplo: 
+		\begin{itemize}
+			\item y = x * 2; // deveria ser y = x ** 2
+			\item \textcolor{red}{funciona corretamente para x = 0, y=0 e x = 2, y = 4.}
+		\end{itemize}
+	\end{itemize}
+\end{frame}
+
+%-------------------------------------------------------------------------Slide
+\begin{frame}{Desvantagens do Teste Caixa Branca}
+	\begin{itemize}
+		\item O número de caminhos a serem executados pode ser infinito (semelhante ao teste exaustivo).
+		\item O caso de teste selecionado pode não revelar o defeito sensível a dado. Por exemplo: 
+		\begin{itemize}
+			\item y = x * 2; // deveria ser y = x ** 2
+			\item funciona corretamente para x = 0, y=0 e x = 2, y = 4.
+		\end{itemize}				
+		\item \textcolor{red}{Assume fluxo de controle correto (ou próximo do correto). Casos de testes são baseados em caminhos existentes: caminhos inexistentes não podem ser descobertos.}
+	\end{itemize}
+\end{frame}
+
+%-------------------------------------------------------------------------Slide
+\begin{frame}{Desvantagens do Teste Caixa Branca}
+	\begin{itemize}
+		\item O número de caminhos a serem executados pode ser infinito (semelhante ao teste exaustivo).
+		\item O caso de teste selecionado pode não revelar o defeito sensível a dado. Por exemplo: 
+		\begin{itemize}
+			\item y = x * 2; // deveria ser y = x ** 2
+			\item funciona corretamente para x = 0, y=0 e x = 2, y = 4.
+		\end{itemize}				
+		\item Assume fluxo de controle correto (ou próximo do correto). Casos de testes são baseados em caminhos existentes: caminhos inexistentes não podem ser descobertos.
+		\item \textcolor{red}{Determinação de caminhos não executáveis pode ser um problema.}	
+	\end{itemize}
+\end{frame}
+
+%-------------------------------------------------------------------------Slide
+\begin{frame}{Desvantagens do Teste Caixa Branca}
+	\begin{itemize}
+		\item O número de caminhos a serem executados pode ser infinito (semelhante ao teste exaustivo).
+		\item O caso de teste selecionado pode não revelar o defeito sensível a dado. Por exemplo: 
+		\begin{itemize}
+			\item y = x * 2; // deveria ser y = x ** 2
+			\item funciona corretamente para x = 0, y=0 e x = 2, y = 4.
+		\end{itemize}				
+		\item Assume fluxo de controle correto (ou próximo do correto). Casos de testes são baseados em caminhos existentes: caminhos inexistentes não podem ser descobertos.
+		\item Determinação de caminhos não executáveis pode ser um problema.
+		\item \textcolor{red}{Dificuldade de automatização.}
+	\end{itemize}
+\end{frame}
+
+%-------------------------------------------------------------------------Slide
+\begin{frame}{Desvantagens do Teste Caixa Branca}
+	\begin{itemize}
+		\item O número de caminhos a serem executados pode ser infinito (semelhante ao teste exaustivo).
+		\item O caso de teste selecionado pode não revelar o defeito sensível a dado. Por exemplo: 
+		\begin{itemize}
+			\item y = x * 2; // deveria ser y = x ** 2
+			\item funciona corretamente para x = 0, y=0 e x = 2, y = 4.
+		\end{itemize}				
+		\item Assume fluxo de controle correto (ou próximo do correto). Casos de testes são baseados em caminhos existentes: caminhos inexistentes não podem ser descobertos.
+		\item Determinação de caminhos não executáveis pode ser um problema.
+		\item Dificuldade de automatização.
+		\item \textcolor{red}{Habilidades de programação avançadas exigidas para compreender o código e decidir pela executabilidade ou não de um caminho.}
+	\end{itemize}
+\end{frame}
+
+%-------------------------------------------------------------------------Slide
+\begin{frame}{Vantagens do Teste Caixa Branca}
+	\begin{itemize}
+		\item Eficaz em determinar defeitos de lógica e de programação, especialmente no nível de unidade.
+		\item É possível garantir que partes essenciais ou críticas do programa tenham sido executadas.
+		\begin{itemize}
+			\item Requisito mínimo de teste: garantir que o programa foi liberado tendo seus comandos executados ao menos uma vez por pelo menos um caso de teste.
+		\end{itemize}
+		\item É poss??vel saber o que ainda não foi testado.
+	\end{itemize}
+\end{frame}
+
+%-------------------------------------------------------------------------Slide
+\begin{frame}{Níveis de Cobertura}
+	\begin{itemize}
+		\item Diferentes níveis de cobertura podem ser definidos em função dos elementos do GFC.
+		\item Cobertura: porcentagem dos requisitos que foram testados versus o total de requisitos gerados.
+		\item Oito diferentes n??veis de cobertura são definidos por \cite{Copeland2003}.	
+		\item Quanto maior o nível, maior o rigor do critério de teste, ou seja, mais caso de teste ele exige para ser satisfeito.
+\begin{itemize}
+	\item Nível 0 $\longleftarrow$ Nível 1 $\longleftarrow$ Nível 2 $\longleftarrow$ Nível 3 $\longleftarrow$ Nível 4 $\longleftarrow$ Nível 5 $\longleftarrow$ Nível 6 $\longleftarrow$ Nível 7
+\end{itemize}
+	\end{itemize}
+\end{frame}
+
+%-------------------------------------------------------------------------Slide
+\begin{frame}{Níveis de Cobertura}
+	\begin{itemize}
+		\item Nível 0: qualquer valor de cobertura inferior a 100\% da cobertura de todos os comandos.
+		\item Nível 1: 100\% de cobertura de comandos. (Todos-Nós)
+		\item Nível 2: 100\% de cobertura de decisões. (Todos-Arcos)
+		\item Nível 3: 100\% de cobertura de condições.
+		\item Nível 4: 100\% de cobertura decisões/condições. 
+		\item Nível 5: 100\% de cobertura de condições múltiplas.
+		\item Nível 6: cobertura de loop.
+		\item Nível 7: 100\% de cobertura de caminhos. (Todos-Caminhos)							
+	\end{itemize}
+\end{frame}
+
+%-------------------------------------------------------------------------Slide
+\begin{frame}{Níveis de Cobertura - Exemplo}
+	\begin{figure}
+		\centering
+		\includegraphics[width=8cm]{nivel1a}
+	\end{figure}
+\end{frame}
+
+%-------------------------------------------------------------------------Slide
+\begin{frame}{Níveis de Cobertura - Exemplo}
+	\begin{figure}
+		\centering
+		\includegraphics[width=8cm]{nivel1}
+	\end{figure}
+\end{frame}
+
+%========================================================================SECTION
+\section{Refer\^encias}
+%========================================================================SECTION
+
+\begin{frame}[shrink]
+ \frametitle{Referências Bibliográficas}
+ %\begin{block}{}
+ 
+  \begin{thebibliography}{99}
+   \beamertemplatearticlebibitems
+   
+\bibitem[Boehm e Basili, 2001]{boehm2001}
+B. Boehm and V. R. Basili. 
+\newblock Software defect reduction top 10 list. 
+\newblock {\em Computer, 34(1):135-137, 2001.
+ISSN 0018-9162. doi: \url{http://dx.doi.org/10.1109/2.962984.}}
+
+\bibitem[Copeland, 2003]{Copeland2003}
+Lee Copeland.
+\newblock A Practitioner's Guide to Software Test Design
+\newblock {\em Artech House Publishers, Boston, 2003.}
+
+\bibitem[Craig e Jaskiel, 2002]{craig2002}
+R. D. Craig and S. P. Jaskiel. 
+\newblock Systematic Software Testing. 
+\newblock {\em Artech House Publishers, 2002.}
+
+\bibitem[Google, 2019]{google2019}
+Imagens, Google
+\newblock Google Imagens.
+\newblock {\em \url{https://www.google.com.br}. Acesso em 19/06/2019.}
+
+   
+\bibitem[IEEE 610.12.1990]{ieee610}
+IEEE. 
+\newblock IEEE standard glossary of software engineering terminology. Standard 610.12-1990 (R2002),
+\newblock {\em IEEE Computer Society Press, 2002.}
+
+\bibitem[HARLEY, 2019]{harley2019}
+Harley, Nick.
+\newblock 11 of the most costly software errors in history [2019 update]
+\newblock {\em \url{https://raygun.com/blog/costly-software-errors-history/}. Acesso em 19/06/2019.}
+
+\bibitem[NETO, 2009]{neto2009}
+Neto, Arilo Cl\'audio Dias Neto.
+\newblock Introdu\c{c}\~ao ao Teste de Software.
+\newblock {\em Engenharia de Software Magazine. Ed. 01, 2009}
+
+\bibitem[Shull et al,2002]{Shull2002}
+F. Shull, V. Basili, B. Boehm, A. W. Brown, P. Costa, M. Lindvall, D. Port, I. Rus, R.e Tesoriero,
+and M. Zelkowitz. 
+\newblock What we have learned about fighting defects. 
+\newblock {\em In VIII International Symposium on Software Metrics - METRICS'02, pages 249-258, Washington, DC, USA, June 2002. IEEE Computer Society. ISBN 0-7695-1339-5.}
+
+      %. . . . . . . . . . . . . . . . . . . . . . . . . . . .
+ %. . . . . . . . . . . . . . . . . . . . . . . . . . . .
+ \end{thebibliography}
+ %\end{block}
+%. . . . . . . . . . . . . . . . . . . . . . . . . . . .
+  
+
+\end{frame}
+
+
+
+\end{document}
