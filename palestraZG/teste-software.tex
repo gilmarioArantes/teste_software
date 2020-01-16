@@ -1,0 +1,1837 @@
+% Copyright © 2009 by Max Gontijo de Oliveira <maxopala@gmail.com>
+%
+% This program is free software; you can redistribute it and/or modify
+% it under the terms of the GNU General Public License as published by
+% the Free Software Foundation; either version 2 of the License, or
+% (at your option) any later version.
+% This program is distributed in the hope that it will be useful,
+% but WITHOUT ANY WARRANTY; without even the implied warranty of
+% MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
+% GNU General Public License for more details.
+
+\documentclass[xcolor=pdftex,dvipsnames,table,11pt]{beamer}
+% Outras classes: [notes], [notes=only], [trans], [handout], [red], [compress], [draft], [class=article]
+ 
+\mode<handout>{
+	\beamertemplatesolidbackgroundcolor{black!5}
+}
+
+\usepackage[brazil]{varioref}
+\usepackage[brazil,english]{babel}
+\usepackage[latin1]{inputenc}
+\usepackage{graphicx,url}
+\usepackage{pslatex}
+\usepackage{beamerthemeshadow}
+\usepackage{pgf}
+\usepackage{pgfpages}
+\usepackage[absolute,overlay]{textpos}
+\usepackage{verbatim}
+\usepackage{multirow}
+
+\newcommand{\cor}[2]{\color{#1}#2\color{black}}
+\newcommand{\kmeans}{\textit{k-means}}
+
+\useoutertheme{francisco}
+\setbeamertemplate{navigation symbols}{}
+%\setbeamertemplate{footline}[frame number]
+%\setbeamertemplate{footline}[infolines theme]
+%\beamertemplatetransparentcovereddynamic
+\usecolortheme[named=NavyBlue]{structure}
+%\useoutertheme{infolines}
+%\usetheme{AnnArbor}
+%\usetheme{Malmoe}
+%\usetheme{JuanLesPins}
+%\usetheme{Montpellier}
+
+\title{Teste de Software}
+%\subtitle{Orienta\c{c}\~{a}o a Objetos}
+\author{Gilmar Ferreira Arantes{\\\href{mailto:gilmar.arantes@goias.gov.br}{ - gilmar.arantes@goias.gov.br}}}
+\institute{Gesis - STI}
+\date{Goiânia, 17 de Janeiro de 2020}
+
+\pgfdeclareimage[height=1.0cm]{right-logo}{./imagens/INFVertical}
+\setbeamertemplate{sidebar right}{%
+  \vskip0.2125cm%
+  \llap{\insertlogo\hskip0.1cm}%
+  \vfill%
+  \llap{\pgfuseimage{right-logo}\hskip0.1cm}%
+  \vskip2pt%
+} 
+\graphicspath{{./imagens/}}
+\begin{document}
+
+\frame
+{
+  \titlepage
+}
+
+%\section{Sumário}
+\frame[allowframebreaks,t]
+{
+  \frametitle{Sumário}
+  \tableofcontents
+}
+
+
+%===============================================================================
+% Inicio Apresentação ================================================================================
+
+%========================================================================SECTION
+\section{Contextualiza\c{c}\~ao}
+%========================================================================SECTION
+
+%-------------------------------------------------------------------------Slide
+\begin{frame}
+\frametitle{Quem Sou Eu...}
+ \begin{enumerate}
+  \item Nome: Gilmar Ferreira Arantes	
+  \item Gradu\c{c}\~ao - An\'alise de Sistemas - Universo - 1999-2003;
+  \item MBA Gest\~ao de TI - Alfa - 2004-2006;
+  \item Especialista em An\'alise e Projeto de Software - UFG - 2006-2007;
+  \item Mestre em Ci\^encia da Computa\c{c}\~ao - UFG - 2009-2012;
+  \item Gestor de Tecnologia da Informa\c{c}\~ao - SEDI - 01/02/2007;
+  \item Professor Assistente - INF/UFG - 28/11/2013.
+  \item Emails: {gilmar.arantes@goias.gov.br}, {gilmar.arantes@ufg.br} e {gilmar.arantes@gmail.com}
+ \end{enumerate}
+\end{frame}
+
+%-------------------------------------------------------------------------Slide
+\begin{frame}
+\frametitle{E Vocês?}
+ \begin{enumerate}
+  \item Nome.
+  \item Atividades na Seduc.
+  \item Experiência com Testes.
+ \end{enumerate}
+\end{frame}
+
+%-------------------------------------------------------------------------Slide
+
+\begin{frame}
+	\frametitle{Filosofando...}
+	\begin{figure}
+		\centering
+		\includegraphics[width=8cm]{filosofando}
+		\caption[numbered]\insertcaptionnumber{ - Filosofando. \cite{google2019}}
+	\end{figure}
+\end{frame}
+
+%-------------------------------------------------------------------------Slide
+
+\begin{frame}
+	\frametitle{Indiv\'iduo x Sociedade}
+	\begin{figure}
+		\centering
+		\includegraphics[width=6cm]{individuo_sociedade}
+		\caption[numbered]\insertcaptionnumber{ - Indiv\'iduo x Sociedade. \cite{google2019}}
+	\end{figure}
+\end{frame}
+
+%-------------------------------------------------------------------------Slide
+
+\begin{frame}
+	\frametitle{Indiv\'iduo x Sociedade}
+	\begin{figure}
+		\centering
+		\includegraphics[width=6cm]{individuo-e-sociedade}
+		\caption[numbered]\insertcaptionnumber{ - Indiv\'iduo x Sociedade. \cite{google2019}}
+	\end{figure}
+\end{frame}
+
+%========================================================================SECTION
+\section{Qualidade de Software}
+%========================================================================SECTION
+
+%-------------------------------------------------------------------------Slide
+\begin{frame}	
+	\begin{itemize}
+		\item No Desenvolvimento de Software...
+	\end{itemize}
+		\begin{figure}
+			\centering
+			\includegraphics[width=7cm]{software-development-team}
+			\caption[numbered]\insertcaptionnumber{ - Equipe de Desenvolvimento de Software. \cite{google2019}}
+		\end{figure}
+\end{frame}
+
+
+%-------------------------------------------------------------------------Slide
+\begin{frame}
+	\frametitle{Qualidade de Software}
+	\begin{itemize}
+		\item Nossos Processos tem qualidade?
+		\item Nossos Produtos tem qualidade?
+	\end{itemize}
+	\begin{figure}
+		\centering
+		\includegraphics[width=5cm]{software-quality}
+		\caption[numbered]\insertcaptionnumber{ - Qualidade de Software. \cite{google2019}}
+		\end{figure}
+\end{frame}
+
+%-------------------------------------------------------------------------Slide
+\begin{frame}
+	\frametitle{Qualidade de Software}
+	\begin{itemize}
+		\item \textcolor{red}{Segundo a norma brasileira NBR ISO 8402, qualidade \'e a totalidade das caracter\'isticas de uma entidade que lhe confere a capacidade de satisfazer as necessidades expl\'icitas e impl\'icitas.}		
+	\end{itemize}
+\end{frame}
+
+%-------------------------------------------------------------------------Slide
+\begin{frame}
+	\frametitle{Qualidade de Software}
+	\begin{itemize}
+		\item Segundo a norma brasileira NBR ISO 8402, qualidade \'e a totalidade das caracter\'isticas de uma entidade que lhe confere a capacidade de satisfazer as necessidades expl\'icitas e impl\'icitas.
+		\item \textcolor{red}{Conquistar um produto de qualidade requer planejamento de atividades que dar\~ao suporte na obten\c{c}\~ao da mesma.}		
+	\end{itemize}
+\end{frame}
+
+%-------------------------------------------------------------------------Slide
+\begin{frame}
+	\frametitle{Qualidade de Software}
+	\begin{itemize}
+		\item Segundo a norma brasileira NBR ISO 8402, qualidade \'e a totalidade das caracter\'isticas de uma entidade que lhe confere a capacidade de satisfazer as necessidades expl\'icitas e impl\'icitas.
+		\item Conquistar um produto de qualidade requer planejamento de atividades que dar\~ao suporte na obten\c{c}\~ao da mesma.
+		\item \textcolor{red}{Essa pr\'atica requer gerenciamento, documenta\c{c}\~ao, padr\~oes de conven\c{c}\~oes e m\'etricas, auditorias, relat\'orios e ferramentas.}	
+	\end{itemize}
+\end{frame}
+
+%-------------------------------------------------------------------------Slide
+\begin{frame}
+	\frametitle{Qualidade de Software}
+	\begin{itemize}
+		\item Segundo a norma brasileira NBR ISO 8402, qualidade \'e a totalidade das caracter\'isticas de uma entidade que lhe confere a capacidade de satisfazer as necessidades expl\'icitas e impl\'icitas.
+		\item Conquistar um produto de qualidade requer planejamento de atividades que dar\~ao suporte na obten\c{c}\~ao da mesma.
+		\item Essa pr\'atica requer gerenciamento, documenta\c{c}\~ao, padr\~oes de conven\c{c}\~oes e m\'etricas, auditorias, relat\'orios e ferramentas.
+		\item \textcolor{red}{Obviamente a qualidade se adapta ao estilo do produto e do processo.}
+	\end{itemize}
+\end{frame}
+
+%-------------------------------------------------------------------------Slide
+\begin{frame}
+	\frametitle{Verifica\c{c}\~ao e Valida\c{c}\~ao}
+	\begin{figure}
+		\centering
+		\includegraphics[width=8cm]{verificacao-validacao}
+		\caption[numbered]\insertcaptionnumber{ - Verifica\c{c}\~ao x Valida\c{c}\~ao. \cite{google2019}}
+	\end{figure}
+\end{frame}
+
+%========================================================================SECTION
+\section{Import\^ancia do Teste de Software}
+%========================================================================SECTION
+
+%-------------------------------------------------------------------------Slide
+
+\begin{frame}{Importância do Teste de Software}
+	\begin{itemize}
+		\item Por que o teste é importante?
+		\item Porque objetiva melhorar a qualidade do produto entregue ao nosso cliente, ou seja, objetiva garantir que o produto entregue correspondente às necessidades explicitadas pelo cliente.
+		\item Nem mais, nem menos.
+	\end{itemize}
+\end{frame}
+
+%-------------------------------------------------------------------------Slide
+\begin{frame}	
+	\begin{figure}
+		\centering
+		\includegraphics[width=8cm]{software-everywhere}
+		\caption[numbered]\insertcaptionnumber{ - Onipresen\c{c}a do Software. \cite{google2019}}
+	\end{figure}
+\end{frame}
+
+%-------------------------------------------------------------------------Slide
+
+\begin{frame}{Teste x Debug}
+	\begin{itemize}
+		\item Testar e Debugar é a mesma coisa?
+		\item a Resposta é...
+		\item Não.
+		\item Teste objetiva revelar a presença de defeitos.
+		\item Debug é o processo de encontrar o corrigir os defeitos.
+	\end{itemize}
+\end{frame}
+
+%-------------------------------------------------------------------------Slide
+
+\begin{frame}{Teste x Homologação}
+	\begin{itemize}
+		\item Testar e homologar é a mesma coisa?
+		\item a Resposta é...
+		\item Não.
+		\item os objetivos são diferentes.
+		\item Teste objetiva revelar a presença de defeitos.
+		\item Homologar objetiva aferir que o funcionamento esteja adequado às necessidades explícitadas.
+	\end{itemize}
+\end{frame}
+
+%-------------------------------------------------------------------------Slide
+\begin{frame}	
+	\frametitle{Custo do Teste}
+	\begin{itemize}
+		\item Por que é difícil a implantação de um processo de teste?
+		\item Custo.
+	\end{itemize}
+\end{frame}
+
+%-------------------------------------------------------------------------Slide
+\begin{frame}	
+	\frametitle{Custo dos Defeitos}
+	\begin{itemize}
+		\item O site \url{https://raygun.com/blog/costly-software-errors-history/}, apresenta um relat\'orio atualizado (2019) do ranking dos maiores custos associados a defeitos de software, que ser\~ao descritos a seguir:
+	\end{itemize}
+\end{frame}
+
+%-------------------------------------------------------------------------Slide
+\begin{frame}	
+	\begin{itemize}
+		\item Preju\' izo de US\$ 125 milh\~oes.
+	\end{itemize}
+	\begin{figure}
+		\centering
+		\includegraphics[width=5cm]{mars-climate}
+		\caption[numbered]\insertcaptionnumber{ - NASA's Mars Climate Orbiter. \cite{harley2019}}
+	\end{figure}
+\end{frame}
+
+%-------------------------------------------------------------------------Slide
+\begin{frame}
+	\begin{itemize}
+		\item O Ariane 5 custou cerca de US \$ 8 bilh\~oes para ser desenvolvido e carregava uma carga \'util de US \$ 500 milh\~oes em sat\'elites quando explodiu.
+	\end{itemize}
+	\begin{figure}
+		\centering
+		\includegraphics[width=2cm]{ariane-501}
+		\caption[numbered]\insertcaptionnumber{ - Ariane 5 Flight 501. \cite{harley2019}}
+	\end{figure}
+\end{frame}
+
+%-------------------------------------------------------------------------Slide
+\begin{frame}	
+	\frametitle{Therac 25}
+	\begin{itemize}
+		\item O Therac-25 \'e o nome de uma m\'aquina de radiografia fabricada pela Atomic Energy of Canada (AECL) em 1985.
+		\item Esse dispositivo ``assassino'' foi responsável pela morte de tr\^es pacientes entre 1985 e 1987.
+		\item A causa da morte dessas pessoas foi o envenenamento por radia\c{c}\~ao.
+		\item O problema estava na quantidade de radia\c{c}\~ao emitida em seu funcionamento.
+		\item Enquanto um paciente deveria receber cerca de 200 rads, a Therac-25 bombardeava as pessoas com o valor absurdo de 15 mil e 20 mil rads.
+	\end{itemize}
+\end{frame}
+
+%-------------------------------------------------------------------------Slide
+\begin{frame}		
+	\begin{figure}
+		\centering
+		\includegraphics[width=7cm]{therac-25}
+		\caption[numbered]\insertcaptionnumber{ - Therac 25. \cite{google2019}}
+	\end{figure}
+\end{frame}
+
+
+%========================================================================SECTION
+\section{Introdução ao Teste de Software}
+%========================================================================SECTION
+
+%-------------------------------------------------------------------------Slide
+
+\begin{frame}{O que \'e teste?}
+ \begin{figure}
+  \centering
+  \includegraphics[width=4cm]{interrogacao1}
+  \caption[numbered]\insertcaptionnumber{ - ???}
+ \end{figure}
+\end{frame}
+
+%-------------------------------------------------------------------------Slide
+
+\begin{frame}{O que \'e teste?}
+    \begin{block}{Segundo a norma \cite{ieee610}}
+    ``Teste  \'e o processo de operar um sistema ou componente sob condi\c{c}\~oes espec\'ificas, observando e registrando os resultados, avaliando alguns aspectos do sistema ou componente.''
+    \end{block}
+\end{frame}
+
+%-------------------------------------------------------------------------Slide
+
+\begin{frame}{Níveis de Maturidade}
+    \begin{itemize}
+    	\item Segundo \cite{beizer1990}, são cinco:
+    \end{itemize}
+\end{frame}
+
+%-------------------------------------------------------------------------Slide
+
+\begin{frame}{Níveis de Maturidade}
+    \begin{itemize}
+    	\item Segundo \cite{beizer1990}
+    	\item Nível 0 - Não há diferença entre teste e depuração (debugging).
+    	
+    \end{itemize}
+\end{frame}
+
+%-------------------------------------------------------------------------Slide
+
+\begin{frame}{Níveis de Maturidade}
+    \begin{itemize}
+    	\item Segundo \cite{beizer1990}
+    	\item Nível 0 - Não há diferença entre teste e depuração (debugging).
+    	\item Nível 1 - O propósito do teste é mostrar que o software funciona.
+    \end{itemize}
+\end{frame}
+
+%-------------------------------------------------------------------------Slide
+
+\begin{frame}{Níveis de Maturidade}
+    \begin{itemize}
+    	\item Segundo \cite{beizer1990}
+    	\item Nível 0 - Não há diferença entre teste e depuração (debugging).
+    	\item Nível 1 - O propósito do teste é mostrar que o software funciona.
+    	\item Nível 2 - O propósito do teste é mostrar que o software não funciona.
+    \end{itemize}
+\end{frame}
+
+%-------------------------------------------------------------------------Slide
+
+\begin{frame}{Níveis de Maturidade}
+    \begin{itemize}
+    	\item Segundo \cite{beizer1990}
+    	\item Nível 0 - Não há diferença entre teste e depuração (debugging).
+    	\item Nível 1 - O propósito do teste é mostrar que o software funciona.
+    	\item Nível 2 - O propósito do teste é mostrar que o software não funciona.
+    	\item Nível 3 - O propósito do teste não é provar nada, mas reduzir o risco de não funcionamento a um valor aceitável.
+    \end{itemize}
+\end{frame}
+
+%-------------------------------------------------------------------------Slide
+
+\begin{frame}{Níveis de Maturidade}
+    \begin{itemize}
+    	\item Segundo \cite{beizer1990}
+    	\item Nível 0 - Não há diferença entre teste e depuração (debugging).
+    	\item Nível 1 - O propósito do teste é mostrar que o software funciona.
+    	\item Nível 2 - O propósito do teste é mostrar que o software não funciona.
+    	\item Nível 3 - O propósito do teste não é provar nada, mas reduzir o risco de não funcionamento a um valor aceitável.
+		\item Nível 4 - Teste não é uma ação, mas sim uma disciplina mental (institucionalizada na empresa) que resulta em software de baixo risco sem que seja empregado muito esforço de teste.
+    \end{itemize}
+\end{frame}
+
+%-------------------------------------------------------------------------Slide
+
+\begin{frame}{Taxonomia}
+ \begin{figure}
+  \centering
+   \includegraphics[width=10cm]{erroDefeitoFalha}
+   \caption[numbered]\insertcaptionnumber{ - \cite{google2019}}
+ \end{figure}
+\end{frame}
+
+%-------------------------------------------------------------------------Slide
+
+\begin{frame}{Taxonomia}
+ \begin{figure}
+  \centering
+   \includegraphics[width=10cm]{erroDefeitoFalha2}
+    \caption[numbered]\insertcaptionnumber{ - \cite{neto2009}}
+ \end{figure}
+\end{frame}
+
+%-------------------------------------------------------------------------Slide
+\begin{frame}{Dado de Teste}
+	\begin{itemize}
+		\item Qualquer valor definido como entrada ou saída para um caso de teste qualquer.
+	\end{itemize}
+\end{frame}
+
+%-------------------------------------------------------------------------Slide
+\begin{frame}{Caso de Teste}
+	\begin{itemize}
+		\item Especificação de um teste. Pode ser textual, script em liguagem de programção, etc.
+		\item Deve conter:
+		\begin{enumerate}
+			\item Identificador;
+			\item Valor de Entrada;
+			\item Pré-condição;
+			\item Roteiro ou procedimento de execução;
+			\item Resultado esperado.
+		\end{enumerate}
+	\end{itemize}
+\end{frame}
+
+%-------------------------------------------------------------------------Slide
+\begin{frame}{Critério de Teste}
+	\begin{itemize}
+		\item serve para selecionar e avaliar casos de teste de forma a aumentar as possibilidades de provocar falhas ou, quando isso não ocorre, estabelecer um nível elevado de confiança na correção do produto.
+	\end{itemize}
+\end{frame}
+
+%-------------------------------------------------------------------------Slide
+\begin{frame}{Técnica de Teste}
+	\begin{itemize}
+		\item Forma de se definir e conduzir os testes. São definidas a partir da fonte da informação obtida para se elaborar o teste. 
+	\end{itemize}
+\end{frame}
+
+%-------------------------------------------------------------------------Slide
+
+\begin{frame}{Por que Testar?}
+ \begin{figure}
+  \centering
+  \includegraphics[width=4cm]{interrogacao1}
+  \caption[numbered]\insertcaptionnumber{ - ???}
+ \end{figure}  
+\end{frame}
+
+%-------------------------------------------------------------------------Slide
+
+\begin{frame}{Por que Testar?}
+\textbf{{\large \textcolor{red}{PORQUE N\~AO EXISTE SOFTWARE LIVRE DE DEFEITO.}}}
+\begin{figure}
+\centering
+\includegraphics[width=4cm]{bug-free-software}
+\caption[numbered]\insertcaptionnumber{ - \cite{google2019}}
+\end{figure}
+\end{frame}
+
+%-------------------------------------------------------------------------Slide
+
+\begin{frame}{Qual a Origem dos Defeitos?}
+ \begin{figure}
+  \centering
+  \includegraphics[width=4cm]{interrogacao1}
+  \caption[numbered]\insertcaptionnumber{ - ???}
+ \end{figure}  
+\end{frame}
+
+%-------------------------------------------------------------------------Slide
+
+\begin{frame}{Origem dos Defeitos}
+	\begin{itemize}
+		\item  \textbf{Erros de Construção}: (falha para satisfazer a especificação através de erros na implementação);
+		\item \textbf{Erros de Especificação}: (falha para escrever uma especificação que corretamente represente o projeto);
+		\item \textbf{Erros de Projeto}: (falha para satisfazer o entendimento de um Requisito);
+		\item \textbf{Erros de Requisitos}: (falha para satisfazer um requisito real).
+	\end{itemize}
+\end{frame}
+
+%-------------------------------------------------------------------------Slide
+
+\begin{frame}{Por que Testar?}
+\textbf{{\large \textcolor{red}{OS DEFEITOS EST\~AO POR TODA PARTE.}}}
+\begin{figure}
+\centering
+\includegraphics[width=5cm]{defeitos}
+\caption[numbered]\insertcaptionnumber{ - \cite{google2019}}
+\end{figure}
+\end{frame}
+
+%-------------------------------------------------------------------------Slide
+
+\begin{frame}{Eficácia do Teste}
+Independentemente do tipo ou da origem dos defeitos, nossos testes devem ser capazes de revelar a presen\c{a} dos mesmos.
+\begin{figure}
+ \centering
+ \includegraphics[width=7cm]{bug-revell}
+ \caption[numbered]\insertcaptionnumber{ - \cite{google2019}}
+\end{figure}
+\end{frame}
+
+%-------------------------------------------------------------------------Slide
+
+\begin{frame}{Paradoxo do Pesticida \cite{beizer1990}}
+\begin{figure}
+ \centering
+ \includegraphics[width=7cm]{pesticida}
+ \caption[numbered]\insertcaptionnumber{ - \cite{google2019}}
+\end{figure}
+\end{frame}
+
+%-------------------------------------------------------------------------Slide
+
+\begin{frame}{Objetivo do Teste}
+\begin{figure}
+ \centering
+ \includegraphics[width=3cm]{interrogacao1}
+ \caption[numbered]\insertcaptionnumber{ - ???}
+\end{figure}
+\end{frame}
+
+%-------------------------------------------------------------------------Slide
+
+\begin{frame}{Objetivo do Teste}
+\textbf{{\large \textcolor{red}{Revelar a presença de defeitos nos nossos softwares.}}}
+\begin{figure}
+ \centering
+ \includegraphics[width=4cm]{bug-tracking}
+ \caption[numbered]\insertcaptionnumber{ - \cite{google2019}}
+\end{figure}
+\end{frame}
+
+%-------------------------------------------------------------------------Slide
+
+\begin{frame}{Quando Testar?}
+\begin{figure}
+ \centering
+ \includegraphics[width=8cm]{modeloV}
+ \caption[numbered]\insertcaptionnumber{ - \cite{google2019}}
+\end{figure}
+\end{frame}
+
+%-------------------------------------------------------------------------Slide
+
+\begin{frame}
+	\frametitle{Efetividade dos N\'iveis de Teste}
+	\begin{itemize}
+		\item Os testes de unidades executados podem reduzir entre 30\% e 50\% dos defeitos dos softwares.
+		\item O processo de revis\~ao de c\'odigo permite diminuir entre 20\% e 30\% os defeitos.
+		\item O processo de testes de sistemas pode remover de 30\% a 50\% os defeitos remanescentes.
+\end{itemize}
+\end{frame}
+
+%-------------------------------------------------------------------------Slide
+
+\begin{frame}
+	\begin{figure}
+		\centering
+		\includegraphics[width=7cm]{regra10}
+		\caption[numbered]\insertcaptionnumber{ - Regra 10 de Myers. \cite{google2019}}
+	\end{figure}
+\end{frame}
+
+%-------------------------------------------------------------------------Slide
+
+\begin{frame}{Níveis de Teste}
+\begin{figure}
+ \centering
+ \includegraphics[width=5cm]{leveltest}
+ \caption[numbered]\insertcaptionnumber{ - \cite{google2019}} 
+\end{figure}
+\end{frame}
+
+%-------------------------------------------------------------------------Slide
+
+\begin{frame}{Tipos de Teste}
+  \begin{itemize}
+   \item Diferentes tipos de testes podem ser utilizados para verificar se um programa se comporta como o especificado.
+   \item Basicamente, os testes podem ser classificados em:
+   \begin{itemize}
+    \item Teste Funcional (\textbf{teste caixa-preta});
+    \item Teste Estrutural (\textbf{teste caixa-branca}) e 
+    \item Teste Baseado em Defeitos (\textbf{Testes de Mutantes}).
+   \end{itemize}
+  \end{itemize}
+\end{frame}
+
+%-------------------------------------------------------------------------Slide
+
+\begin{frame}{Tipos de Teste}
+  \begin{itemize}
+   \item A t\'ecnica de teste \'e definida pelo tipo de informa\c{c}\~ao utilizada para realizar o teste.
+  \end{itemize}
+\end{frame}
+
+%-------------------------------------------------------------------------Slide
+
+\begin{frame}{Técnica de Teste Funcional}
+  \begin{itemize}
+    \item \textbf{T\'ecnica caixa-preta} - os testes s\~ao baseados exclusivamente na especifica\c{c}\~ao de requisitos do programa. Nenhum conhecimento de como o programa est\'a implementado \'e requerido.
+  \end{itemize}
+  \begin{figure}
+   \centering
+   \includegraphics[width=5cm]{testeCaixaPreta}
+   \caption[numbered]\insertcaptionnumber{ - Técnica de Teste Funcional. \cite{neto2009}}
+  \end{figure}
+\end{frame}
+
+%-------------------------------------------------------------------------Slide
+
+\begin{frame}{Técnica de Teste Estrutural}
+  \begin{itemize}
+    \item \textbf{T\'ecnica caixa-branca} - os testes s\~ao baseados na estrutura interna do programa, ou seja, na implementa\c{c}\~ao do mesmo.
+  \end{itemize}
+  \begin{figure}
+   \centering
+   \includegraphics[width=5cm]{testeCaixaBranca}
+   \caption[numbered]\insertcaptionnumber{ - Técnica de Teste Estrutural. \cite{neto2009}}
+  \end{figure}
+\end{frame}
+
+%-------------------------------------------------------------------------Slide
+
+\begin{frame}{Técnica de Teste Baseada em Defeitos}
+  \begin{itemize}
+    \item \textbf{T\'ecnica baseada em defeitos} - os testes s\~ao baseados em informa\c{c}\~oes hist\'oricas sobre defeitos cometidos frequuentemente durante o processo de desenvolvimento de software.
+  \end{itemize}
+  \begin{figure}
+   \centering
+   \includegraphics[width=5cm]{testeBaseadoEmDefeitos}
+   \caption[numbered]\insertcaptionnumber{ - Teste de Mutantes. \cite{neto2009}}
+  \end{figure}
+\end{frame}
+
+%-------------------------------------------------------------------------Slide
+
+\begin{frame}{Variações de Tipos de Teste}
+ \begin{block}{Teste de Performance}
+ Modelagem do uso esperado do sistema, pela simulaç\~ao do acesso de v\'arios usu\'arios concorrentemente.
+ \end{block}
+ \begin{figure}
+  \centering
+   \includegraphics[width=5cm]{performanceTesting}
+   \caption[numbered]\insertcaptionnumber{ - Teste de Performance. \cite{google2019}}
+ \end{figure}
+\end{frame}
+
+%-------------------------------------------------------------------------Slide
+
+\begin{frame}{Variações de Tipos de Teste}
+  \begin{block}{Teste de Carga}
+  Testar o comportamento do sistema submetendo-o ao processamento de um grande volume de dados.
+ \end{block}
+ \begin{figure}
+  \centering
+   \includegraphics[width=3cm]{loadingTesting}
+	\caption[numbered]\insertcaptionnumber{ - Teste de Carga. \cite{google2019}}
+ \end{figure}
+\end{frame}
+
+%-------------------------------------------------------------------------Slide
+
+\begin{frame}{Variações de Tipos de Teste}
+  \begin{block}{Teste de Estresse}
+    Determinar a estabilidade de um dado sistema para al\'em da sua capacidade normal de operaç\~ao.
+  \end{block}
+  \begin{figure}
+   \centering
+    \includegraphics[width=4cm]{estresse}
+    \caption[numbered]\insertcaptionnumber{ - Teste de Estresse. \cite{google2019}}
+  \end{figure}
+\end{frame}
+
+%-------------------------------------------------------------------------Slide
+
+\begin{frame}{Variações de Tipos de Teste}
+  \begin{block}{Teste de Confiabilidade}
+    Determinar por quanto tempo o sistema \'e capaz de sustentar uma performance \'otima.
+  \end{block}
+  \begin{figure}
+   \centering
+    \includegraphics[width=4cm]{reliability-testing}
+    \caption[numbered]\insertcaptionnumber{ - Teste de Confiabilidade. \cite{google2019}}
+  \end{figure}  
+\end{frame}
+
+%-------------------------------------------------------------------------Slide
+
+\begin{frame}{Variações de Tipos de Teste}
+ \begin{block}{Teste de Regressão}
+  \begin{enumerate}
+   \item Os testes de regressão geralmente são executados após a correção de algum defeito ou após a adição de uma nova funcionalidade.
+  \end{enumerate}
+ \end{block}
+\end{frame}
+
+%-------------------------------------------------------------------------Slide
+
+\begin{frame}{Variações de Tipos de Teste}
+ \begin{block}{Teste de Regressão}
+  \begin{enumerate}
+   \item Os testes de regressão geralmente são executados após a correção de algum defeito ou após a adição de uma nova funcionalidade. 
+   \item Seu objetivo é garantir que nenhum defeito foi acrescentado ao sistema após sua modificação. 
+  \end{enumerate}
+ \end{block}
+\end{frame}
+
+%-------------------------------------------------------------------------Slide
+
+\begin{frame}{Variações de Tipos de Teste}
+ \begin{block}{Teste de Regressão}
+  \begin{enumerate}
+   \item Os testes de regressão geralmente são executados após a correção de algum defeito ou após a adição de uma nova funcionalidade. 
+   \item Seu objetivo é garantir que nenhum defeito foi acrescentado ao sistema após sua modificação. 
+   \item De nada adianta testar um sistema, verificar que ele não possui defeitos para aquele conjunto de casos de teste e após modificações no sistema, aqueles casos de teste não serem novamente executados, pois as novas mudanças podem trazer defeitos para o sistema.
+  \end{enumerate}
+ \end{block}
+\end{frame}
+
+%-------------------------------------------------------------------------Slide
+
+\begin{frame}{Variações de Tipos de Teste}
+   \begin{figure}
+   \centering
+    \includegraphics[width=8cm]{regression-testing}
+    \caption[numbered]\insertcaptionnumber{ - Teste de Regressão. \cite{google2019}}
+  \end{figure}
+\end{frame}
+
+%===============================================================================
+\section{Teste Funcional}
+%===============================================================================
+
+%-------------------------------------------------------------------------Slide
+\begin{frame}{Desafios}
+	\begin{itemize}
+		\item Alguém já testou algum produto de software?		 
+	\end{itemize}
+\end{frame}
+
+%-------------------------------------------------------------------------Slide
+\begin{frame}{Desafios}
+	\begin{itemize}
+		\item Alguém já testou algum produto de software?
+		\item Quais foram os maiores desafios?
+	\end{itemize}
+\end{frame}
+
+%-------------------------------------------------------------------------Slide
+\begin{frame}{Desafios}
+	\begin{itemize}
+		\item Alguém já testou algum produto de software?
+		\item Quais foram os maiores desafios?
+		\item Alguns problemas comuns são:
+	\end{itemize}
+\end{frame}
+
+%-------------------------------------------------------------------------Slide
+\begin{frame}{Desafios}
+	\begin{itemize}
+		\item Alguém já testou algum produto de software?
+		\item Quais foram os maiores desafios?
+		\item Alguns problemas comuns são:
+		\begin{enumerate}
+			\item Não há tempo para o teste exaustivo.
+		\end{enumerate}		 
+	\end{itemize}
+\end{frame}
+
+%-------------------------------------------------------------------------Slide
+\begin{frame}{Desafios}
+	\begin{itemize}
+		\item Alguém já testou algum produto de software?
+		\item Quais foram os maiores desafios?
+		\item Alguns problemas comuns são:
+		\begin{enumerate}
+			\item Não há tempo para o teste exaustivo.
+			\item Muitas combinações de entrada para serem exercitadas.
+		\end{enumerate}		 
+	\end{itemize}
+\end{frame}
+
+%-------------------------------------------------------------------------Slide
+\begin{frame}{Desafios}
+	\begin{itemize}
+		\item Alguém já testou algum produto de software?
+		\item Quais foram os maiores desafios?
+		\item Alguns problemas comuns são:
+		\begin{enumerate}
+			\item Não há tempo para o teste exaustivo.
+			\item Muitas combinações de entrada para serem exercitadas.
+			\item Dificuldade em determinar os resultados esperados para cada caso de teste.
+		\end{enumerate}		 
+	\end{itemize}
+\end{frame}
+
+%-------------------------------------------------------------------------Slide
+\begin{frame}{Desafios}
+	\begin{itemize}
+		\item Alguém já testou algum produto de software?
+		\item Quais foram os maiores desafios?
+		\item Alguns problemas comuns são:
+		\begin{enumerate}
+			\item Não há tempo para o teste exaustivo.
+			\item Muitas combinações de entrada para serem exercitadas.
+			\item Dificuldade em determinar os resultados esperados para cada caso de teste.
+			\item Requisitos do software inexistentes ou que mudam rapidamente.
+		\end{enumerate}		 
+	\end{itemize}
+\end{frame}
+
+%-------------------------------------------------------------------------Slide
+\begin{frame}{Desafios}
+	\begin{itemize}
+		\item Alguém já testou algum produto de software?
+		\item Quais foram os maiores desafios?
+		\item Alguns problemas comuns são:
+		\begin{enumerate}
+			\item Não há tempo para o teste exaustivo.
+			\item Muitas combinações de entrada para serem exercitadas.
+			\item Dificuldade em determinar os resultados esperados para cada caso de teste.
+			\item Requisitos do software inexistentes ou que mudam rapidamente.
+			\item Não há tempo suficiente para o teste.
+		\end{enumerate}		 
+	\end{itemize}
+\end{frame}
+
+%-------------------------------------------------------------------------Slide
+\begin{frame}{Desafios}
+	\begin{itemize}
+		\item Alguém já testou algum produto de software?
+		\item Quais foram os maiores desafios?
+		\item Alguns problemas comuns são:
+		\begin{enumerate}
+			\item Não há tempo para o teste exaustivo.
+			\item Muitas combinações de entrada para serem exercitadas.
+			\item Dificuldade em determinar os resultados esperados para cada caso de teste.
+			\item Requisitos do software inexistentes ou que mudam rapidamente.
+			\item Não há tempo suficiente para o teste.
+			\item Não há treinamento no processo de teste.
+		\end{enumerate}		 
+	\end{itemize}
+\end{frame}
+
+%-------------------------------------------------------------------------Slide
+\begin{frame}{Desafios}
+	\begin{itemize}
+		\item Alguém já testou algum produto de software?
+		\item Quais foram os maiores desafios?
+		\item Alguns problemas comuns são:
+		\begin{enumerate}
+			\item Não há tempo para o teste exaustivo.
+			\item Muitas combinações de entrada para serem exercitadas.
+			\item Dificuldade em determinar os resultados esperados para cada caso de teste.
+			\item Requisitos do software inexistentes ou que mudam rapidamente.
+			\item Não há tempo suficiente para o teste.
+			\item Não há treinamento no processo de teste.
+			\item Não há ferramenta de apoio.
+		\end{enumerate}		 
+	\end{itemize}
+\end{frame}
+
+%-------------------------------------------------------------------------Slide
+\begin{frame}{Desafios}
+	\begin{itemize}
+		\item Alguém já testou algum produto de software?
+		\item Quais foram os maiores desafios?
+		\item Alguns problemas comuns são:
+		\begin{enumerate}
+			\item Não há tempo para o teste exaustivo.
+			\item Muitas combinações de entrada para serem exercitadas.
+			\item Dificuldade em determinar os resultados esperados para cada caso de teste.
+			\item Requisitos do software inexistentes ou que mudam rapidamente.
+			\item Não há tempo suficiente para o teste.
+			\item Não há treinamento no processo de teste.
+			\item Não há ferramenta de apoio.
+			\item Gerentes que desconhecem teste ou que não se preocupam com qualidade.
+		\end{enumerate}		 
+	\end{itemize}
+\end{frame}
+
+%-------------------------------------------------------------------------Slide
+\begin{frame}{Pratica 1}
+	\begin{itemize}
+		\item Elaborar um conjunto de casos de testes suficientes para um programa com a seguinte especificação:
+		\item O programa deve determinar se um identificador é válido ou não.
+Um identificador válido deve começar com uma letra e conter apenas letras ou dígitos. Além disso, deve ter no mínimo um caractere e no máximo seis caracteres de comprimento.
+	\end{itemize}
+\end{frame}
+
+%-------------------------------------------------------------------------Slide
+\begin{frame}{Pratica 2}
+	\begin{itemize}
+		\item Avaliação Escolar.
+	\end{itemize}
+\end{frame}
+
+%===============================================================================
+\subsection{Processo e Critérios}
+%===============================================================================
+
+%-------------------------------------------------------------------------Slide
+\begin{frame}{Processo de Teste Caixa Preta}
+ \begin{itemize}
+  \item \textcolor{red}{Os passos b\'asicos para se aplicar um crit\'erio de teste caixa preta s\~ao os seguintes:}
+ \end{itemize}
+\end{frame}
+
+%-------------------------------------------------------------------------Slide
+\begin{frame}{Processo de Teste Caixa Preta}
+ \begin{itemize}
+  \item Os passos b\'asicos para se aplicar um crit\'erio de teste caixa preta s\~ao os seguintes:
+  \begin{enumerate}
+   \item \textcolor{red}{A especifica\c{c}\~ao de requisitos \'e analisada.}
+  \end{enumerate}
+ \end{itemize}
+\end{frame}
+
+%-------------------------------------------------------------------------Slide
+\begin{frame}{Processo de Teste Caixa Preta}
+ \begin{itemize}
+  \item Os passos b\'asicos para se aplicar um crit\'erio de teste caixa preta s\~ao os seguintes:
+  \begin{enumerate}
+   \item A especifica\c{c}\~ao de requisitos \'e analisada.
+   \item \textcolor{red}{Entradas v\'alidas s\~ao escolhidas (com base na especifica\c{c}\~ao) para determinar se o produto em teste se comporta corretamente.} 
+  \end{enumerate}
+ \end{itemize}
+\end{frame}
+
+%-------------------------------------------------------------------------Slide
+
+\begin{frame}{Processo de Teste Caixa Preta}
+ \begin{itemize}
+  \item Os passos b\'asicos para se aplicar um crit\'erio de teste caixa preta s\~ao os seguintes:
+  \begin{enumerate}
+   \item A especifica\c{c}\~ao de requisitos \'e analisada.
+   \item Entradas v\'alidas s\~ao escolhidas (com base na especifica\c{c}\~ao) para determinar se o produto em teste se comporta corretamente. 
+   \item \textcolor{red}{Entradas inv\'alidas tamb\'em s\~ao escolhidas para verificar se s\~ao detectadas e manipuladas adequadamente.} 
+  \end{enumerate}
+ \end{itemize}
+\end{frame}
+
+%-------------------------------------------------------------------------Slide
+
+\begin{frame}{Processo de Teste Caixa Preta}
+ \begin{itemize}
+  \item Os passos b\'asicos para se aplicar um crit\'erio de teste caixa preta s\~ao os seguintes:
+  \begin{enumerate}
+   \item A especifica\c{c}\~ao de requisitos \'e analisada.
+   \item Entradas v\'alidas s\~ao escolhidas (com base na especifica\c{c}\~ao) para determinar se o produto em teste se comporta corretamente. 
+   \item Entradas inv\'alidas tamb\'em s\~ao escolhidas para verificar se s\~ao detectadas e manipuladas adequadamente. 
+   \item \textcolor{red}{As sa\'idas esperadas para as entradas escolhidas s\~ao determinadas.}
+  \end{enumerate}
+ \end{itemize}
+\end{frame}
+
+%-------------------------------------------------------------------------Slide
+
+\begin{frame}{Processo de Teste Caixa Preta}
+ \begin{itemize}
+  \item Os passos b\'asicos para se aplicar um crit\'erio de teste caixa preta s\~ao os seguintes:
+  \begin{enumerate}
+   \item A especifica\c{c}\~ao de requisitos \'e analisada.
+   \item Entradas v\'alidas s\~ao escolhidas (com base na especifica\c{c}\~ao) para determinar se o produto em teste se comporta corretamente. 
+   \item Entradas inv\'alidas tamb\'em s\~ao escolhidas para verificar se s\~ao detectadas e manipuladas adequadamente. 
+   \item As sa\'idas esperadas para as entradas escolhidas s\~ao determinadas.
+   \item \textcolor{red}{Os casos de testes s\~ao constru\'idos.}
+  \end{enumerate}
+ \end{itemize}
+\end{frame}
+
+%-------------------------------------------------------------------------Slide
+
+\begin{frame}{Processo de Teste Caixa Preta}
+ \begin{itemize}
+  \item Os passos b\'asicos para se aplicar um crit\'erio de teste caixa preta s\~ao os seguintes:
+  \begin{enumerate}
+   \item A especifica\c{c}\~ao de requisitos \'e analisada.
+   \item Entradas v\'alidas s\~ao escolhidas (com base na especifica\c{c}\~ao) para determinar se o produto em teste se comporta corretamente. 
+   \item Entradas inv\'alidas tamb\'em s\~ao escolhidas para verificar se s\~ao detectadas e manipuladas adequadamente. 
+   \item As sa\'idas esperadas para as entradas escolhidas s\~ao determinadas.
+   \item Os casos de testes s\~ao constru\'idos.
+   \item \textcolor{red}{O conjunto de teste \'e executado.}
+  \end{enumerate}
+ \end{itemize}
+\end{frame}
+
+%-------------------------------------------------------------------------Slide
+
+\begin{frame}{Processo de Teste Caixa Preta}
+ \begin{itemize}
+  \item Os passos b\'asicos para se aplicar um crit\'erio de teste caixa preta s\~ao os seguintes:
+  \begin{enumerate}
+   \item A especifica\c{c}\~ao de requisitos \'e analisada.
+   \item Entradas v\'alidas s\~ao escolhidas (com base na especifica\c{c}\~ao) para determinar se o produto em teste se comporta corretamente. 
+   \item Entradas inv\'alidas tamb\'em s\~ao escolhidas para verificar se s\~ao detectadas e manipuladas adequadamente. 
+   \item As sa\'idas esperadas para as entradas escolhidas s\~ao determinadas.
+   \item Os casos de testes s\~ao constru\'idos.
+   \item O conjunto de teste \'e executado.
+   \item \textcolor{red}{As sa\'idas obtidas s\~ao comparadas com as sa\'idas esperadas.}
+  \end{enumerate}
+ \end{itemize}
+\end{frame}
+
+%-------------------------------------------------------------------------Slide
+
+\begin{frame}{Processo de Teste Caixa Preta}
+ \begin{itemize}
+  \item Os passos b\'asicos para se aplicar um crit\'erio de teste caixa preta s\~ao os seguintes:
+  \begin{enumerate}
+   \item A especifica\c{c}\~ao de requisitos \'e analisada.
+   \item Entradas v\'alidas s\~ao escolhidas (com base na especifica\c{c}\~ao) para determinar se o produto em teste se comporta corretamente. 
+   \item Entradas inv\'alidas tamb\'em s\~ao escolhidas para verificar se s\~ao detectadas e manipuladas adequadamente. 
+   \item As sa\'idas esperadas para as entradas escolhidas s\~ao determinadas.
+   \item Os casos de testes s\~ao constru\'idos.
+   \item O conjunto de teste \'e executado.
+   \item As sa\'idas obtidas s\~ao comparadas com as sa\'idas esperadas.
+   \item \textcolor{red}{Um relat\'orio \'e gerado para avaliar o resultado dos testes.}
+  \end{enumerate}
+ \end{itemize}
+\end{frame}
+
+%=========================================================================================SECTION
+\subsection{Critérios de Teste Funcional}
+%=========================================================================================SECTION
+
+%-------------------------------------------------------------------------Slide
+
+\begin{frame}{Critérios de Teste Funcional}
+    \begin{enumerate}
+        \item \textcolor{red}{Particionamento de Equivalência (\textit{Equivalence Partition}).}
+    \end{enumerate}
+\end{frame}
+
+%-------------------------------------------------------------------------Slide
+
+\begin{frame}{Critérios de Teste Funcional}
+    \begin{enumerate}
+        \item Particionamento de Equivalência (\textit{Equivalence Partition}).
+        \item \textcolor{red}{Análise do Valor Limite (\textit{Boundary Value Analysis}).}
+    \end{enumerate}
+\end{frame}
+
+%-------------------------------------------------------------------------Slide
+
+\begin{frame}{Critérios de Teste Funcional}
+    \begin{enumerate}
+        \item Particionamento de Equivalência (\textit{Equivalence Partition}).
+        \item Análise do Valor Limite (\textit{Boundary Value Analysis}).
+        \item \textcolor{red}{Tabela de Decisão (\textit{Decision Table}).}
+    \end{enumerate}
+\end{frame}
+
+%-------------------------------------------------------------------------Slide
+
+\begin{frame}{Critérios de Teste Funcional}
+    \begin{enumerate}
+        \item Particionamento de Equivalência (\textit{Equivalence Partition}).
+        \item Análise do Valor Limite (\textit{Boundary Value Analysis}).
+        \item Tabela de Decisão (\textit{Decision Table}).
+        \item \textcolor{red}{Grafo de Causa e Efeito (\textit{Cause-Effect Graph}).}
+    \end{enumerate}
+\end{frame}
+
+%-------------------------------------------------------------------------Slide
+
+\begin{frame}{Critérios de Teste Funcional}
+    \begin{enumerate}
+        \item Particionamento de Equivalência (\textit{Equivalence Partition}).
+        \item Análise do Valor Limite (\textit{Boundary Value Analysis}).
+        \item Tabela de Decisão (\textit{Decision Table}).
+        \item Grafo de Causa e Efeito (\textit{Cause-Effect Graph}).
+        \item \textcolor{red}{Teste de Todos os Pares (\textit{Pairwise Testing}).}
+    \end{enumerate}
+\end{frame}
+
+%-------------------------------------------------------------------------Slide
+
+\begin{frame}{Critérios de Teste Funcional}
+    \begin{enumerate}
+        \item Particionamento de Equivalência (\textit{Equivalence Partition}).
+        \item Análise do Valor Limite (\textit{Boundary Value Analysis}).
+        \item Tabela de Decisão (\textit{Decision Table}).
+        \item Grafo de Causa e Efeito (\textit{Cause-Effect Graph}).
+        \item Teste de Todos os Pares (\textit{Pairwise Testing}).
+        \item \textcolor{red}{Teste de Transição de Estado (\textit{State-Transition Testing}).}
+    \end{enumerate}
+\end{frame}
+
+%-------------------------------------------------------------------------Slide
+
+\begin{frame}{Critérios de Teste Funcional}
+    \begin{enumerate}
+        \item Particionamento de Equivalência (\textit{Equivalence Partition}).
+        \item Análise do Valor Limite (\textit{Boundary Value Analysis}).
+        \item Tabela de Decisão (\textit{Decision Table}).
+        \item Grafo de Causa e Efeito (\textit{Cause-Effect Graph}).
+        \item Teste de Todos os Pares (\textit{Pairwise Testing}).
+        \item Teste de Transição de Estado (\textit{State-Transition Testing}).
+        \item \textcolor{red}{Teste de Análise de Domínio (\textit{Domain Analysis Testing}).}
+    \end{enumerate}
+\end{frame}
+
+%-------------------------------------------------------------------------Slide
+
+\begin{frame}{Critérios de Teste Funcional}
+    \begin{enumerate}
+        \item Particionamento de Equivalência (\textit{Equivalence Partition}).
+        \item Análise do Valor Limite (\textit{Boundary Value Analysis}).
+        \item Tabela de Decisão (\textit{Decision Table}).
+        \item Grafo de Causa e Efeito (\textit{Cause-Effect Graph}).
+        \item Teste de Todos os Pares (\textit{Pairwise Testing}).
+        \item Teste de Transição de Estado (\textit{State-Transition Testing}).
+        \item Teste de Análise de Domínio (\textit{Domain Analysis Testing}).
+        \item \textcolor{red}{Teste Funcional Sistemático (\textit{Systematic Functional Testing}).}
+    \end{enumerate}
+\end{frame}
+
+%-------------------------------------------------------------------------Slide
+
+\begin{frame}{Critérios de Teste Funcional}
+    \begin{enumerate}
+        \item Particionamento de Equivalência (\textit{Equivalence Partition}).
+        \item Análise do Valor Limite (\textit{Boundary Value Analysis}).
+        \item Tabela de Decisão (\textit{Decision Table}).
+        \item Grafo de Causa e Efeito (\textit{Cause-Effect Graph}).
+        \item Teste de Todos os Pares (\textit{Pairwise Testing}).
+        \item Teste de Transição de Estado (\textit{State-Transition Testing}).
+        \item Teste de Análise de Domínio (\textit{Domain Analysis Testing}).
+        \item Teste Funcional Sistemático (\textit{Systematic Functional Testing}).
+        \item \textcolor{red}{Teste de Caso de Uso (\textit{Use Case Testing}).}
+    \end{enumerate}
+\end{frame}
+
+%-------------------------------------------------------------------------Slide
+
+\begin{frame}{Particionamento Por Equivalência}
+    \begin{enumerate}
+        \item \textcolor{red}{Consiste na divisão do domínio de entrada e saída em intervalos.}
+    \end{enumerate}
+\end{frame}
+
+\begin{frame}{Particionamento Por Equivalência}
+    \begin{enumerate}
+        \item Consiste na divisão do domínio de entrada e saída em intervalos.
+        \item \textcolor{red}{Qualquer valor dentro do intervalo tem a mesma importância, ou seja, qualquer valor escolhido é adequado.}
+    \end{enumerate}
+\end{frame}
+
+\begin{frame}{Particionamento Por Equivalência}
+    \begin{enumerate}
+        \item Consiste na divisão do domínio de entrada e saída em intervalos.
+        \item Qualquer valor dentro do intervalo tem a mesma importância, ou seja, qualquer valor escolhido é adequado.
+        \item \textcolor{red}{O mesmo se aplica para os demais intervalos de dados.}
+    \end{enumerate}
+\end{frame}
+
+\begin{frame}{Particionamento Por Equivalência}
+    \begin{enumerate}
+        \item Consiste na divisão do domínio de entrada e saída em intervalos.
+        \item Qualquer valor dentro do intervalo tem a mesma importância, ou seja, qualquer valor escolhido é adequado.
+        \item O mesmo se aplica para os demais intervalos de dados.
+        \item \textcolor{red}{Tais intervalos determinam o que é chamado de \textbf{classe de equivalência}.}
+    \end{enumerate}
+\end{frame}
+
+\begin{frame}{Particionamento Por Equivalência}
+    \begin{enumerate}
+        \item Consiste na divisão do domínio de entrada e saída em intervalos.
+        \item Qualquer valor dentro do intervalo tem a mesma importância, ou seja, qualquer valor escolhido é adequado.
+        \item O mesmo se aplica para os demais intervalos de dados.
+        \item Tais intervalos determinam o que é chamado de \textbf{classe de equivalência}.
+        \item \textcolor{red}{Qualquer valor no intervalo de uma classe é considerado equivalente em termos de teste. Assim sendo:}
+    \end{enumerate}
+\end{frame}
+
+\begin{frame}{Particionamento Por Equivalência}
+    \begin{enumerate}
+        \item Consiste na divisão do domínio de entrada e saída em intervalos.
+        \item Qualquer valor dentro do intervalo tem a mesma importância, ou seja, qualquer valor escolhido é adequado.
+        \item O mesmo se aplica para os demais intervalos de dados.
+        \item Tais intervalos determinam o que é chamado de \textbf{classe de equivalência}.
+        \item Qualquer valor no intervalo de uma classe é considerado equivalente em termos de teste. Assim sendo:
+    \begin{itemize}
+        \item \textcolor{red}{Se um caso de teste de uma classe de equivalência revela um defeito, qualquer caso de teste da mesma classe também revelaria e vice-versa.}
+    \end{itemize}
+    \end{enumerate}
+\end{frame}
+
+\begin{frame}{Particionamento por Equival\^encia (\textit{Equivalence Partition})}
+\begin{columns}
+\column{0.5\textwidth}
+    \begin{itemize}
+        \item Conjunto de Valores
+    \end{itemize}
+    \begin{figure}[H]
+        \centering
+        \includegraphics[width=6cm, height=3cm]{../imagens/equiv.png}
+        \caption[numbered]\insertcaptionnumber{ - PCE. \cite{google2019}}
+    \end{figure}
+\column{0.5\textwidth}
+    \begin{itemize}
+        \item Intervalo de Valores
+    \end{itemize}
+    \begin{figure}[H]
+        \centering
+        \includegraphics[width=5cm, height=1cm]{../imagens/equiv2.png}
+        \caption[numbered]\insertcaptionnumber{ - PCE. \cite{google2019}}
+    \end{figure}
+\end{columns}
+\end{frame}
+
+\begin{frame}{Particionamento por Equival\^encia - Diretrizes}
+ \begin{itemize}
+  \item Indenpendentemente do tipo do atributo:
+  \begin{itemize}
+    \item Atributo - Obrigat\'orio (S/N):
+    \begin{itemize}
+      \item Definir uma classe v\'alida (atributo informado);
+      \item Definir uma classe inv\'alida (atributo n\~ao informado). 
+    \end{itemize}
+  \end{itemize}
+ \end{itemize}
+\end{frame}
+
+\begin{frame}{Particionamento por Equival\^encia - Diretrizes}
+ \begin{itemize}
+  \item Atributos do tipo String:
+  \begin{itemize}
+  \item Acentuação gr\'afica / Caracteres especiais (sim ou não)
+  \begin{itemize}
+   \item Definir uma classe para o ``sim'';
+   \item Definir uma classe para o ``n\~ao''
+  \end{itemize}
+  \item Tamanho mínimo / Tamanho máximo
+  \begin{itemize}
+   \item Definir uma classe inv\'alida para valor inferior ao m\'inimo;
+   \item Definir uma classe v\'alida para valor dentro do intervalo entre o m\'inimo e o m\'aximo.
+   \item Definir uma classe inv\'alida para valor superior do m\'aximo.
+  \end{itemize}
+  \end{itemize}
+ \end{itemize}
+\end{frame}
+
+\begin{frame}{Particionamento por Equival\^encia - Diretrizes}
+ \begin{itemize}
+  \item Atributos de tipos num\'ericos
+  \begin{itemize}
+   \item Valores Inteiros:
+    \begin{itemize}
+     \item Definir uma classe inv\'alida para valores inferiores ao limite inferior;
+     \item Definir uma classe v\'alida para valores dentro do intervalo entre os limites;
+     \item Definir uma classe inv\'alida para valores acima do limite superior. 
+    \end{itemize}
+   \item Valores de ponto-flutuante:
+   \begin{itemize}
+    \item Definir tr\^es classes de equival\^encia para a quantidade de casas depois da v\'irgula.
+   \end{itemize}
+  \end{itemize}
+ \end{itemize}
+\end{frame}
+
+\begin{frame}{Particionamento por Equival\^encia - Diretrizes}
+ \begin{itemize}
+  \item Atributos do tipo l\'ogico
+  \begin{itemize}
+   \item Definir duas classes de equival\^encia.
+  \end{itemize}
+  \item Atributos do tipo Data:
+   \begin{itemize}
+    \item Definir classes de equival\^encia para:
+    \begin{itemize}
+     \item Data V\'alida e inv\'alida;
+     \item Formato
+     \item Data inferior e data superior.
+    \end{itemize}
+   \end{itemize}
+  \end{itemize}
+\end{frame}
+
+%-------------------------------------------------------------------------Slide
+\begin{frame}{Prática 1 - Classes de Equivalência}
+	\begin{figure}
+		\centering
+		\includegraphics[width=10cm]{ce-identifier}
+	\end{figure}
+\end{frame}
+
+\begin{frame}{Crit\'erios de Teste Caixa Preta}
+An\'alise do Valor Limite (\textit{Boundary Value Analysis}).
+\begin{columns}
+\column{0,5\textwidth}
+\begin{figure}[H]
+\centering
+\includegraphics[width=5cm, height=3cm]{../imagens/bva1.jpg} %bva1.jpg
+\end{figure}
+\column{0,5\textwidth}
+\begin{figure}[H]
+\centering
+\includegraphics[width=5cm, height=3cm]{../imagens/bva1.png} %bva1.jpg
+\end{figure}
+\end{columns}
+\end{frame}
+
+\begin{frame}{Teste Funcional e as Fases de Teste}
+ \begin{itemize}
+  \item Por ser independente da implementa\c{c}\~ao, crit\'erios da t\'ecnica caixa preta podem ser utilizados em todas as fases de teste.
+ \end{itemize} 
+\end{frame}
+
+\begin{frame}{Teste Funcional e as Fases de Teste}
+ \begin{itemize}
+  \item Por ser independente da implementa\c{c}\~ao, crit\'erios da t\'ecnica caixa preta podem ser utilizados em todas as
+fases de teste.
+  \item A medida que se move do teste de unidade para o teste de sistema, entradas e sa\'idas mais complexas s\~ao exigidas, mas a abordagem permanece a mesma.
+  \end{itemize}
+\end{frame}
+
+\begin{frame}{Teste Funcional e as Fases de Teste}
+ \begin{itemize}
+  \item Por ser independente da implementa\c{c}\~ao, crit\'erios da t\'ecnica caixa preta podem ser utilizados em todas as
+fases de teste.
+  \item A medida que se move do teste de unidade para o teste de sistema, entradas e sa\'idas mais complexas s\~ao exigidas, mas a abordagem permanece a mesma.
+  \item Al\'em disso, principalmente no n\'ivel de sistema, o teste caixa-preta \'e de fundamental import\^ancia uma vez que a estrutura interna do sistema \'e muito complexa, inviabilizando o teste caixa-branca.
+ \end{itemize}
+\begin{figure}
+ \includegraphics[width=8cm]{../imagens/fasesTesteFuncional.png}
+\end{figure} 
+\end{frame}
+
+\begin{frame}{Vantagens do Teste Funcional}
+ \begin{itemize}
+  \item Pode ser utilizado em todas as fases de teste.
+ \end{itemize}
+\end{frame}
+
+\begin{frame}{Vantagens do Teste Funcional}
+ \begin{itemize}
+  \item Pode ser utilizado em todas as fases de teste.
+  \item Independente do paradigma de programa\c{c}\~ao utilizado.
+ \end{itemize}
+\end{frame}
+
+\begin{frame}{Vantagens do Teste Funcional}
+ \begin{itemize}
+  \item Pode ser utilizado em todas as fases de teste.
+  \item Independente do paradigma de programa\c{c}\~ao utilizado.
+  \item Teste funcional sistem\'atico direciona o testador a escolher subconjuntos de teste que s\~ao eficientes e efetivos em identificar defeitos. Melhor que o teste aleat\'orio \cite{copeland2003}.
+ \end{itemize}
+\end{frame}
+
+\begin{frame}{Vantagens do Teste Funcional}
+ \begin{itemize}
+  \item Pode ser utilizado em todas as fases de teste.
+  \item Independente do paradigma de programa\c{c}\~ao utilizado.
+  \item Teste funcional sistem\'atico direciona o testador a escolher subconjuntos de teste que s\~ao eficientes e efetivos em identificar defeitos. Melhor que o teste aleat\'orio \cite{copeland2003}.
+  \item Eficaz em detectar determinados tipos de defeitos:
+ \end{itemize}
+\end{frame}
+
+\begin{frame}{Vantagens do Teste Funcional}
+ \begin{itemize}
+  \item Pode ser utilizado em todas as fases de teste.
+  \item Independente do paradigma de programa\c{c}\~ao utilizado.
+  \item Teste funcional sistem\'atico direciona o testador a escolher subconjuntos de teste que s\~ao eficientes e efetivos em identificar defeitos. Melhor que o teste aleat\'orio \cite{copeland2003}.
+  \item Eficaz em detectar determinados tipos de defeitos:
+  \begin{itemize}
+    \item Funcionalidade ausente, por exemplo.
+  \end{itemize}
+ \end{itemize}
+\end{frame}
+
+\begin{frame}{Desvantagens do Teste Funcional}
+ \begin{itemize}
+  \item \textcolor{red}{Dependente de uma boa especifica\c{c}\~ao de requisitos.}
+ \end{itemize}
+\end{frame}
+
+\begin{frame}{Desvantagens do Teste Funcional}
+ \begin{itemize}
+  \item Dependente de uma boa especifica\c{c}\~ao de requisitos.
+  \item \textcolor{red}{N\~ao permite determinar que partes essenciais ou cr\'iticas da implementa\c{c}\~ao do software tenham sido executadas.}
+ \end{itemize}
+\end{frame}
+
+%========================================================================SECTION
+\section{Teste Estrutural}
+%========================================================================SECTION
+
+%-------------------------------------------------------------------------Slide
+\begin{frame}{Conceitos Básicos}
+	\begin{itemize}
+		\item \textcolor{red}{Técnica Caixa Branca oposto da Técnica Caixa Preta.}		
+	\end{itemize}
+\end{frame}
+
+%-------------------------------------------------------------------------Slide
+\begin{frame}{Conceitos Básicos}
+	\begin{itemize}
+		\item Técnica Caixa Branca oposto da Técnica Caixa Preta.
+		\begin{itemize}
+			\item \textcolor{red}{Baseia-se nos caminhos internos, estrutura e implementação do produto em teste.}
+		\end{itemize}
+	\end{itemize}
+\end{frame}
+
+%-------------------------------------------------------------------------Slide
+\begin{frame}{Conceitos Básicos}
+	\begin{itemize}
+		\item Técnica Caixa Branca oposto da Técnica Caixa Preta.
+		\begin{itemize}
+			\item Baseia-se nos caminhos internos, estrutura e implementação do produto em teste.
+			\item \textcolor{red}{Requer conhecimento do código do produto em teste para ser aplicada.}
+		\end{itemize}
+	\end{itemize}
+\end{frame}
+
+%-------------------------------------------------------------------------Slide
+\begin{frame}{Processo do Teste Caixa Branca}
+	\begin{itemize}
+		\item \textcolor{red}{Os passos básicos para se aplicar um critério de teste caixa branca são os seguintes:}
+	\end{itemize}
+\end{frame}
+
+%-------------------------------------------------------------------------Slide
+\begin{frame}{Processo do Teste Caixa Branca}
+	\begin{itemize}
+		\item Os passos básicos para se aplicar um critério de teste
+caixa branca são os seguintes:
+		\begin{enumerate}
+			\item \textcolor{red}{A implementação do produto em teste é analisada.}	
+		\end{enumerate}
+	\end{itemize}
+\end{frame}
+
+%-------------------------------------------------------------------------Slide
+\begin{frame}{Processo do Teste Caixa Branca}
+	\begin{itemize}
+		\item Os passos básicos para se aplicar um critério de teste
+caixa branca são os seguintes:
+		\begin{enumerate}
+			\item A implementação do produto em teste é analisada.
+			\item \textcolor{red}{Caminhos através da implementação são escolhidos.}
+		\end{enumerate}
+	\end{itemize}
+\end{frame}
+
+%-------------------------------------------------------------------------Slide
+\begin{frame}{Processo do Teste Caixa Branca}
+	\begin{itemize}
+		\item Os passos básicos para se aplicar um critério de teste
+caixa branca são os seguintes:
+		\begin{enumerate}
+			\item A implementação do produto em teste é analisada.
+			\item Caminhos através da implementação são escolhidos.
+			\item \textcolor{red}{Valores de entradas são selecionados de modo que os caminhos selecionados sejam executados.}
+		\end{enumerate}
+	\end{itemize}
+\end{frame}
+
+%-------------------------------------------------------------------------Slide
+\begin{frame}{Processo do Teste Caixa Branca}
+	\begin{itemize}
+		\item Os passos básicos para se aplicar um critério de teste
+caixa branca são os seguintes:
+		\begin{enumerate}
+			\item A implementação do produto em teste é analisada.
+			\item Caminhos através da implementação são escolhidos.
+			\item Valores de entradas são selecionados de modo que os caminhos selecionados sejam executados.
+			\item \textcolor{red}{As saídas esperadas para as entradas escolhidas são determinadas.}
+		\end{enumerate}
+	\end{itemize}
+\end{frame}
+
+%-------------------------------------------------------------------------Slide
+\begin{frame}{Processo do Teste Caixa Branca}
+	\begin{itemize}
+		\item Os passos básicos para se aplicar um critério de teste
+caixa branca são os seguintes:
+		\begin{enumerate}
+			\item A implementação do produto em teste é analisada.
+			\item Caminhos através da implementação são escolhidos.
+			\item Valores de entradas são selecionados de modo que os caminhos selecionados sejam executados.
+			\item As saídas esperadas para as entradas escolhidas são determinadas.
+			\item \textcolor{red}{Os casos de testes são construídos.}
+		\end{enumerate}
+	\end{itemize}
+\end{frame}
+
+%-------------------------------------------------------------------------Slide
+\begin{frame}{Processo do Teste Caixa Branca}
+	\begin{itemize}
+		\item Os passos básicos para se aplicar um critério de teste
+caixa branca são os seguintes:
+		\begin{enumerate}
+			\item A implementação do produto em teste é analisada.
+			\item Caminhos através da implementação são escolhidos.
+			\item Valores de entradas são selecionados de modo que os caminhos selecionados sejam executados.
+			\item As saídas esperadas para as entradas escolhidas são determinadas.
+			\item Os casos de testes são construídos.
+			\item \textcolor{red}{Os casos de testes são executados.}
+		\end{enumerate}
+	\end{itemize}
+\end{frame}
+
+%-------------------------------------------------------------------------Slide
+\begin{frame}{Processo do Teste Caixa Branca}
+	\begin{itemize}
+		\item Os passos básicos para se aplicar um critério de teste
+caixa branca são os seguintes:
+		\begin{enumerate}
+			\item A implementação do produto em teste é analisada.
+			\item Caminhos através da implementação são escolhidos.
+			\item Valores de entradas são selecionados de modo que os caminhos selecionados sejam executados.
+			\item As saídas esperadas para as entradas escolhidas são determinadas.
+			\item Os casos de testes são construídos.
+			\item Os casos de testes são executados.
+			\item \textcolor{red}{As saídas obtidas são comparadas com as saídas esperadas.}	
+		\end{enumerate}
+	\end{itemize}
+\end{frame}
+
+%-------------------------------------------------------------------------Slide
+\begin{frame}{Processo do Teste Caixa Branca}
+	\begin{itemize}
+		\item Os passos básicos para se aplicar um critério de teste
+caixa branca são os seguintes:
+		\begin{enumerate}
+			\item A implementação do produto em teste é analisada.
+			\item Caminhos através da implementação são escolhidos.
+			\item Valores de entradas são selecionados de modo que os caminhos selecionados sejam executados.
+			\item As saídas esperadas para as entradas escolhidas são determinadas.
+			\item Os casos de testes são construídos.
+			\item Os casos de testes são executados.
+			\item As saídas obtidas são comparadas com as saídas esperadas.
+			\item \textcolor{red}{Um relatório é gerado para avaliar o resultado dos testes.}	
+		\end{enumerate}
+	\end{itemize}
+\end{frame}
+
+%-------------------------------------------------------------------------Slide
+\begin{frame}{Critérios de Teste Estrutural}
+	\begin{itemize}
+		\item Critérios Baseados em Fluxo de Controle:
+		\begin{itemize}
+			\item Todos-Nós, Todas-Arestas, Todos-Caminhos.
+		\end{itemize}
+		\item Critérios Baseados em Fluxo de Dados:
+		\begin{itemize}
+			\item Todas-Definições, Todos-P-Usos, Todos-C-Usos, Todos-Usos, Todos-Du-Caminhos, Todos-Pot-Usos,Todos-Pot-Du-Caminhos, Todos-Pot-Usos/Du.
+		\end{itemize}
+	\end{itemize}
+\end{frame}
+
+%-------------------------------------------------------------------------Slide
+\begin{frame}{Uso nas Fases de Teste}
+	\begin{itemize}
+		\item Critérios da técnica caixa branca também podem ser utilizados em todas as fases/níveis de teste.
+		\item São mais comuns no teste de unidade e de integração.
+		\item Teste de caminhos:
+		\begin{itemize}
+			\item Caminhos dentro de uma unidade.
+			\item Caminhos entre unidades.
+			\item Caminhos entre sub-sistemas.
+			\item Caminhos entre o sistema todo.
+		\end{itemize}
+	\end{itemize}
+\end{frame}
+
+%-------------------------------------------------------------------------Slide
+\begin{frame}{Uso nas Fases de Teste}
+	\begin{itemize}
+		\item Diferentes caminhos dentro de um produto em teste.
+	\end{itemize}
+	\begin{figure}
+		\centering
+		\includegraphics[width=5cm]{gfc}
+	\end{figure}
+\end{frame}
+
+%-------------------------------------------------------------------------Slide
+\begin{frame}{Desvantagens do Teste Caixa Branca}
+	\begin{itemize}
+		\item \textcolor{red}{O número de caminhos a serem executados pode ser infinito (semelhante ao teste exaustivo).}
+	\end{itemize}
+\end{frame}
+
+%-------------------------------------------------------------------------Slide
+\begin{frame}{Desvantagens do Teste Caixa Branca}
+	\begin{itemize}
+		\item O número de caminhos a serem executados pode ser infinito (semelhante ao teste exaustivo).
+		\item \textcolor{red}{O caso de teste selecionado pode não revelar o defeito sensível a dado. Por exemplo:}
+	\end{itemize}
+\end{frame}
+
+%-------------------------------------------------------------------------Slide
+\begin{frame}{Desvantagens do Teste Caixa Branca}
+	\begin{itemize}
+		\item O número de caminhos a serem executados pode ser infinito (semelhante ao teste exaustivo).
+		\item O caso de teste selecionado pode não revelar o defeito sensível a dado. Por exemplo: 
+		\begin{itemize}
+			\item \textcolor{red}{y = x * 2; // deveria ser y = x ** 2}
+		\end{itemize}
+	\end{itemize}
+\end{frame}
+
+%-------------------------------------------------------------------------Slide
+\begin{frame}{Desvantagens do Teste Caixa Branca}
+	\begin{itemize}
+		\item O número de caminhos a serem executados pode ser infinito (semelhante ao teste exaustivo).
+		\item O caso de teste selecionado pode não revelar o defeito sensível a dado. Por exemplo: 
+		\begin{itemize}
+			\item y = x * 2; // deveria ser y = x ** 2
+			\item \textcolor{red}{funciona corretamente para x = 0, y=0 e x = 2, y = 4.}
+		\end{itemize}
+	\end{itemize}
+\end{frame}
+
+%-------------------------------------------------------------------------Slide
+\begin{frame}{Desvantagens do Teste Caixa Branca}
+	\begin{itemize}
+		\item O número de caminhos a serem executados pode ser infinito (semelhante ao teste exaustivo).
+		\item O caso de teste selecionado pode não revelar o defeito sensível a dado. Por exemplo: 
+		\begin{itemize}
+			\item y = x * 2; // deveria ser y = x ** 2
+			\item funciona corretamente para x = 0, y=0 e x = 2, y = 4.
+		\end{itemize}				
+		\item \textcolor{red}{Assume fluxo de controle correto (ou próximo do correto). Casos de testes são baseados em caminhos existentes: caminhos inexistentes não podem ser descobertos.}
+	\end{itemize}
+\end{frame}
+
+%-------------------------------------------------------------------------Slide
+\begin{frame}{Desvantagens do Teste Caixa Branca}
+	\begin{itemize}
+		\item O número de caminhos a serem executados pode ser infinito (semelhante ao teste exaustivo).
+		\item O caso de teste selecionado pode não revelar o defeito sensível a dado. Por exemplo: 
+		\begin{itemize}
+			\item y = x * 2; // deveria ser y = x ** 2
+			\item funciona corretamente para x = 0, y=0 e x = 2, y = 4.
+		\end{itemize}				
+		\item Assume fluxo de controle correto (ou próximo do correto). Casos de testes são baseados em caminhos existentes: caminhos inexistentes não podem ser descobertos.
+		\item \textcolor{red}{Determinação de caminhos não executáveis pode ser um problema.}	
+	\end{itemize}
+\end{frame}
+
+%-------------------------------------------------------------------------Slide
+\begin{frame}{Desvantagens do Teste Caixa Branca}
+	\begin{itemize}
+		\item O número de caminhos a serem executados pode ser infinito (semelhante ao teste exaustivo).
+		\item O caso de teste selecionado pode não revelar o defeito sensível a dado. Por exemplo: 
+		\begin{itemize}
+			\item y = x * 2; // deveria ser y = x ** 2
+			\item funciona corretamente para x = 0, y=0 e x = 2, y = 4.
+		\end{itemize}				
+		\item Assume fluxo de controle correto (ou próximo do correto). Casos de testes são baseados em caminhos existentes: caminhos inexistentes não podem ser descobertos.
+		\item Determinação de caminhos não executáveis pode ser um problema.
+		\item \textcolor{red}{Dificuldade de automatização.}
+	\end{itemize}
+\end{frame}
+
+%-------------------------------------------------------------------------Slide
+\begin{frame}{Desvantagens do Teste Caixa Branca}
+	\begin{itemize}
+		\item O número de caminhos a serem executados pode ser infinito (semelhante ao teste exaustivo).
+		\item O caso de teste selecionado pode não revelar o defeito sensível a dado. Por exemplo: 
+		\begin{itemize}
+			\item y = x * 2; // deveria ser y = x ** 2
+			\item funciona corretamente para x = 0, y=0 e x = 2, y = 4.
+		\end{itemize}				
+		\item Assume fluxo de controle correto (ou próximo do correto). Casos de testes são baseados em caminhos existentes: caminhos inexistentes não podem ser descobertos.
+		\item Determinação de caminhos não executáveis pode ser um problema.
+		\item Dificuldade de automatização.
+		\item \textcolor{red}{Habilidades de programação avançadas exigidas para compreender o código e decidir pela executabilidade ou não de um caminho.}
+	\end{itemize}
+\end{frame}
+
+%-------------------------------------------------------------------------Slide
+\begin{frame}{Vantagens do Teste Caixa Branca}
+	\begin{itemize}
+		\item Eficaz em determinar defeitos de lógica e de programação, especialmente no nível de unidade.
+		\item É possível garantir que partes essenciais ou críticas do programa tenham sido executadas.
+		\begin{itemize}
+			\item Requisito mínimo de teste: garantir que o programa foi liberado tendo seus comandos executados ao menos uma vez por pelo menos um caso de teste.
+		\end{itemize}
+		\item É poss??vel saber o que ainda não foi testado.
+	\end{itemize}
+\end{frame}
+
+%-------------------------------------------------------------------------Slide
+\begin{frame}{Níveis de Cobertura}
+	\begin{itemize}
+		\item Diferentes níveis de cobertura podem ser definidos em função dos elementos do GFC.
+		\item Cobertura: porcentagem dos requisitos que foram testados versus o total de requisitos gerados.
+		\item Oito diferentes n??veis de cobertura são definidos por \cite{Copeland2003}.	
+		\item Quanto maior o nível, maior o rigor do critério de teste, ou seja, mais caso de teste ele exige para ser satisfeito.
+\begin{itemize}
+	\item Nível 0 $\longleftarrow$ Nível 1 $\longleftarrow$ Nível 2 $\longleftarrow$ Nível 3 $\longleftarrow$ Nível 4 $\longleftarrow$ Nível 5 $\longleftarrow$ Nível 6 $\longleftarrow$ Nível 7
+\end{itemize}
+	\end{itemize}
+\end{frame}
+
+%-------------------------------------------------------------------------Slide
+\begin{frame}{Níveis de Cobertura}
+	\begin{itemize}
+		\item Nível 0: qualquer valor de cobertura inferior a 100\% da cobertura de todos os comandos.
+		\item Nível 1: 100\% de cobertura de comandos. (Todos-Nós)
+		\item Nível 2: 100\% de cobertura de decisões. (Todos-Arcos)
+		\item Nível 3: 100\% de cobertura de condições.
+		\item Nível 4: 100\% de cobertura decisões/condições. 
+		\item Nível 5: 100\% de cobertura de condições múltiplas.
+		\item Nível 6: cobertura de loop.
+		\item Nível 7: 100\% de cobertura de caminhos. (Todos-Caminhos)							
+	\end{itemize}
+\end{frame}
+
+%-------------------------------------------------------------------------Slide
+\begin{frame}{Níveis de Cobertura - Exemplo}
+	\begin{figure}
+		\centering
+		\includegraphics[width=8cm]{nivel1a}
+	\end{figure}
+\end{frame}
+
+%-------------------------------------------------------------------------Slide
+\begin{frame}{Níveis de Cobertura - Exemplo}
+	\begin{figure}
+		\centering
+		\includegraphics[width=8cm]{nivel1}
+	\end{figure}
+\end{frame}
+
+
+\section{Refer\^encias}
+%\section{Referências Bibliográficas}
+\begin{frame}[shrink]
+ \frametitle{Referências Bibliográficas}
+ %\begin{block}{}
+ 
+  \begin{thebibliography}{99}
+   \beamertemplatearticlebibitems
+
+
+\bibitem[Beizer, 1990]{beizer1990}
+Beizer, Boris.
+\newblock Software Testing Techniques. 
+\newblock {\em Van Nostrand Reinhold Company, New York, 2nd edition,1990.}
+
+\bibitem[Boehm e Basili, 2001]{boehm2001}
+B. Boehm and V. R. Basili. 
+\newblock Software defect reduction top 10 list. 
+\newblock {\em Computer, 34(1):135-137, 2001.
+ISSN 0018-9162. doi: \url{http://dx.doi.org/10.1109/2.962984.}}
+
+\bibitem[Copeland, 2003]{Copeland2003}
+Lee Copeland.
+\newblock A Practitioner's Guide to Software Test Design
+\newblock {\em Artech House Publishers, Boston, 2003.}
+
+\bibitem[Craig e Jaskiel, 2002]{craig2002}
+R. D. Craig and S. P. Jaskiel. 
+\newblock Systematic Software Testing. 
+\newblock {\em Artech House Publishers, 2002.}
+
+\bibitem[Google, 2019]{google2019}
+Imagens, Google
+\newblock Google Imagens.
+\newblock {\em \url{https://www.google.com.br}. Acesso em 19/06/2019.}
+
+   
+\bibitem[IEEE 610.12.1990]{ieee610}
+IEEE. 
+\newblock IEEE standard glossary of software engineering terminology. Standard 610.12-1990 (R2002),
+\newblock {\em IEEE Computer Society Press, 2002.}
+
+\bibitem[HARLEY, 2019]{harley2019}
+Harley, Nick.
+\newblock 11 of the most costly software errors in history [2019 update]
+\newblock {\em \url{https://raygun.com/blog/costly-software-errors-history/}. Acesso em 19/06/2019.}
+
+\bibitem[NETO, 2009]{neto2009}
+Neto, Arilo Cl\'audio Dias Neto.
+\newblock Introdu\c{c}\~ao ao Teste de Software.
+\newblock {\em Engenharia de Software Magazine. Ed. 01, 2009}
+
+\bibitem[Shull et al,2002]{Shull2002}
+F. Shull, V. Basili, B. Boehm, A. W. Brown, P. Costa, M. Lindvall, D. Port, I. Rus, R.e Tesoriero,
+and M. Zelkowitz. 
+\newblock What we have learned about fighting defects. 
+\newblock {\em In VIII International Symposium on Software Metrics - METRICS'02, pages 249-258, Washington, DC, USA, June 2002. IEEE Computer Society. ISBN 0-7695-1339-5.}
+
+      %. . . . . . . . . . . . . . . . . . . . . . . . . . . .
+ %. . . . . . . . . . . . . . . . . . . . . . . . . . . .
+ \end{thebibliography}
+ %\end{block}
+%. . . . . . . . . . . . . . . . . . . . . . . . . . . .
+  
+
+\end{frame}
+
+
+
+\end{document}
