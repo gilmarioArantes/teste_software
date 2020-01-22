@@ -1,5 +1,7 @@
 Font: https://www.tutorialspoint.com/protractor/protractor_and_selenium_server.htm
 
+/usr/local/lib/node_modules/protractor/node_modules
+
 1. exemplo de comando de atualização do webdriver ignorando restrições de proxy e segurança ssl:
 	"sudo webdriver-manager update --ignore_ssl --proxy"
 2.
