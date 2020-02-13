@@ -6,3 +6,8 @@ Font: https://www.tutorialspoint.com/protractor/protractor_and_selenium_server.h
 	"sudo webdriver-manager update --ignore_ssl --proxy"
 2.
 
+Font: https://mherman.org/blog/testing-angularjs-with-protractor-and-karma-part-1/
+Font: https://mherman.org/blog/testing-angularjs-with-protractor-and-karma-part-2/
+
+
+
