@@ -1,12 +1,8 @@
-//chokoCreateAccount.po.js
-
-var ChokoCreateAccountPage = function () {
+// chokoCreateAccount.po.js
+var chokoCreateAccountPage = function() {
     this.createAccountButton = element(by.id('element-create-account-submit'));
 };
-
-ChokoCreateAccountPage.prototype.visit = function () {
-    browser.waitForAngularEnabled(false);
+chokoCreateAccountPage.prototype.visit = function() {
     browser.get('http://choko.org/create-account');
 };
-
-module.exports = ChokoCreateAccountPage;
+module.exports = chokoCreateAccountPage;
