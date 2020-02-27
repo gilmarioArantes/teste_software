@@ -1,6 +1,7 @@
 //paginaLogin.po.js
 
 var PaginaLogin = function() {
+    browser.waitForAngularEnabled(false);
     this.usernameField = element(by.id('username'));
     this.passwordField = element(by.id('password'));
     this.loginButton = element(by.name('submit'));

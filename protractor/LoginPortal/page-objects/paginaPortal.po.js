@@ -1,7 +1,8 @@
 //paginaPortal.po.js
 
 var PaginaPortal = function() {
-    this.searchField = element(by.xpath('//*[@id="search-form"]/div/input'));
+    browser.waitForAngularEnabled(false);
+    this.searchField = element(by.xpath('//*[@id="content"]/div/section/div/h2'));
 };
 
 module.exports = PaginaPortal;

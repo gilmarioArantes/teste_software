@@ -8,6 +8,7 @@ describe('Teste de Login no Portal de Teste com Protractor', function () {
     var paginaPortal = new PaginaPortal();
 
     it('logando no portal de teste',function () {
+        paginaLogin.visit();
         paginaLogin.signIn('gilmararantes','gfa2706')
         expect(paginaPortal.searchField.isDisplayed()).toBe(true);
     });

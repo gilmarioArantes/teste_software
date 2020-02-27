@@ -8,6 +8,7 @@ Font: https://www.tutorialspoint.com/protractor/protractor_and_selenium_server.h
 
 Font: https://mherman.org/blog/testing-angularjs-with-protractor-and-karma-part-1/
 Font: https://mherman.org/blog/testing-angularjs-with-protractor-and-karma-part-2/
+https://www.logigear.com/blog/test-automation/15-best-practices-for-building-an-awesome-protractor-framework/
 
 
 
