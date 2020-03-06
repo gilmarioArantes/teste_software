@@ -1,4 +1,5 @@
 // chokoSignInPage.po.js
+
 var ChokoSignInPage = function() {
     this.usernameField = element(by.id('element-username'));
     this.passwordField = element(by.id('element-password'));

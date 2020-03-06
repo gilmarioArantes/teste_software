@@ -1,4 +1,11 @@
 // config.js
+
+var Jasmine2HtmlReporter = require('protractor-jasmine2-html-reporter');
+
+var SpecReporter = require('jasmine-spec-reporter');
+
+var jasmineReporters = require('jasmine-reporters');
+
 exports.config = {
    directConnect: true,
 
@@ -18,11 +25,23 @@ exports.config = {
 
    onPrepare: function(){ //configure junit xml report
 
-      var jasmineReporters = require('jasmine-reporters');
+      
       jasmine.getEnv().addReporter(new jasmineReporters.JUnitXmlReporter({
          consolidateAll: true,
          filePrefix: 'guitest-xmloutput',
          savePath: 'reports'
       }));	
+   
+      jasmine.getEnv().addReporter(new SpecReporter({
+         displayFailuresSummary: true,
+         displayFailedSpec: true,
+         dispaySuiteNumber: true,
+         displaySpecDuration: true
+      }));
+
+      jasmine.getEnv().addReporter(new Jasmine2HtmlReporter({
+         takeScreenshots: true,
+         fixedScreenshotName: true
+      }))
   },	
 };
