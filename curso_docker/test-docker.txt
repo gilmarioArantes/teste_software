@@ -1,0 +1,7 @@
+https://www.softwaretestingmagazine.com/
+http://www.methodsandtools.com/archive/archive.php
+https://www.atlantbh.com/qatest-automation/dockerize-tests-test-environment-part-1/ and 
+https://www.atlantbh.com/qatest-automation/dockerize-your-tests-and-test-environment-part2/.
+https://www.blazemeter.com/blog/how-to-run-selenium-tests-in-docker/
+https://www.freecodecamp.org/news/how-to-dockerize-your-end-to-end-acceptance-tests-dbb593acb8e0/
+https://www.linuxpro.com.br/2017/08/curso-de-docker-gratis/ - curso gratis.

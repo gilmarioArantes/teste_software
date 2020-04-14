@@ -1,0 +1,28 @@
+1 - Instalação:
+	segui este link no dia 12/04/2020 - https://phoenixnap.com/kb/how-to-install-docker-on-ubuntu-18-04
+2 - Executar um container:
+	sudo docker run <nome_container> <comando_executar>
+	exemplo: sudo docker run ubuntu /bin/echo Hello, Docker! - executará o container ubuntu e imprimirá a mensagem "Hello Docker".
+3 - Listar os containers em execução:
+	sudo docker ps
+4 - Listar os containers que foram inicializados ou pausados:
+	sudo docker ps -a			
+4 - Acessar o shell de um container:
+	sudo docker run -i -t ubuntu /bin/bash - neste caso, do container ubuntu
+	-i - para ter iteratividade com o container
+	-t - para linkar ao terminal do container.
+5 - Sair do container:
+	exit
+6 - Exibit o ID do container:
+	sudo docker ps -qa
+7 - Verificar o status de um container:
+	sudo docker stats <id_container> - exemplo:
+	sudo docker stats cff02d2515ee
+8 - Listar as imagens existentes no seu PC /var/lib/docker/
+	sudo docker images
+M60GD
+
+R$ 325,00
+
+
+https://g1.globo.com/go/goias/edicao/2020/04/13/videos-bom-dia-goias-de-segunda-feira-13-de-abril-de-2020.ghtml - clique no link do vídeo "Telespectadores enviam mais fotos para o Bom Dia Goiás. Do Lado direito. 
