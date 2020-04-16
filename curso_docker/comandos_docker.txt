@@ -26,6 +26,20 @@
 	a opção -p abre a porta 8080 do localhost e a mapeia para a porta 80 do container.
 11 - iniciar um contexto e colocá-lo pra rodar em background
 	sudo docker run -d -p 8080:80 ubuntu/nginx /usr/sbin/nginx -g "daemon off;"
+12 - interromper a execução de um container:
+	docker stop <id_container>
+13 - Reiniciar a execução de um container
+	docker start <id_container>
+14 - Excluir o container
+	docker rm <id_container>
+15 - Excluir o container e a imagem
+	docker rmi <id_container>
+16 - excluir todos os containers de uma vez:
+	docker rm $(docker ps -qa)
+17 - excluir todas as imagens de uma vez:
+	sudo docker rmi $(docker images -q)
+18 - 
+	
 
 M60GD
 
