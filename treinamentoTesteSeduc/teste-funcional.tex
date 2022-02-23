@@ -1,0 +1,795 @@
+% Copyright © 2009 by Max Gontijo de Oliveira <maxopala@gmail.com>
+%
+% This program is free software; you can redistribute it and/or modify
+% it under the terms of the GNU General Public License as published by
+% the Free Software Foundation; either version 2 of the License, or
+% (at your option) any later version.
+% This program is distributed in the hope that it will be useful,
+% but WITHOUT ANY WARRANTY; without even the implied warranty of
+% MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
+% GNU General Public License for more details.
+
+\documentclass[xcolor=pdftex,dvipsnames,table,11pt]{beamer}
+% Outras classes: [notes], [notes=only], [trans], [handout], [red], [compress], [draft], [class=article]
+ 
+\mode<handout>{
+	\beamertemplatesolidbackgroundcolor{black!5}
+}
+
+\usepackage[brazil]{varioref}
+\usepackage[brazil,english]{babel}
+\usepackage[latin1]{inputenc}
+\usepackage{graphicx,url}
+\usepackage{pslatex}
+\usepackage{beamerthemeshadow}
+\usepackage{pgf}
+\usepackage{pgfpages}
+\usepackage[absolute,overlay]{textpos}
+\usepackage{verbatim}
+\usepackage{multirow}
+
+\newcommand{\cor}[2]{\color{#1}#2\color{black}}
+\newcommand{\kmeans}{\textit{k-means}}
+
+\useoutertheme{francisco}
+\setbeamertemplate{navigation symbols}{}
+%\setbeamertemplate{footline}[frame number]
+%\setbeamertemplate{footline}[infolines theme]
+%\beamertemplatetransparentcovereddynamic
+\usecolortheme[named=NavyBlue]{structure}
+%\useoutertheme{infolines}
+%\usetheme{AnnArbor}
+%\usetheme{Malmoe}
+%\usetheme{JuanLesPins}
+%\usetheme{Montpellier}
+
+\title{Teste Funcional}
+%\subtitle{Orienta\c{c}\~{a}o a Objetos}
+\author{Gilmar Ferreira Arantes{\\\href{mailto:gilmar.arantes@goias.gov.br}{ - gilmar.arantes@goias.gov.br}}}
+\institute{GPS - SCTI}
+\date{Goiânia, 24 e 25 de Junho de 2019}
+
+\pgfdeclareimage[height=1.0cm]{right-logo}{./imagens/seduc-gov-siti-verde}
+\setbeamertemplate{sidebar right}{%
+  \vskip0.2125cm%
+  \llap{\insertlogo\hskip0.1cm}%
+  \vfill%
+  \llap{\pgfuseimage{right-logo}\hskip0.1cm}%
+  \vskip2pt%
+} 
+\graphicspath{{./imagens/}}
+\begin{document}
+
+\frame
+{
+  \titlepage
+}
+
+%\section{Sumário}
+\frame[allowframebreaks,t]
+{
+  \frametitle{Sumário}
+  \tableofcontents
+}
+
+
+%===============================================================================
+\section{Teste Funcional}
+%===============================================================================
+
+%-------------------------------------------------------------------------Slide
+\begin{frame}{Desafios}
+	\begin{itemize}
+		\item Alguém já testou algum produto de software?		 
+	\end{itemize}
+\end{frame}
+
+%-------------------------------------------------------------------------Slide
+\begin{frame}{Desafios}
+	\begin{itemize}
+		\item Alguém já testou algum produto de software?
+		\item Quais foram os maiores desafios?
+	\end{itemize}
+\end{frame}
+
+%-------------------------------------------------------------------------Slide
+\begin{frame}{Desafios}
+	\begin{itemize}
+		\item Alguém já testou algum produto de software?
+		\item Quais foram os maiores desafios?
+		\item Alguns problemas comuns são:
+	\end{itemize}
+\end{frame}
+
+%-------------------------------------------------------------------------Slide
+\begin{frame}{Desafios}
+	\begin{itemize}
+		\item Alguém já testou algum produto de software?
+		\item Quais foram os maiores desafios?
+		\item Alguns problemas comuns são:
+		\begin{enumerate}
+			\item Não há tempo para o teste exaustivo.
+		\end{enumerate}		 
+	\end{itemize}
+\end{frame}
+
+%-------------------------------------------------------------------------Slide
+\begin{frame}{Desafios}
+	\begin{itemize}
+		\item Alguém já testou algum produto de software?
+		\item Quais foram os maiores desafios?
+		\item Alguns problemas comuns são:
+		\begin{enumerate}
+			\item Não há tempo para o teste exaustivo.
+			\item Muitas combinações de entrada para serem exercitadas.
+		\end{enumerate}		 
+	\end{itemize}
+\end{frame}
+
+%-------------------------------------------------------------------------Slide
+\begin{frame}{Desafios}
+	\begin{itemize}
+		\item Alguém já testou algum produto de software?
+		\item Quais foram os maiores desafios?
+		\item Alguns problemas comuns são:
+		\begin{enumerate}
+			\item Não há tempo para o teste exaustivo.
+			\item Muitas combinações de entrada para serem exercitadas.
+			\item Dificuldade em determinar os resultados esperados para cada caso de teste.
+		\end{enumerate}		 
+	\end{itemize}
+\end{frame}
+
+%-------------------------------------------------------------------------Slide
+\begin{frame}{Desafios}
+	\begin{itemize}
+		\item Alguém já testou algum produto de software?
+		\item Quais foram os maiores desafios?
+		\item Alguns problemas comuns são:
+		\begin{enumerate}
+			\item Não há tempo para o teste exaustivo.
+			\item Muitas combinações de entrada para serem exercitadas.
+			\item Dificuldade em determinar os resultados esperados para cada caso de teste.
+			\item Requisitos do software inexistentes ou que mudam rapidamente.
+		\end{enumerate}		 
+	\end{itemize}
+\end{frame}
+
+%-------------------------------------------------------------------------Slide
+\begin{frame}{Desafios}
+	\begin{itemize}
+		\item Alguém já testou algum produto de software?
+		\item Quais foram os maiores desafios?
+		\item Alguns problemas comuns são:
+		\begin{enumerate}
+			\item Não há tempo para o teste exaustivo.
+			\item Muitas combinações de entrada para serem exercitadas.
+			\item Dificuldade em determinar os resultados esperados para cada caso de teste.
+			\item Requisitos do software inexistentes ou que mudam rapidamente.
+			\item Não há tempo suficiente para o teste.
+		\end{enumerate}		 
+	\end{itemize}
+\end{frame}
+
+%-------------------------------------------------------------------------Slide
+\begin{frame}{Desafios}
+	\begin{itemize}
+		\item Alguém já testou algum produto de software?
+		\item Quais foram os maiores desafios?
+		\item Alguns problemas comuns são:
+		\begin{enumerate}
+			\item Não há tempo para o teste exaustivo.
+			\item Muitas combinações de entrada para serem exercitadas.
+			\item Dificuldade em determinar os resultados esperados para cada caso de teste.
+			\item Requisitos do software inexistentes ou que mudam rapidamente.
+			\item Não há tempo suficiente para o teste.
+			\item Não há treinamento no processo de teste.
+		\end{enumerate}		 
+	\end{itemize}
+\end{frame}
+
+%-------------------------------------------------------------------------Slide
+\begin{frame}{Desafios}
+	\begin{itemize}
+		\item Alguém já testou algum produto de software?
+		\item Quais foram os maiores desafios?
+		\item Alguns problemas comuns são:
+		\begin{enumerate}
+			\item Não há tempo para o teste exaustivo.
+			\item Muitas combinações de entrada para serem exercitadas.
+			\item Dificuldade em determinar os resultados esperados para cada caso de teste.
+			\item Requisitos do software inexistentes ou que mudam rapidamente.
+			\item Não há tempo suficiente para o teste.
+			\item Não há treinamento no processo de teste.
+			\item Não há ferramenta de apoio.
+		\end{enumerate}		 
+	\end{itemize}
+\end{frame}
+
+%-------------------------------------------------------------------------Slide
+\begin{frame}{Desafios}
+	\begin{itemize}
+		\item Alguém já testou algum produto de software?
+		\item Quais foram os maiores desafios?
+		\item Alguns problemas comuns são:
+		\begin{enumerate}
+			\item Não há tempo para o teste exaustivo.
+			\item Muitas combinações de entrada para serem exercitadas.
+			\item Dificuldade em determinar os resultados esperados para cada caso de teste.
+			\item Requisitos do software inexistentes ou que mudam rapidamente.
+			\item Não há tempo suficiente para o teste.
+			\item Não há treinamento no processo de teste.
+			\item Não há ferramenta de apoio.
+			\item Gerentes que desconhecem teste ou que não se preocupam com qualidade.
+		\end{enumerate}		 
+	\end{itemize}
+\end{frame}
+
+%-------------------------------------------------------------------------Slide
+\begin{frame}{Pratica 1}
+	\begin{itemize}
+		\item Elaborar um conjunto de casos de testes suficientes para um programa com a seguinte especificação:
+		\item O programa deve determinar se um identificador é válido ou não.
+Um identificador válido deve começar com uma letra e conter apenas letras ou dígitos. Além disso, deve ter no mínimo um caractere e no máximo seis caracteres de comprimento.
+	\end{itemize}
+\end{frame}
+
+%-------------------------------------------------------------------------Slide
+\begin{frame}{Pratica 2}
+	\begin{itemize}
+		\item Avaliação Escolar.
+	\end{itemize}
+\end{frame}
+
+%===============================================================================
+\subsection{Processo e Critérios}
+%===============================================================================
+
+%-------------------------------------------------------------------------Slide
+\begin{frame}{Processo de Teste Caixa Preta}
+ \begin{itemize}
+  \item \textcolor{red}{Os passos b\'asicos para se aplicar um crit\'erio de teste caixa preta s\~ao os seguintes:}
+ \end{itemize}
+\end{frame}
+
+%-------------------------------------------------------------------------Slide
+\begin{frame}{Processo de Teste Caixa Preta}
+ \begin{itemize}
+  \item Os passos b\'asicos para se aplicar um crit\'erio de teste caixa preta s\~ao os seguintes:
+  \begin{enumerate}
+   \item \textcolor{red}{A especifica\c{c}\~ao de requisitos \'e analisada.}
+  \end{enumerate}
+ \end{itemize}
+\end{frame}
+
+%-------------------------------------------------------------------------Slide
+\begin{frame}{Processo de Teste Caixa Preta}
+ \begin{itemize}
+  \item Os passos b\'asicos para se aplicar um crit\'erio de teste caixa preta s\~ao os seguintes:
+  \begin{enumerate}
+   \item A especifica\c{c}\~ao de requisitos \'e analisada.
+   \item \textcolor{red}{Entradas v\'alidas s\~ao escolhidas (com base na especifica\c{c}\~ao) para determinar se o produto em teste se comporta corretamente.} 
+  \end{enumerate}
+ \end{itemize}
+\end{frame}
+
+%-------------------------------------------------------------------------Slide
+
+\begin{frame}{Processo de Teste Caixa Preta}
+ \begin{itemize}
+  \item Os passos b\'asicos para se aplicar um crit\'erio de teste caixa preta s\~ao os seguintes:
+  \begin{enumerate}
+   \item A especifica\c{c}\~ao de requisitos \'e analisada.
+   \item Entradas v\'alidas s\~ao escolhidas (com base na especifica\c{c}\~ao) para determinar se o produto em teste se comporta corretamente. 
+   \item \textcolor{red}{Entradas inv\'alidas tamb\'em s\~ao escolhidas para verificar se s\~ao detectadas e manipuladas adequadamente.} 
+  \end{enumerate}
+ \end{itemize}
+\end{frame}
+
+%-------------------------------------------------------------------------Slide
+
+\begin{frame}{Processo de Teste Caixa Preta}
+ \begin{itemize}
+  \item Os passos b\'asicos para se aplicar um crit\'erio de teste caixa preta s\~ao os seguintes:
+  \begin{enumerate}
+   \item A especifica\c{c}\~ao de requisitos \'e analisada.
+   \item Entradas v\'alidas s\~ao escolhidas (com base na especifica\c{c}\~ao) para determinar se o produto em teste se comporta corretamente. 
+   \item Entradas inv\'alidas tamb\'em s\~ao escolhidas para verificar se s\~ao detectadas e manipuladas adequadamente. 
+   \item \textcolor{red}{As sa\'idas esperadas para as entradas escolhidas s\~ao determinadas.}
+  \end{enumerate}
+ \end{itemize}
+\end{frame}
+
+%-------------------------------------------------------------------------Slide
+
+\begin{frame}{Processo de Teste Caixa Preta}
+ \begin{itemize}
+  \item Os passos b\'asicos para se aplicar um crit\'erio de teste caixa preta s\~ao os seguintes:
+  \begin{enumerate}
+   \item A especifica\c{c}\~ao de requisitos \'e analisada.
+   \item Entradas v\'alidas s\~ao escolhidas (com base na especifica\c{c}\~ao) para determinar se o produto em teste se comporta corretamente. 
+   \item Entradas inv\'alidas tamb\'em s\~ao escolhidas para verificar se s\~ao detectadas e manipuladas adequadamente. 
+   \item As sa\'idas esperadas para as entradas escolhidas s\~ao determinadas.
+   \item \textcolor{red}{Os casos de testes s\~ao constru\'idos.}
+  \end{enumerate}
+ \end{itemize}
+\end{frame}
+
+%-------------------------------------------------------------------------Slide
+
+\begin{frame}{Processo de Teste Caixa Preta}
+ \begin{itemize}
+  \item Os passos b\'asicos para se aplicar um crit\'erio de teste caixa preta s\~ao os seguintes:
+  \begin{enumerate}
+   \item A especifica\c{c}\~ao de requisitos \'e analisada.
+   \item Entradas v\'alidas s\~ao escolhidas (com base na especifica\c{c}\~ao) para determinar se o produto em teste se comporta corretamente. 
+   \item Entradas inv\'alidas tamb\'em s\~ao escolhidas para verificar se s\~ao detectadas e manipuladas adequadamente. 
+   \item As sa\'idas esperadas para as entradas escolhidas s\~ao determinadas.
+   \item Os casos de testes s\~ao constru\'idos.
+   \item \textcolor{red}{O conjunto de teste \'e executado.}
+  \end{enumerate}
+ \end{itemize}
+\end{frame}
+
+%-------------------------------------------------------------------------Slide
+
+\begin{frame}{Processo de Teste Caixa Preta}
+ \begin{itemize}
+  \item Os passos b\'asicos para se aplicar um crit\'erio de teste caixa preta s\~ao os seguintes:
+  \begin{enumerate}
+   \item A especifica\c{c}\~ao de requisitos \'e analisada.
+   \item Entradas v\'alidas s\~ao escolhidas (com base na especifica\c{c}\~ao) para determinar se o produto em teste se comporta corretamente. 
+   \item Entradas inv\'alidas tamb\'em s\~ao escolhidas para verificar se s\~ao detectadas e manipuladas adequadamente. 
+   \item As sa\'idas esperadas para as entradas escolhidas s\~ao determinadas.
+   \item Os casos de testes s\~ao constru\'idos.
+   \item O conjunto de teste \'e executado.
+   \item \textcolor{red}{As sa\'idas obtidas s\~ao comparadas com as sa\'idas esperadas.}
+  \end{enumerate}
+ \end{itemize}
+\end{frame}
+
+%-------------------------------------------------------------------------Slide
+
+\begin{frame}{Processo de Teste Caixa Preta}
+ \begin{itemize}
+  \item Os passos b\'asicos para se aplicar um crit\'erio de teste caixa preta s\~ao os seguintes:
+  \begin{enumerate}
+   \item A especifica\c{c}\~ao de requisitos \'e analisada.
+   \item Entradas v\'alidas s\~ao escolhidas (com base na especifica\c{c}\~ao) para determinar se o produto em teste se comporta corretamente. 
+   \item Entradas inv\'alidas tamb\'em s\~ao escolhidas para verificar se s\~ao detectadas e manipuladas adequadamente. 
+   \item As sa\'idas esperadas para as entradas escolhidas s\~ao determinadas.
+   \item Os casos de testes s\~ao constru\'idos.
+   \item O conjunto de teste \'e executado.
+   \item As sa\'idas obtidas s\~ao comparadas com as sa\'idas esperadas.
+   \item \textcolor{red}{Um relat\'orio \'e gerado para avaliar o resultado dos testes.}
+  \end{enumerate}
+ \end{itemize}
+\end{frame}
+
+%=========================================================================================SECTION
+\subsection{Critérios de Teste Funcional}
+%=========================================================================================SECTION
+
+%-------------------------------------------------------------------------Slide
+
+\begin{frame}{Critérios de Teste Funcional}
+    \begin{enumerate}
+        \item \textcolor{red}{Particionamento de Equivalência (\textit{Equivalence Partition}).}
+    \end{enumerate}
+\end{frame}
+
+%-------------------------------------------------------------------------Slide
+
+\begin{frame}{Critérios de Teste Funcional}
+    \begin{enumerate}
+        \item Particionamento de Equivalência (\textit{Equivalence Partition}).
+        \item \textcolor{red}{Análise do Valor Limite (\textit{Boundary Value Analysis}).}
+    \end{enumerate}
+\end{frame}
+
+%-------------------------------------------------------------------------Slide
+
+\begin{frame}{Critérios de Teste Funcional}
+    \begin{enumerate}
+        \item Particionamento de Equivalência (\textit{Equivalence Partition}).
+        \item Análise do Valor Limite (\textit{Boundary Value Analysis}).
+        \item \textcolor{red}{Tabela de Decisão (\textit{Decision Table}).}
+    \end{enumerate}
+\end{frame}
+
+%-------------------------------------------------------------------------Slide
+
+\begin{frame}{Critérios de Teste Funcional}
+    \begin{enumerate}
+        \item Particionamento de Equivalência (\textit{Equivalence Partition}).
+        \item Análise do Valor Limite (\textit{Boundary Value Analysis}).
+        \item Tabela de Decisão (\textit{Decision Table}).
+        \item \textcolor{red}{Grafo de Causa e Efeito (\textit{Cause-Effect Graph}).}
+    \end{enumerate}
+\end{frame}
+
+%-------------------------------------------------------------------------Slide
+
+\begin{frame}{Critérios de Teste Funcional}
+    \begin{enumerate}
+        \item Particionamento de Equivalência (\textit{Equivalence Partition}).
+        \item Análise do Valor Limite (\textit{Boundary Value Analysis}).
+        \item Tabela de Decisão (\textit{Decision Table}).
+        \item Grafo de Causa e Efeito (\textit{Cause-Effect Graph}).
+        \item \textcolor{red}{Teste de Todos os Pares (\textit{Pairwise Testing}).}
+    \end{enumerate}
+\end{frame}
+
+%-------------------------------------------------------------------------Slide
+
+\begin{frame}{Critérios de Teste Funcional}
+    \begin{enumerate}
+        \item Particionamento de Equivalência (\textit{Equivalence Partition}).
+        \item Análise do Valor Limite (\textit{Boundary Value Analysis}).
+        \item Tabela de Decisão (\textit{Decision Table}).
+        \item Grafo de Causa e Efeito (\textit{Cause-Effect Graph}).
+        \item Teste de Todos os Pares (\textit{Pairwise Testing}).
+        \item \textcolor{red}{Teste de Transição de Estado (\textit{State-Transition Testing}).}
+    \end{enumerate}
+\end{frame}
+
+%-------------------------------------------------------------------------Slide
+
+\begin{frame}{Critérios de Teste Funcional}
+    \begin{enumerate}
+        \item Particionamento de Equivalência (\textit{Equivalence Partition}).
+        \item Análise do Valor Limite (\textit{Boundary Value Analysis}).
+        \item Tabela de Decisão (\textit{Decision Table}).
+        \item Grafo de Causa e Efeito (\textit{Cause-Effect Graph}).
+        \item Teste de Todos os Pares (\textit{Pairwise Testing}).
+        \item Teste de Transição de Estado (\textit{State-Transition Testing}).
+        \item \textcolor{red}{Teste de Análise de Domínio (\textit{Domain Analysis Testing}).}
+    \end{enumerate}
+\end{frame}
+
+%-------------------------------------------------------------------------Slide
+
+\begin{frame}{Critérios de Teste Funcional}
+    \begin{enumerate}
+        \item Particionamento de Equivalência (\textit{Equivalence Partition}).
+        \item Análise do Valor Limite (\textit{Boundary Value Analysis}).
+        \item Tabela de Decisão (\textit{Decision Table}).
+        \item Grafo de Causa e Efeito (\textit{Cause-Effect Graph}).
+        \item Teste de Todos os Pares (\textit{Pairwise Testing}).
+        \item Teste de Transição de Estado (\textit{State-Transition Testing}).
+        \item Teste de Análise de Domínio (\textit{Domain Analysis Testing}).
+        \item \textcolor{red}{Teste Funcional Sistemático (\textit{Systematic Functional Testing}).}
+    \end{enumerate}
+\end{frame}
+
+%-------------------------------------------------------------------------Slide
+
+\begin{frame}{Critérios de Teste Funcional}
+    \begin{enumerate}
+        \item Particionamento de Equivalência (\textit{Equivalence Partition}).
+        \item Análise do Valor Limite (\textit{Boundary Value Analysis}).
+        \item Tabela de Decisão (\textit{Decision Table}).
+        \item Grafo de Causa e Efeito (\textit{Cause-Effect Graph}).
+        \item Teste de Todos os Pares (\textit{Pairwise Testing}).
+        \item Teste de Transição de Estado (\textit{State-Transition Testing}).
+        \item Teste de Análise de Domínio (\textit{Domain Analysis Testing}).
+        \item Teste Funcional Sistemático (\textit{Systematic Functional Testing}).
+        \item \textcolor{red}{Teste de Caso de Uso (\textit{Use Case Testing}).}
+    \end{enumerate}
+\end{frame}
+
+%-------------------------------------------------------------------------Slide
+
+\begin{frame}{Particionamento Por Equivalência}
+    \begin{enumerate}
+        \item \textcolor{red}{Consiste na divisão do domínio de entrada e saída em intervalos.}
+    \end{enumerate}
+\end{frame}
+
+\begin{frame}{Particionamento Por Equivalência}
+    \begin{enumerate}
+        \item Consiste na divisão do domínio de entrada e saída em intervalos.
+        \item \textcolor{red}{Qualquer valor dentro do intervalo tem a mesma importância, ou seja, qualquer valor escolhido é adequado.}
+    \end{enumerate}
+\end{frame}
+
+\begin{frame}{Particionamento Por Equivalência}
+    \begin{enumerate}
+        \item Consiste na divisão do domínio de entrada e saída em intervalos.
+        \item Qualquer valor dentro do intervalo tem a mesma importância, ou seja, qualquer valor escolhido é adequado.
+        \item \textcolor{red}{O mesmo se aplica para os demais intervalos de dados.}
+    \end{enumerate}
+\end{frame}
+
+\begin{frame}{Particionamento Por Equivalência}
+    \begin{enumerate}
+        \item Consiste na divisão do domínio de entrada e saída em intervalos.
+        \item Qualquer valor dentro do intervalo tem a mesma importância, ou seja, qualquer valor escolhido é adequado.
+        \item O mesmo se aplica para os demais intervalos de dados.
+        \item \textcolor{red}{Tais intervalos determinam o que é chamado de \textbf{classe de equivalência}.}
+    \end{enumerate}
+\end{frame}
+
+\begin{frame}{Particionamento Por Equivalência}
+    \begin{enumerate}
+        \item Consiste na divisão do domínio de entrada e saída em intervalos.
+        \item Qualquer valor dentro do intervalo tem a mesma importância, ou seja, qualquer valor escolhido é adequado.
+        \item O mesmo se aplica para os demais intervalos de dados.
+        \item Tais intervalos determinam o que é chamado de \textbf{classe de equivalência}.
+        \item \textcolor{red}{Qualquer valor no intervalo de uma classe é considerado equivalente em termos de teste. Assim sendo:}
+    \end{enumerate}
+\end{frame}
+
+\begin{frame}{Particionamento Por Equivalência}
+    \begin{enumerate}
+        \item Consiste na divisão do domínio de entrada e saída em intervalos.
+        \item Qualquer valor dentro do intervalo tem a mesma importância, ou seja, qualquer valor escolhido é adequado.
+        \item O mesmo se aplica para os demais intervalos de dados.
+        \item Tais intervalos determinam o que é chamado de \textbf{classe de equivalência}.
+        \item Qualquer valor no intervalo de uma classe é considerado equivalente em termos de teste. Assim sendo:
+    \begin{itemize}
+        \item \textcolor{red}{Se um caso de teste de uma classe de equivalência revela um defeito, qualquer caso de teste da mesma classe também revelaria e vice-versa.}
+    \end{itemize}
+    \end{enumerate}
+\end{frame}
+
+\begin{frame}{Particionamento por Equival\^encia (\textit{Equivalence Partition})}
+\begin{columns}
+\column{0.5\textwidth}
+    \begin{itemize}
+        \item Conjunto de Valores
+    \end{itemize}
+    \begin{figure}[H]
+        \centering
+        \includegraphics[width=6cm, height=3cm]{../imagens/equiv.png}
+        \caption[numbered]\insertcaptionnumber{ - PCE. \cite{google2019}}
+    \end{figure}
+\column{0.5\textwidth}
+    \begin{itemize}
+        \item Intervalo de Valores
+    \end{itemize}
+    \begin{figure}[H]
+        \centering
+        \includegraphics[width=5cm, height=1cm]{../imagens/equiv2.png}
+        \caption[numbered]\insertcaptionnumber{ - PCE. \cite{google2019}}
+    \end{figure}
+\end{columns}
+\end{frame}
+
+\begin{frame}{Particionamento por Equival\^encia - Diretrizes}
+ \begin{itemize}
+  \item Indenpendentemente do tipo do atributo:
+  \begin{itemize}
+    \item Atributo - Obrigat\'orio (S/N):
+    \begin{itemize}
+      \item Definir uma classe v\'alida (atributo informado);
+      \item Definir uma classe inv\'alida (atributo n\~ao informado). 
+    \end{itemize}
+  \end{itemize}
+ \end{itemize}
+\end{frame}
+
+\begin{frame}{Particionamento por Equival\^encia - Diretrizes}
+ \begin{itemize}
+  \item Atributos do tipo String:
+  \begin{itemize}
+  \item Acentuação gr\'afica / Caracteres especiais (sim ou não)
+  \begin{itemize}
+   \item Definir uma classe para o ``sim'';
+   \item Definir uma classe para o ``n\~ao''
+  \end{itemize}
+  \item Tamanho mínimo / Tamanho máximo
+  \begin{itemize}
+   \item Definir uma classe inv\'alida para valor inferior ao m\'inimo;
+   \item Definir uma classe v\'alida para valor dentro do intervalo entre o m\'inimo e o m\'aximo.
+   \item Definir uma classe inv\'alida para valor superior do m\'aximo.
+  \end{itemize}
+  \end{itemize}
+ \end{itemize}
+\end{frame}
+
+\begin{frame}{Particionamento por Equival\^encia - Diretrizes}
+ \begin{itemize}
+  \item Atributos de tipos num\'ericos
+  \begin{itemize}
+   \item Valores Inteiros:
+    \begin{itemize}
+     \item Definir uma classe inv\'alida para valores inferiores ao limite inferior;
+     \item Definir uma classe v\'alida para valores dentro do intervalo entre os limites;
+     \item Definir uma classe inv\'alida para valores acima do limite superior. 
+    \end{itemize}
+   \item Valores de ponto-flutuante:
+   \begin{itemize}
+    \item Definir tr\^es classes de equival\^encia para a quantidade de casas depois da v\'irgula.
+   \end{itemize}
+  \end{itemize}
+ \end{itemize}
+\end{frame}
+
+\begin{frame}{Particionamento por Equival\^encia - Diretrizes}
+ \begin{itemize}
+  \item Atributos do tipo l\'ogico
+  \begin{itemize}
+   \item Definir duas classes de equival\^encia.
+  \end{itemize}
+  \item Atributos do tipo Data:
+   \begin{itemize}
+    \item Definir classes de equival\^encia para:
+    \begin{itemize}
+     \item Data V\'alida e inv\'alida;
+     \item Formato
+     \item Data inferior e data superior.
+    \end{itemize}
+   \end{itemize}
+  \end{itemize}
+\end{frame}
+
+%-------------------------------------------------------------------------Slide
+\begin{frame}{Prática 1 - Classes de Equivalência}
+	\begin{figure}
+		\centering
+		\includegraphics[width=10cm]{ce-identifier}
+	\end{figure}
+\end{frame}
+
+\begin{frame}{Crit\'erios de Teste Caixa Preta}
+An\'alise do Valor Limite (\textit{Boundary Value Analysis}).
+\begin{columns}
+\column{0,5\textwidth}
+\begin{figure}[H]
+\centering
+\includegraphics[width=5cm, height=3cm]{../imagens/bva1.jpg} %bva1.jpg
+\end{figure}
+\column{0,5\textwidth}
+\begin{figure}[H]
+\centering
+\includegraphics[width=5cm, height=3cm]{../imagens/bva1.png} %bva1.jpg
+\end{figure}
+\end{columns}
+\end{frame}
+
+\begin{frame}{Teste Funcional e as Fases de Teste}
+ \begin{itemize}
+  \item Por ser independente da implementa\c{c}\~ao, crit\'erios da t\'ecnica caixa preta podem ser utilizados em todas as fases de teste.
+ \end{itemize} 
+\end{frame}
+
+\begin{frame}{Teste Funcional e as Fases de Teste}
+ \begin{itemize}
+  \item Por ser independente da implementa\c{c}\~ao, crit\'erios da t\'ecnica caixa preta podem ser utilizados em todas as
+fases de teste.
+  \item A medida que se move do teste de unidade para o teste de sistema, entradas e sa\'idas mais complexas s\~ao exigidas, mas a abordagem permanece a mesma.
+  \end{itemize}
+\end{frame}
+
+\begin{frame}{Teste Funcional e as Fases de Teste}
+ \begin{itemize}
+  \item Por ser independente da implementa\c{c}\~ao, crit\'erios da t\'ecnica caixa preta podem ser utilizados em todas as
+fases de teste.
+  \item A medida que se move do teste de unidade para o teste de sistema, entradas e sa\'idas mais complexas s\~ao exigidas, mas a abordagem permanece a mesma.
+  \item Al\'em disso, principalmente no n\'ivel de sistema, o teste caixa-preta \'e de fundamental import\^ancia uma vez que a estrutura interna do sistema \'e muito complexa, inviabilizando o teste caixa-branca.
+ \end{itemize}
+\begin{figure}
+ \includegraphics[width=8cm]{../imagens/fasesTesteFuncional.png}
+\end{figure} 
+\end{frame}
+
+\begin{frame}{Vantagens do Teste Funcional}
+ \begin{itemize}
+  \item Pode ser utilizado em todas as fases de teste.
+ \end{itemize}
+\end{frame}
+
+\begin{frame}{Vantagens do Teste Funcional}
+ \begin{itemize}
+  \item Pode ser utilizado em todas as fases de teste.
+  \item Independente do paradigma de programa\c{c}\~ao utilizado.
+ \end{itemize}
+\end{frame}
+
+\begin{frame}{Vantagens do Teste Funcional}
+ \begin{itemize}
+  \item Pode ser utilizado em todas as fases de teste.
+  \item Independente do paradigma de programa\c{c}\~ao utilizado.
+  \item Teste funcional sistem\'atico direciona o testador a escolher subconjuntos de teste que s\~ao eficientes e efetivos em identificar defeitos. Melhor que o teste aleat\'orio \cite{copeland2003}.
+ \end{itemize}
+\end{frame}
+
+\begin{frame}{Vantagens do Teste Funcional}
+ \begin{itemize}
+  \item Pode ser utilizado em todas as fases de teste.
+  \item Independente do paradigma de programa\c{c}\~ao utilizado.
+  \item Teste funcional sistem\'atico direciona o testador a escolher subconjuntos de teste que s\~ao eficientes e efetivos em identificar defeitos. Melhor que o teste aleat\'orio \cite{copeland2003}.
+  \item Eficaz em detectar determinados tipos de defeitos:
+ \end{itemize}
+\end{frame}
+
+\begin{frame}{Vantagens do Teste Funcional}
+ \begin{itemize}
+  \item Pode ser utilizado em todas as fases de teste.
+  \item Independente do paradigma de programa\c{c}\~ao utilizado.
+  \item Teste funcional sistem\'atico direciona o testador a escolher subconjuntos de teste que s\~ao eficientes e efetivos em identificar defeitos. Melhor que o teste aleat\'orio \cite{copeland2003}.
+  \item Eficaz em detectar determinados tipos de defeitos:
+  \begin{itemize}
+    \item Funcionalidade ausente, por exemplo.
+  \end{itemize}
+ \end{itemize}
+\end{frame}
+
+\begin{frame}{Desvantagens do Teste Funcional}
+ \begin{itemize}
+  \item \textcolor{red}{Dependente de uma boa especifica\c{c}\~ao de requisitos.}
+ \end{itemize}
+\end{frame}
+
+\begin{frame}{Desvantagens do Teste Funcional}
+ \begin{itemize}
+  \item Dependente de uma boa especifica\c{c}\~ao de requisitos.
+  \item \textcolor{red}{N\~ao permite determinar que partes essenciais ou cr\'iticas da implementa\c{c}\~ao do software tenham sido executadas.}
+ \end{itemize}
+\end{frame}
+
+\section{Refer\^encias}
+%\section{Referências Bibliográficas}
+\begin{frame}[shrink]
+ \frametitle{Referências Bibliográficas}
+ %\begin{block}{}
+ 
+  \begin{thebibliography}{99}
+   \beamertemplatearticlebibitems
+   
+\bibitem[Boehm e Basili, 2001]{boehm2001}
+B. Boehm and V. R. Basili. 
+\newblock Software defect reduction top 10 list. 
+\newblock {\em Computer, 34(1):135-137, 2001.
+ISSN 0018-9162. doi: \url{http://dx.doi.org/10.1109/2.962984.}}
+
+\bibitem[Copeland, 2003]{copeland2003}
+Lee Copeland.
+\newblock A Practitioner's Guide to Software Test Design
+\newblock {\em Artech House Publishers, Boston, 2003.}
+
+\bibitem[Craig e Jaskiel, 2002]{craig2002}
+R. D. Craig and S. P. Jaskiel. 
+\newblock Systematic Software Testing. 
+\newblock {\em Artech House Publishers, 2002.}
+
+\bibitem[Google, 2019]{google2019}
+Imagens, Google
+\newblock Google Imagens.
+\newblock {\em \url{https://www.google.com.br}. Acesso em 19/06/2019.}
+
+   
+\bibitem[IEEE 610.12.1990]{ieee610}
+IEEE. 
+\newblock IEEE standard glossary of software engineering terminology. Standard 610.12-1990 (R2002),
+\newblock {\em IEEE Computer Society Press, 2002.}
+
+\bibitem[HARLEY, 2019]{harley2019}
+Harley, Nick.
+\newblock 11 of the most costly software errors in history [2019 update]
+\newblock {\em \url{https://raygun.com/blog/costly-software-errors-history/}. Acesso em 19/06/2019.}
+
+\bibitem[NETO, 2009]{neto2009}
+Neto, Arilo Cl\'audio Dias Neto.
+\newblock Introdu\c{c}\~ao ao Teste de Software.
+\newblock {\em Engenharia de Software Magazine. Ed. 01, 2009}
+
+\bibitem[Shull et al,2002]{Shull2002}
+F. Shull, V. Basili, B. Boehm, A. W. Brown, P. Costa, M. Lindvall, D. Port, I. Rus, R.e Tesoriero,
+and M. Zelkowitz. 
+\newblock What we have learned about fighting defects. 
+\newblock {\em In VIII International Symposium on Software Metrics - METRICS'02, pages 249-258, Washington, DC, USA, June 2002. IEEE Computer Society. ISBN 0-7695-1339-5.}
+
+      %. . . . . . . . . . . . . . . . . . . . . . . . . . . .
+ %. . . . . . . . . . . . . . . . . . . . . . . . . . . .
+ \end{thebibliography}
+ %\end{block}
+%. . . . . . . . . . . . . . . . . . . . . . . . . . . .
+  
+
+\end{frame}
+
+
+
+\end{document}

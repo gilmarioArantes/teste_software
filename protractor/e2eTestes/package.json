@@ -1,0 +1,12 @@
+{
+  "name": "e2eTestes",
+  "version": "1.0.0",
+  "dependencies": {
+    "shortid": "^2.2.15"
+  },
+  "devDependencies": {
+    "jasmine-spec-reporter": "^4.2.1",
+    "node-uuid": "^1.4.8",
+    "protractor-jasmine2-html-reporter": "0.0.7"
+  }
+}

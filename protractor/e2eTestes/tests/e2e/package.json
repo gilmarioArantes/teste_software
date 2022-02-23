@@ -1,0 +1,19 @@
+{
+  "name": "e2e",
+  "version": "1.0.0",
+  "description": "gerenciamento de dependencias do projeto",
+  "main": "config.js",
+  "scripts": {
+    "test": "protractor"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+ssh://git@github.com/gilmarioArantes/TesteSoftware.git"
+  },
+  "author": "Gilmar Ferreira Arantes",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/gilmarioArantes/TesteSoftware/issues"
+  },
+  "homepage": "https://github.com/gilmarioArantes/TesteSoftware#readme"
+}

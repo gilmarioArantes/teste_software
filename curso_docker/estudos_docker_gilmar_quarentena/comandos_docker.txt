@@ -1,0 +1,49 @@
+01 - Instalação:
+	segui este link no dia 12/04/2020 - https://phoenixnap.com/kb/how-to-install-docker-on-ubuntu-18-04
+02 - Executar um container:
+	sudo docker run <nome_container> <comando_executar>
+	exemplo: sudo docker run ubuntu /bin/echo Hello, Docker! - executará o container ubuntu e imprimirá a mensagem "Hello Docker".
+03 - Listar os containers em execução:
+	sudo docker ps
+04 - Listar os containers que foram inicializados ou pausados:
+	sudo docker ps -a			
+05 - Acessar o shell de um container:
+	sudo docker run -i -t ubuntu /bin/bash - neste caso, do container ubuntu
+	-i - para ter iteratividade com o container
+	-t - para linkar ao terminal do container.
+06 - Sair do container:
+	exit
+07 - Exibit o ID do container:
+	sudo docker ps -qa
+08 - Verificar o status de um container:
+	sudo docker stats <id_container> - exemplo:
+	sudo docker stats cff02d2515ee
+09 - Listar as imagens existentes no seu PC /var/lib/docker/
+	sudo docker images
+10 - Destruir o container ao encerrá-lo:
+	comando para iniciar - docker run -it --rm -p 8080:80 ubuntu/nginx /bin/bash
+	quando sair: exit - o comando será destruido, devido à opção -rm.
+	a opção -p abre a porta 8080 do localhost e a mapeia para a porta 80 do container.
+11 - iniciar um contexto e colocá-lo pra rodar em background
+	sudo docker run -d -p 8080:80 ubuntu/nginx /usr/sbin/nginx -g "daemon off;"
+12 - interromper a execução de um container:
+	docker stop <id_container>
+13 - Reiniciar a execução de um container
+	docker start <id_container>
+14 - Excluir o container
+	docker rm <id_container>
+15 - Excluir o container e a imagem
+	docker rmi <id_container>
+16 - excluir todos os containers de uma vez:
+	docker rm $(docker ps -qa)
+17 - excluir todas as imagens de uma vez:
+	sudo docker rmi $(docker images -q)
+18 - 
+	
+
+M60GD
+
+R$ 325,00
+
+
+https://g1.globo.com/go/goias/edicao/2020/04/13/videos-bom-dia-goias-de-segunda-feira-13-de-abril-de-2020.ghtml - clique no link do vídeo "Telespectadores enviam mais fotos para o Bom Dia Goiás. Do Lado direito. 
