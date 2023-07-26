@@ -1,4 +1,0 @@
-var jq=jQuery.noConflict();var max1=jq("ul li.active").index();var max2=max1+5;var min1=jq("ul li.active").index();var min2=min1-5;const listItems=document.querySelectorAll('.nav');for(let i=0;i<listItems.length;i++){var listmenuitems=listItems[i].innerHTML}
-listmenuitems.toString();document.getElementById("demo1").innerHTML=listmenuitems;if(min2<0){var min_positive=Math.abs(min2);var max2=max2+min_positive}
-var total_length=document.getElementById("demo1").getElementsByTagName("li").length;if(total_length<=max2){var check_diff=total_length-max2-1;var max_positive=Math.abs(check_diff);var min2=min2-max_positive}
-jq('.menuside').each(function(){jq(this).find('li').each(function(index){if(index<min2||index>max2)jq(this).hide()})})

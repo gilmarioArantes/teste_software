@@ -1,1 +1,0 @@
-/**/skimlinksApplyHandlers({"country":"BR","ts":1502998375,"sessid":"9220eb3eb52ed77d9a5eed43804e3ef8","csp":"magnetic:1474560277|liveramp:1474992586|rakuteninbound:1490188615|lotame:1491933251|captify:1498765797","guid":"7a033b4e0f4cd528cdc558761958db96","merchant_domains":[]});
